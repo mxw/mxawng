@@ -56,6 +56,10 @@ h2 {
   padding-top: 8px;
   @include header-common;
 }
+h3 {
+  color: $base00;
+  font-size: 16pt;
+}
 
 /* Navigation styles. */
 nav {
@@ -79,6 +83,7 @@ nav a:hover {
   background: $base3;
 }
 #content {
+  color: $base02;
   margin: 0 auto;
   padding: 32pt 0;
   width: $contentwidth

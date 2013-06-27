@@ -1,11 +1,7 @@
----
-title: mxw
----
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{ page.title }}</title>
+  <title>mxw: {{ page.title }}</title>
   <link rel="stylesheet" type="text/css" href="/css/site.css" />
 </head>
 
@@ -14,6 +10,10 @@ title: mxw
 
   <div id="container">
     <div id="content">
+      <article>
+        <h3>{{ page.title }}</h3>
+        {{ content }}
+      </article>
     </div>
   </div>
 
