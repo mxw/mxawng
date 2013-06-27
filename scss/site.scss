@@ -1,0 +1,108 @@
+/* Solarized colorscheme. */
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+$contentwidth: 800px;
+
+html {
+  margin: 0;
+}
+body {
+  background: $base03;
+  color: $base0;
+  font-family: 'Palatino', 'Garamond', serif;
+  font-size: 14pt;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles. */
+header {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+@mixin header-common {
+  color: $base2;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 0 0 8px $base3, 0.1em 0.1em 0.1em rgba(0,0,0,0.4);
+}
+h1 {
+  font-size: 64pt;
+  margin: 0;
+  @include header-common;
+}
+h2 {
+  font-size: 16pt;
+  margin: 0;
+  padding-top: 8px;
+  @include header-common;
+}
+
+/* Navigation styles. */
+nav {
+  background: $base1;
+  padding: 6pt 0pt;
+  text-align: center;
+}
+nav a {
+  background-color: transparent;
+  color: #eee;
+  font-size: 18pt;
+  padding: 6pt 12pt;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: $base01;
+}
+
+/* Content styles. */
+#container {
+  background: $base3;
+}
+#content {
+  margin: 0 auto;
+  padding: 32pt 0;
+  width: $contentwidth
+}
+
+/* Footer styles. */
+footer {
+  font-size: 14pt;
+  padding: 16px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Woooo purple! */
+::selection {
+  background: $cyan;
+  color: #fff;
+}
+::-moz-selection {
+  background: $cyan;
+  color: #fff;
+}
+
+canvas {
+  border: 1px solid;
+}
+canvas.jsdemo {
+  margin: 0px auto;
+  display: block;
+}
