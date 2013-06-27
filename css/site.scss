@@ -56,10 +56,6 @@ h2 {
   padding-top: 8px;
   @include header-common;
 }
-h3 {
-  color: $base00;
-  font-size: 16pt;
-}
 
 /* Navigation styles. */
 nav {
@@ -87,6 +83,24 @@ nav a:hover {
   margin: 0 auto;
   padding: 32pt 0;
   width: $contentwidth
+}
+
+/* Post header. */
+.post-header, .post-header a {
+  color: $base00;
+}
+.post-header a:hover {
+  color: $base1;
+}
+.post-header .title {
+  clear: none;
+  display: inline;
+  font-size: 16pt;
+}
+.post-header .date {
+  color: $base00;
+  float: right;
+  vertical-align: bottom;
 }
 
 /* Footer styles. */

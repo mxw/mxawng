@@ -11,7 +11,12 @@
   <div id="container">
     <div id="content">
       <article>
-        <h3>{{ page.title }}</h3>
+        <div class="post-header">
+          <h3 class="title">{{ page.title }}</h3>
+          <span class="date">
+            <i>{{ page.date | date_to_long_string }}</i>
+          </span>
+        </div>
         {{ content }}
       </article>
     </div>
