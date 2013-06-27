@@ -1,23 +1,16 @@
+---
+title: mxw
+---
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>mxw</title>
+  <title>{{ page.title }}</title>
   <link rel="stylesheet" type="text/css" href="css/site.css" />
 </head>
 
 <body>
-  <header>
-    <h1>{m x[a}w n g]</h1>
-    <h2>structured and compressed</h2>
-  </header>
-  <nav>
-    <a href="about.html">about</a>
-    <a href="index.html">blog</a>
-    <a href="mailto:mxawng@gmail.com">email</a>
-    <a href="http://www.github.com/mxw/">github</a>
-    <a href="projects.html">projects</a>
-    <a href="resume.html">r&#233;sum&#233;</a>
-  </nav>
+  {% include header.html %}
 
   <div id="container">
     <div id="content">
@@ -31,9 +24,7 @@
     </div>
   </div>
 
-  <footer>
-    solarized&nbsp; &#xa4&nbsp; jekyll
-  </footer>
+  {% include footer.html %}
 
   <script type="text/javascript" src="js/common.js"></script>
   <script type="text/javascript" src="js/solarized.js"></script>
