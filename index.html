@@ -21,15 +21,22 @@ title: mxw
               <a href="{{ post.url }}">{{ post.title }}</a>
             </h3>
             <span class="date">
-              <i>{{ post.date | date_to_long_string }}</i>
+              {{ post.date | date_to_long_string }}
             </span>
           </div>
+
           <p>{{ post.content }}</p>
+
+          <div class="post-footer">
+            <a class="count" href="{{ post.url }}#disqus_thread"></a>
+          </div>
         </article>
       {% endfor %}
     </div>
   </div>
 
   {% include footer.html %}
+
+  <script type="text/javascript" src="/js/disqus-count.js"></script>
 </body>
 </html>

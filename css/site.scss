@@ -87,11 +87,11 @@ nav a:hover {
   width: $contentwidth
 }
 
-/* Post header. */
-.post-header, .post-header a {
+/* Post header and footer. */
+.post-header a, .post-footer a {
   color: $base00;
 }
-.post-header a:hover {
+.post-header a:hover, .post-footer a:hover {
   color: $base1;
 }
 .post-header .title {
@@ -102,7 +102,11 @@ nav a:hover {
 .post-header .date {
   color: $base00;
   float: right;
+  font-style: italic;
   vertical-align: bottom;
+}
+.post-footer .count {
+  float: right;
 }
 
 /* Footer styles. */
