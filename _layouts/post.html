@@ -12,11 +12,18 @@
     <div id="content">
       <article>
         <div class="post-header">
-          <h3 class="title">{{ page.title }}</h3>
-          <span class="date">
-            <i>{{ page.date | date_to_long_string }}</i>
-          </span>
+          <table>
+            <tr>
+              <td class="title">
+                <h3>{{ page.title }}</h3>
+              </td>
+              <td class="date">
+                {{ page.date | date_to_long_string }}
+              </td>
+            </tr>
+          </table>
         </div>
+
         {{ content }}
 
         {% if page.comments %}

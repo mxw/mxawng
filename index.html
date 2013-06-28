@@ -17,20 +17,25 @@ title: mxw
       {% for post in site.posts %}
         <article>
           <div class="post-header">
-            <h3 class="title">
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </h3>
-            <span class="date">
-              {{ post.date | date_to_long_string }}
-            </span>
+            <table>
+              <tr>
+                <td class="title">
+                  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                </td>
+                <td class="date">
+                  {{ post.date | date_to_long_string }}
+                </td>
+              </tr>
+            </table>
           </div>
 
-          <p>{{ post.content }}</p>
+          <div class="post-content">{{ post.content }}</div>
 
           <div class="post-footer">
             <a class="count" href="{{ post.url }}#disqus_thread"></a>
           </div>
         </article>
+        <hr />
       {% endfor %}
     </div>
   </div>

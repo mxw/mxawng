@@ -18,7 +18,7 @@ here's my simplified clone of [this pong game](http://js1k.com/2010-first/demo/4
 from the first js1k---simplified in the sense that it is less flashy.  It is,
 of course, many more bytes.
 
-<canvas id="c" class="jsdemo" width="800" height="450">
+<canvas id="c" class="jsdemo" width="798" height="450">
   Your browser does not support the <code>&lt;canvas&gt;</code> tag!
   Sadface.
 </canvas>
