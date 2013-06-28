@@ -2,6 +2,7 @@
 
 title: Some practice with Javascript
 layout: post
+comments: true
 
 ---
 

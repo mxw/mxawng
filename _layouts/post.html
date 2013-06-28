@@ -18,6 +18,11 @@
           </span>
         </div>
         {{ content }}
+
+        {% if page.comments %}
+          <br />
+          {% include comments.html %}
+        {% endif %}
       </article>
     </div>
   </div>
