@@ -18,7 +18,7 @@
                 <h3>{{ page.title }}</h3>
               </td>
               <td class="date">
-                {{ page.date | date_to_long_string }}
+                {{ page.date | date: "%A, %B %e, %Y" }}
               </td>
             </tr>
           </table>
