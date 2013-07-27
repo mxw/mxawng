@@ -26,6 +26,13 @@ title: "Structured and Compressed"
                   {{ post.date | date: "%A, %B %e, %Y" }}
                 </td>
               </tr>
+              {% if post.subtitle %}
+                <tr>
+                  <td class="subtitle">
+                    <h4>{{ post.subtitle }}</h4>
+                  </td>
+                </tr>
+              {% endif %}
             </table>
           </div>
 

@@ -20,6 +20,13 @@
               <td class="date">
                 {{ page.date | date: "%A, %B %e, %Y" }}
               </td>
+            {% if page.subtitle %}
+              <tr>
+                <td class="subtitle">
+                  <h4>{{ page.subtitle }}</h4>
+                </td>
+              </tr>
+            {% endif %}
             </tr>
           </table>
         </div>

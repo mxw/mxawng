@@ -31,6 +31,7 @@ body {
   font-size: 12pt;
   margin: 0;
   padding: 0;
+  text-align: justify;
 }
 hr {
   border-color: $base3;
@@ -42,7 +43,7 @@ header {
   padding-top: 36px;
   padding-bottom: 42px;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
 }
 @mixin header-common {
@@ -64,6 +65,9 @@ h2, h2 a {
 h3, h3 a {
   font-size: 18pt;
   text-decoration: none;
+}
+h4, h4 a {
+  font-size: 14pt;
 }
 
 /* Navigation styles. */
@@ -120,6 +124,10 @@ article {
   color: $base00;
   font-style: italic;
   text-align: right;
+}
+.post-header .subtitle {
+  color: $base02;
+  font-style: italic;
 }
 .post-footer {
   text-align: right;
