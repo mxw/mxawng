@@ -29,20 +29,23 @@ title: "Structured and Compressed"
               {% if post.subtitle %}
                 <tr>
                   <td class="subtitle">
-                    <h4>{{ post.subtitle }}</h4>
+                    <h4>&#8213;{{ post.subtitle }}</h4>
                   </td>
                 </tr>
               {% endif %}
             </table>
           </div>
+          <hr />
 
-          <div class="post-content">{{ post.content }}</div>
+          <div class="post-content">{{ post.excerpt }}</div>
 
           <div class="post-footer">
+            {% if post.content != post.excerpt %}
+              <a class="readmore" href="{{ post.url }}">Read more...</a>
+            {% endif %}
             <a class="count" href="{{ post.url }}#disqus_thread"></a>
           </div>
         </article>
-        <hr />
       {% endfor %}
     </div>
   </div>

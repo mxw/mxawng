@@ -23,15 +23,16 @@
             {% if page.subtitle %}
               <tr>
                 <td class="subtitle">
-                  <h4>{{ page.subtitle }}</h4>
+                  <h4>&#8213;{{ page.subtitle }}</h4>
                 </td>
               </tr>
             {% endif %}
             </tr>
           </table>
         </div>
+        <hr />
 
-        {{ content }}
+        <div class="post-content">{{ content }}</div>
 
         <div class="post-nav">
           {% if page.previous.url %}
@@ -46,8 +47,10 @@
           {% endif %}
         </div>
 
+        <hr />
+
         {% if page.comments %}
-          <br /><br />
+          <br />
           {% include comments.html %}
         {% endif %}
       </article>

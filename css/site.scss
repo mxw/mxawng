@@ -35,6 +35,7 @@ body {
 }
 hr {
   border-color: $base3;
+  margin: 2px auto;
 }
 
 /* Header styles. */
@@ -102,6 +103,7 @@ nav a:hover {
 article {
   margin: 40px 0px 16px 0px;
 }
+
 .post-header a, .post-footer a {
   color: $base03;
 }
@@ -110,7 +112,7 @@ article {
 }
 
 .post-header {
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
   height: 100%;
   table {
     border-collapse: collapse;
@@ -132,17 +134,30 @@ article {
 }
 
 .post-footer {
-  text-align: right;
+  display: inline-block;
   width: 100%;
+  .count {
+    float: left;
+  }
+  .readmore {
+    float: right;
+  }
 }
 
 .post-nav {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: 100%;
   .prev {
     float: left;
   }
   .next {
     float: right;
   }
+}
+
+.post-content {
+  padding-top: 4px;
 }
 
 /* Footer styles. */
