@@ -136,6 +136,15 @@ article {
   width: 100%;
 }
 
+.post-nav {
+  .prev {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+}
+
 /* Footer styles. */
 footer {
   font-size: 12pt;
