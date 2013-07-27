@@ -108,27 +108,29 @@ article {
 .post-header a:hover, .post-footer a:hover {
   color: $base00;
 }
+
 .post-header {
   margin: 20px auto;
   height: 100%;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td {
+    padding: 0;
+    vertical-align: baseline;
+  }
+  .date {
+    color: $base00;
+    font-style: italic;
+    text-align: right;
+  }
+  .subtitle {
+    color: $base02;
+    font-style: italic;
+  }
 }
-.post-header table {
-  border-collapse: collapse;
-  width: 100%;
-}
-.post-header td {
-  padding: 0;
-  vertical-align: baseline;
-}
-.post-header .date {
-  color: $base00;
-  font-style: italic;
-  text-align: right;
-}
-.post-header .subtitle {
-  color: $base02;
-  font-style: italic;
-}
+
 .post-footer {
   text-align: right;
   width: 100%;
