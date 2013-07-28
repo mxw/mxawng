@@ -39,14 +39,6 @@ hr {
 }
 
 /* Header styles. */
-header {
-  margin: 0;
-  padding-top: 36px;
-  padding-bottom: 42px;
-}
-h1, h2, h3, h4 {
-  margin: 0;
-}
 @mixin header-common {
   color: $base2;
   font-weight: normal;
@@ -54,14 +46,22 @@ h1, h2, h3, h4 {
   text-decoration: none;
   text-shadow: 0 0 8px $base3, 0.1em 0.1em 0.1em rgba(0,0,0,0.4);
 }
-h1, h1 a {
-  font-size: 48pt;
-  @include header-common;
+header {
+  margin: 0;
+  padding-top: 36px;
+  padding-bottom: 42px;
+  h1, h1 a {
+    font-size: 48pt;
+    @include header-common;
+  }
+  h2, h2 a {
+    font-size: 14pt;
+    padding-top: 8px;
+    @include header-common;
+  }
 }
-h2, h2 a {
-  font-size: 14pt;
-  padding-top: 8px;
-  @include header-common;
+h1, h2, h3, h4 {
+  margin: 0;
 }
 h3, h3 a {
   font-size: 18pt;
@@ -158,6 +158,10 @@ article {
 
 .post-content {
   padding-top: 4px;
+  h2 {
+    padding-top: 8px;
+    font-size: 14pt;
+  }
 }
 
 /* Footer styles. */
