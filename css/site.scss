@@ -96,7 +96,7 @@ nav a:hover {
   color: $base02;
   margin: 0 auto;
   padding: 8px 0pt 32px 0;
-  width: $contentwidth
+  width: $contentwidth;
 }
 
 /* Post styles. */
@@ -162,6 +162,12 @@ article {
     padding-top: 8px;
     font-size: 14pt;
   }
+  a:link {
+    color: $blue;
+  }
+  a:visited {
+    color: $cyan;
+  }
 }
 
 /* Footer styles. */
@@ -174,11 +180,11 @@ footer {
 
 /* Woooo purple! */
 ::selection {
-  background: $cyan;
+  background: $blue;
   color: #fff;
 }
 ::-moz-selection {
-  background: $cyan;
+  background: $blue;
   color: #fff;
 }
 
