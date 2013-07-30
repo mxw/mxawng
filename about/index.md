@@ -15,12 +15,13 @@ There's some okay stuff in there, though.
 ## Bio ##
 
 I'm a recent graduate of Harvard with a degree in computer science.  While not
-coding or reading CS papers (or just chilling), I also studied mathematics,
-linguistics, and chemistry---in roughly descending order of diligence---and I
-continue to do all these things regularly, though not generally all at the same
-time.  I also enjoy writing (mostly exposition and autobiographical fiction),
-and I'm a musician, with some degree of competency in classical sax and some
-degree of incomptency in piano.
+coding or reading CS papers (or just chilling, which I'm sure I did more of), I
+also studied mathematics, linguistics, and chemistry---in roughly descending
+order of diligence---and I continue to do all these things regularly, though
+not generally all at the same time.  I also enjoy writing (mostly exposition
+and autobiographical fiction), and I'm a musician, with some degree of
+competency in classical sax, some degree of incomptency in piano, and some
+degree of ownership of an acoustic guitar.
 
 I am a proud alum of the [Center for Talented Youth][1] and am the maintainer
 of [RealCTY][2], the CTY wiki; I also held the [Duck][3] there.  I was a member
@@ -31,8 +32,19 @@ I hoard my own data and have kept all the schoolwork I've produced since middle
 school (and much of it from earlier) organized into collections of binders,
 bins, and hard drives---so I suppose it's impressive that I've never worked at
 Google.  I like playing board games, but, probably like most people, I spend
-more time chatting with people or poking the Internet, and I am totally okay
-with that.  If I could choose, I'd choose this life to live again, every time.
+more time chatting with friends or poking the Internet, and I'm just totally
+okay with that.  My other interests include orange juice, apple juice, metal
+clipboards, stuffed animals, and speaking with a loud voice.
+
+If given the choice, I'd choose this life to live again every time.
+
+## Links ##
+
+Some prime real estate for some [stuff](/stuff/) I like.
+
+## Testimonials ##
+
+What do other people have to say about this "Max Wang" guy?
 
 
 [1]: http://cty.jhu.edu/            "CTY"
