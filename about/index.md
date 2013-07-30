@@ -44,7 +44,28 @@ Some prime real estate for some [stuff](/stuff/) I like.
 
 ## Testimonials ##
 
-What do other people have to say about this "Max Wang" guy?
+What do other people have to say about this "Max Wang" guy, like, I mean,
+what's he all about?
+
+> Who does this guy think he is?
+> <cite>James Buckland</cite>
+
+> Turkey exonerated a kestrel accused of spying for Israel, and Indian
+> scientists confirmed that bright lights detected over Indian airspace and
+> suspected of being Chinese drones were in fact Jupiter and Venus.
+> <cite>Anonymous</cite>
+
+> Max you spelled my name wrong.
+> <cite>Scott Johnson</cite>
+
+> You should piece together some choice quotes from a Q review or something.
+> <cite>Anonymous</cite>
+
+> There are other people about whom I have worse things to say.
+> <cite>Anonymous</cite>
+
+> I heard he recently started a blog.
+> <cite>Garrett Morton</cite>
 
 
 [1]: http://cty.jhu.edu/            "CTY"

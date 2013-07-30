@@ -189,11 +189,52 @@ article {
 /*
  * Pages.
  */
+@mixin quote {
+  color: $base2;
+  display: block;
+  font-size: 80px;
+  font-family: "Trebuchet MS", sans-serif;
+  position: absolute;
+}
 .page-content {
   @include content;
   h2 {
     color: $base01;
     font-size: 16pt;
+  }
+  blockquote:before {
+    @include quote;
+    content: "\201c";
+    left: -48px;
+    top: -20px;
+  }
+  blockquote:after {
+    @include quote;
+    content: "\201d";
+    right: -36px;
+    bottom: -56px;
+  }
+  blockquote {
+    color: $base01;
+    font-size: 16pt;
+    font-style: italic;
+    margin: 40px auto;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+    width: auto;
+    a, a:link, a:visited {
+      color: $base01;
+    }
+    cite {
+      display: block;
+      font-size: 12pt;
+      margin-top: 8px;
+      text-align: right;
+    }
+    cite:before {
+      content: "\2014 \2009";
+    }
   }
 }
 
