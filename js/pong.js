@@ -81,9 +81,9 @@ c.onclick = (function() {
 
   // Render the initial scores.
   ctx.textAlign = 'right';
-  ctx.fillStyleText('0', -250, 0, p[0].color);
+  ctx.fillStyleText('0', -270, 0, p[0].color);
   ctx.textAlign = 'left';
-  ctx.fillStyleText('0', 250, 0, p[1].color);
+  ctx.fillStyleText('0', 270, 0, p[1].color);
 
   // Render the gameboard in a loop.
   refresh();
