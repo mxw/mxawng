@@ -11,26 +11,8 @@
   <div id="container">
     <div id="content">
       <article>
-        <div class="post-header">
-          <table>
-            <tr>
-              <td class="title">
-                <h3>{{ page.title }}</h3>
-              </td>
-              <td class="date">
-                {{ page.date | date: "%A, %B %e, %Y" }}
-              </td>
-            {% if page.subtitle %}
-              <tr>
-                <td class="subtitle">
-                  <h4>&#8213;{{ page.subtitle }}</h4>
-                </td>
-              </tr>
-            {% endif %}
-            </tr>
-          </table>
-        </div>
-        <hr />
+        {% assign post = page %}
+        {% include post-header.html %}
 
         <div class="post-content">{{ content }}</div>
 
