@@ -112,22 +112,38 @@ nav a:hover {
 }
 
 /*
- * Posts.
+ * Articles.
  */
 article {
   margin: 40px 0px 16px 0px;
 }
 
-.post-header a, .post-footer a {
+@mixin hf-color {
   color: $base03;
-}
-.post-header a:hover, .post-footer a:hover {
-  color: $base00;
+  a { color: $base03; }
+  a:hover { color: $base00; }
 }
 
-.post-header {
-  margin: 20px auto 0px auto;
+@mixin content {
+  padding-top: 4px;
+  h2 {
+    font-size: 14pt;
+    padding-top: 8px;
+  }
+  a:link { color: $blue; }
+  a:visited { color: $cyan; }
+}
+
+.page-header, .post-header {
+  @include hf-color;
   height: 100%;
+  margin: 20px auto 0px auto;
+}
+
+/*
+ * Posts.
+ */
+.post-header {
   table {
     border-collapse: collapse;
     width: 100%;
@@ -148,39 +164,36 @@ article {
 }
 
 .post-footer {
+  @include hf-color;
   display: inline-block;
   width: 100%;
-  .count {
-    float: left;
-  }
-  .readmore {
-    float: right;
-  }
+  .count { float: left; }
+  .readmore { float: right; }
 }
 
 .post-nav {
   display: inline-block;
   margin-bottom: 8px;
   width: 100%;
-  .prev {
-    float: left;
-  }
-  .next {
-    float: right;
-  }
+  .prev { float: left; }
+  .next { float: right; }
 }
 
 .post-content {
-  padding-top: 4px;
+  @include content;
   h2 {
-    padding-top: 8px;
     font-size: 14pt;
   }
-  a:link {
-    color: $blue;
-  }
-  a:visited {
-    color: $cyan;
+}
+
+/*
+ * Pages.
+ */
+.page-content {
+  @include content;
+  h2 {
+    color: $base01;
+    font-size: 16pt;
   }
 }
 
