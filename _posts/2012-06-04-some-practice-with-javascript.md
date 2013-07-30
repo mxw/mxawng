@@ -13,10 +13,12 @@ Javascript", but having nothing in mind to make with it after the first two
 attempts, all I achieved was a pleasant and nostalgic sense of familiarity
 whenever I looked over Mozilla's JS references.
 
-[Carl](http://avtok.com) suggested that I duplicate a js1k submission, so
-here's my simplified clone of [this pong game](http://js1k.com/2010-first/demo/41)
-from the first js1k---simplified in the sense that it is less flashy.  It is,
-of course, many more bytes.
+My friend [Carl][1] suggested that I duplicate a js1k submission, so here's my
+simplified clone of [this pong game][2] from the first js1k---simplified in the
+sense that it is less flashy.  It is, of course, many more bytes.
+
+The purple paddles are controlled by the `a` and `q` keys; the turquoise
+paddles, by the `p` and `l` keys.
 
 <canvas id="c" class="jsdemo" width="798" height="450">
   Your browser does not support the <code>&lt;canvas&gt;</code> tag!
@@ -32,3 +34,7 @@ of course, many more bytes.
 <script type="text/javascript" src="/js/pong.js">
 </script>
 <noscript>Your browser does not support Javascript!  Sadface.</noscript>
+
+
+[1]: http://avtok.com                     "Avtok"
+[2]: http://js1k.com/2010-first/demo/41   "js1k 2010 submission: feiss"
