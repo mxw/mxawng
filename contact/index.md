@@ -1,6 +1,8 @@
 ---
+
 title: Contact
 layout: page
+
 ---
 
-<p> Coming soon!
+Coming soon!

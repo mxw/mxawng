@@ -1,6 +1,8 @@
 ---
+
 title: Resume
 layout: page
+
 ---
 
-<p> Coming soon!
+Coming soon!
