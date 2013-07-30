@@ -1,7 +1,9 @@
 ---
 ---
 
-/* Solarized colorscheme. */
+/*
+ * Solarized colorscheme.
+ */
 $base03:    #002b36;
 $base02:    #073642;
 $base01:    #586e75;
@@ -38,7 +40,9 @@ hr {
   margin: 2px auto;
 }
 
-/* Header styles. */
+/*
+ * Header.
+ */
 @mixin header-common {
   color: $base2;
   font-weight: normal;
@@ -60,6 +64,10 @@ header {
     @include header-common;
   }
 }
+
+/*
+ * Headings.
+ */
 h1, h2, h3, h4 {
   margin: 0;
 }
@@ -71,7 +79,9 @@ h4, h4 a {
   font-size: 14pt;
 }
 
-/* Navigation styles. */
+/*
+ * Navigation.
+ */
 nav {
   background: $base1;
   padding: 6pt 0pt;
@@ -88,7 +98,9 @@ nav a:hover {
   background-color: $base01;
 }
 
-/* Content styles. */
+/*
+ * Containers.
+ */
 #container {
   background: $base3;
 }
@@ -99,7 +111,9 @@ nav a:hover {
   width: $contentwidth;
 }
 
-/* Post styles. */
+/*
+ * Posts.
+ */
 article {
   margin: 40px 0px 16px 0px;
 }
@@ -170,7 +184,9 @@ article {
   }
 }
 
-/* Footer styles. */
+/*
+ * Footer.
+ */
 footer {
   font-size: 12pt;
   padding: 10px 0;
@@ -178,7 +194,9 @@ footer {
   text-align: center;
 }
 
-/* Woooo purple! */
+/*
+ * Selection.
+ */
 ::selection {
   background: $blue;
   color: #fff;
@@ -188,6 +206,9 @@ footer {
   color: #fff;
 }
 
+/*
+ * Canvases.
+ */
 canvas {
   border: 1px solid;
   display: block;
