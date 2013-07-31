@@ -1,24 +1,16 @@
 /*
  * image-wrap.js - Image tricks from
- * http://webdesignerwall.com/tutorials/css3-image-styles
+ * http://webdesignerwall.com/tutorials/css3-image-styles-part-2
  */
 
-$(window).load(function() {
-  $('.img-inner').each(function() {
+$(document).ready(function() {
+  $('img.image-wrap').each(function() {
     $(this).wrap(function() {
-      image = $(this);
-      wrapper = $(document.createElement('span'));
-
-      wrapper.addClass('img-wrapper');
-      wrapper.addClass(image.attr('class'));
-      wrapper.removeClass('img-inner');
-
-      wrapper.css('background', 'url(' + image.attr('src') + ') no-repeat center center');
-      wrapper.css('width', image.width() + 'px');
-      wrapper.css('height', image.height() + 'px');
-
-      return wrapper;
+      return $(document.createElement('span'))
+        .addClass($(this).attr('class'))
+        .css('width', 'auto')
+        .css('height', 'auto');
     });
-    $(this).css('opacity', '0');
+    $(this).removeAttr('class');
   });
 });

@@ -31,12 +31,25 @@
  * Rules adapted from http://webdesignerwall.com/tutorials/css3-image-styles.
  * An image size of 200-x-200 px is assumed.
  */
-.img-wrapper {
+.image-wrap {
   display: inline-block;
+  max-width: 100%;
   position: relative;
+  vertical-align: bottom;
+}
+.image-wrap:after {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.image-wrap img {
+  vertical-align: bottom;
 }
 
-.img-wrapper.cutout {
+.image-wrap.cutout:after, .image-wrap.cutout img {
   @include box-shadow(
     0 1px 0 rgba(255,255,255,.2),
     inset 0 4px 5px rgba(0,0,0,.6),
@@ -45,11 +58,11 @@
   @include border-radius(1000px);
 }
 
-.img-wrapper.morphglow {
+.image-wrap.morphglow:after, .image-wrap.morphglow img {
   @include transition(1s);
   @include border-radius(20px);
 }
-.img-wrapper.morphglow:hover {
+.image-wrap.morphglow:hover:after, .image-wrap.morphglow:hover img {
   @include box-shadow(
     0 0 20px rgba(255,255,255,.6),
     inset 0 0 20px rgba(255,255,255,1)
