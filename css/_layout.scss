@@ -1,0 +1,58 @@
+/**
+ * layout.scss - General layout rules.
+ */
+
+/*
+ * Equidistant spacing.
+ */
+.equidist-center {
+  display: table;
+  & > * {
+    display: table-cell;
+    text-align: center;
+  }
+}
+.equidist-left {
+  font-size: 0.1pt;
+  text-align: justify;
+  & > * {
+    display: inline-block;
+  }
+}
+.equidist-left:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+/*
+ * Image styling; for use with image-wrapper.js.
+ *
+ * Rules adapted from http://webdesignerwall.com/tutorials/css3-image-styles.
+ * An image size of 200-x-200 px is assumed.
+ */
+.img-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.img-wrapper.cutout {
+  @include box-shadow(
+    0 1px 0 rgba(255,255,255,.2),
+    inset 0 4px 5px rgba(0,0,0,.6),
+    inset 0 1px 0 rgba(0,0,0,.6)
+  );
+  @include border-radius(1000px);
+}
+
+.img-wrapper.morphglow {
+  @include transition(1s);
+  @include border-radius(20px);
+}
+.img-wrapper.morphglow:hover {
+  @include box-shadow(
+    0 0 20px rgba(255,255,255,.6),
+    inset 0 0 20px rgba(255,255,255,1)
+  );
+  @include border-radius(1000px);
+}

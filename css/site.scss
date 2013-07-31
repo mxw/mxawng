@@ -1,25 +1,9 @@
 ---
 ---
 
-/*
- * Solarized colorscheme.
- */
-$base03:    #002b36;
-$base02:    #073642;
-$base01:    #586e75;
-$base00:    #657b83;
-$base0:     #839496;
-$base1:     #93a1a1;
-$base2:     #eee8d5;
-$base3:     #fdf6e3;
-$yellow:    #b58900;
-$orange:    #cb4b16;
-$red:       #dc322f;
-$magenta:   #d33682;
-$violet:    #6c71c4;
-$blue:      #268bd2;
-$cyan:      #2aa198;
-$green:     #859900;
+@import "colors";
+@import "utils";
+@import "layout";
 
 $contentwidth: 740px;
 
@@ -41,61 +25,61 @@ hr {
 }
 
 /*
- * Header.
+ * Header and footer.
  */
-@mixin header-common {
+@mixin header-heading($font-size) {
   color: $base2;
-  font-weight: normal;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 0 8px $base3, 0.1em 0.1em 0.1em rgba(0,0,0,0.4);
+  font: {
+    size: $font-size;
+    weight: normal;
+  }
+  text: {
+    align: center;
+    decoration: none;
+    shadow: 0 0 8px $base3, 0.1em 0.1em 0.1em rgba(0,0,0,0.4);
+  }
 }
 header {
   margin: 0;
   padding-top: 36px;
   padding-bottom: 42px;
   h1, h1 a {
-    font-size: 48pt;
-    @include header-common;
+    @include header-heading(48pt);
   }
   h2, h2 a {
-    font-size: 14pt;
     padding-top: 8px;
-    @include header-common;
+    @include header-heading(14pt);
   }
+}
+footer {
+  font-size: 12pt;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
 }
 
 /*
  * Headings.
  */
-h1, h2, h3, h4 {
-  margin: 0;
-}
-h3, h3 a {
-  font-size: 18pt;
-  text-decoration: none;
-}
-h4, h4 a {
-  font-size: 14pt;
-}
+h1, h2, h3, h4 { margin: 0; }
+h3 { font-size: 18pt; }
+h4 { font-size: 14pt; }
 
 /*
  * Navigation.
  */
 nav {
   background: $base1;
-  padding: 6pt 0pt;
+  padding: 6pt 0;
   text-align: center;
-}
-nav a {
-  background-color: transparent;
-  color: #eee;
-  font-size: 14pt;
-  padding: 6pt 12pt;
-  text-decoration: none;
-}
-nav a:hover {
-  background-color: $base01;
+  a {
+    background-color: transparent;
+    color: #eee;
+    font-size: 14pt;
+    padding: 6pt 12pt;
+    text-decoration: none;
+    &:hover { background-color: $base01; }
+  }
 }
 
 /*
@@ -107,15 +91,18 @@ nav a:hover {
 #content {
   color: $base02;
   margin: 0 auto;
-  padding: 8px 0pt 32px 0;
+  padding: 8px 0 32px 0;
   width: $contentwidth;
+}
+.img-container {
+  margin: 20px auto;
 }
 
 /*
  * Articles.
  */
 article {
-  margin: 40px 0px 16px 0px;
+  margin: 40px 0 16px 0;
 }
 
 @mixin hf-color {
@@ -126,10 +113,7 @@ article {
 
 @mixin content {
   padding-top: 4px;
-  h2 {
-    font-size: 14pt;
-    padding-top: 8px;
-  }
+  h2 { padding-top: 8px; }
   a:link { color: $blue; }
   a:visited { color: $cyan; }
 }
@@ -151,6 +135,9 @@ article {
   td {
     padding: 0;
     vertical-align: baseline;
+  }
+  .title a {
+    text-decoration: none;
   }
   .date {
     color: $base00;
@@ -189,31 +176,14 @@ article {
 /*
  * Pages.
  */
-@mixin quote {
-  color: $base2;
-  display: block;
-  font-size: 80px;
-  font-family: "Trebuchet MS", sans-serif;
-  position: absolute;
-}
 .page-content {
   @include content;
+
   h2 {
     color: $base01;
     font-size: 16pt;
   }
-  blockquote:before {
-    @include quote;
-    content: "\201c";
-    left: -48px;
-    top: -20px;
-  }
-  blockquote:after {
-    @include quote;
-    content: "\201d";
-    right: -36px;
-    bottom: -56px;
-  }
+
   blockquote {
     color: $base01;
     font-size: 16pt;
@@ -223,9 +193,31 @@ article {
     position: relative;
     text-align: center;
     width: auto;
+
+    @mixin quote {
+      color: $base2;
+      display: block;
+      font-size: 80px;
+      font-family: "Trebuchet MS", sans-serif;
+      position: absolute;
+    }
+    &:before {
+      @include quote;
+      content: "\201c";
+      left: -48px;
+      top: -20px;
+    }
+    &:after {
+      @include quote;
+      content: "\201d";
+      right: -36px;
+      bottom: -56px;
+    }
+
     a, a:link, a:visited {
       color: $base01;
     }
+
     cite {
       display: block;
       font-size: 12pt;
@@ -239,80 +231,9 @@ article {
 }
 
 /*
- * Footer.
- */
-footer {
-  font-size: 12pt;
-  padding: 10px 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/*
- * Images.
- */
-.img-container {
-  margin: 20px auto;
-}
-
-.img-wrapper {
-  display: inline-block;
-  position: relative;
-}
-
-@mixin box-shadow($shadows...) {
-  -webkit-box-shadow: $shadows;
-  -moz-box-shadow: $shadows;
-  box-shadow: $shadows;
-}
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
-}
-
-$cutout-shadow-1: 0 1px 0 rgba(255,255,255,.2);
-$cutout-shadow-2: inset 0 4px 5px rgba(0,0,0,.6);
-$cutout-shadow-3: inset 0 1px 0 rgba(0,0,0,.6);
-
-.img-wrapper.cutout {
-  @include box-shadow($cutout-shadow-1, $cutout-shadow-2, $cutout-shadow-3);
-  @include border-radius(1000px);
-}
-
-/*
- * Layout.
- */
-.equidist-center {
-  display: table;
-  & > * {
-    display: table-cell;
-    text-align: center;
-  }
-}
-
-.equidist-left {
-  font-size: 0.1pt;
-  text-align: justify;
-  & > * {
-    display: inline-block;
-  }
-}
-.equidist-left:after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
-/*
  * Selection.
  */
-::selection {
-  background: $blue;
-  color: #fff;
-}
-::-moz-selection {
+::selection, ::-moz-selection {
   background: $blue;
   color: #fff;
 }
@@ -323,5 +244,5 @@ $cutout-shadow-3: inset 0 1px 0 rgba(0,0,0,.6);
 canvas {
   border: 1px solid;
   display: block;
-  margin: 16px auto;
+  margin: 20px auto;
 }
