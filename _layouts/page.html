@@ -1,33 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" type="text/css" href="/css/site.css" />
-</head>
+---
 
-<body>
-  {% include header.html %}
+layout: default
+scripts: [jquery, image-wrap]
 
-  <div id="container">
-    <div id="content">
-      <article>
-        <div class="page-header">
-          <h3>{{ page.title }}</h3>
-        </div>
-        <hr />
-        <div class="page-content">
-          {{ content }}
-        </div>
-      </article>
-    </div>
+---
+
+<article>
+  <div class="page-header">
+    <h3>{{ page.title }}</h3>
   </div>
-
-  {% include footer.html %}
-
-  <script
-    type="text/javascript"
-    src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-  </script>
-  <script type="text/javascript" src="/js/image-wrap.js"></script>
-</body>
-</html>
+  <hr />
+  <div class="page-content">
+    {{ content }}
+  </div>
+</article>

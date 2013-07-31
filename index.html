@@ -1,38 +1,22 @@
 ---
+
 title: mxawng
+layout: default
+scripts: [disqus/count]
+
 ---
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" type="text/css" href="/css/site.css" />
-</head>
+{% for post in site.posts %}
+  <article>
+    {% include post-header.html %}
 
-<body>
-  {% include header.html %}
+    <div class="post-content">{{ post.excerpt }}</div>
 
-  <div id="container">
-    <div id="content">
-      {% for post in site.posts %}
-        <article>
-          {% include post-header.html %}
-
-          <div class="post-content">{{ post.excerpt }}</div>
-
-          <div class="post-footer">
-            {% if post.content != post.excerpt %}
-              <a class="readmore" href="{{ post.url }}">Read more...</a>
-            {% endif %}
-            <a class="count" href="{{ post.url }}#disqus_thread"></a>
-          </div>
-        </article>
-      {% endfor %}
+    <div class="post-footer">
+      {% if post.content != post.excerpt %}
+        <a class="readmore" href="{{ post.url }}">Read more...</a>
+      {% endif %}
+      <a class="count" href="{{ post.url }}#disqus_thread"></a>
     </div>
-  </div>
-
-  {% include footer.html %}
-
-  <script type="text/javascript" src="/js/disqus/count.js"></script>
-</body>
-</html>
+  </article>
+{% endfor %}
