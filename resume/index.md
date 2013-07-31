@@ -1,6 +1,6 @@
 ---
 
-title: Resume
+title: R&eacute;sum&eacute;
 layout: page
 
 ---
