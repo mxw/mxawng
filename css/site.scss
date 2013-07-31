@@ -249,6 +249,63 @@ footer {
 }
 
 /*
+ * Images.
+ */
+.img-container {
+  margin: 20px auto;
+}
+
+.img-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+@mixin box-shadow($shadows...) {
+  -webkit-box-shadow: $shadows;
+  -moz-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+$cutout-shadow-1: 0 1px 0 rgba(255,255,255,.2);
+$cutout-shadow-2: inset 0 4px 5px rgba(0,0,0,.6);
+$cutout-shadow-3: inset 0 1px 0 rgba(0,0,0,.6);
+
+.img-wrapper.cutout {
+  @include box-shadow($cutout-shadow-1, $cutout-shadow-2, $cutout-shadow-3);
+  @include border-radius(1000px);
+}
+
+/*
+ * Layout.
+ */
+.equidist-center {
+  display: table;
+  & > * {
+    display: table-cell;
+    text-align: center;
+  }
+}
+
+.equidist-left {
+  font-size: 0.1pt;
+  text-align: justify;
+  & > * {
+    display: inline-block;
+  }
+}
+.equidist-left:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+/*
  * Selection.
  */
 ::selection {

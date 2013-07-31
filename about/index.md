@@ -42,6 +42,18 @@ If given the choice, I'd choose this life to live again every time.
 
 Some prime real estate for some [stuff](/stuff/) I like.
 
+<div class="img-container equidist-center" style="width: 100%">
+  <div><a href="http://www.realcty.org">
+    <img class="img-inner cutout" src="/img/realcty-logo.png"/>
+  </a></div>
+  <div><a href="http://www.harvardband.org">
+    <img class="img-inner cutout" src="/img/hub-logo.png"/>
+  </a></div>
+  <div><a href="https://www.facebook.com/Engineering">
+    <img class="img-inner cutout" src="/img/fb-eng-logo.jpg"/>
+  </a></div>
+</div>
+
 ## Testimonials ##
 
 What do other people have to say about this "Max Wang" guy, like, I mean,
