@@ -7,6 +7,9 @@
     <title>mxawng: {{ page.title }}</title>
   {% endif %}
   <link rel="stylesheet" type="text/css" href="/css/site.css" />
+  {% for css in page.styles %}
+    <link rel="stylesheet" type="text/css" href="/css/{{ css }}.css" />
+  {% endfor %}
 </head>
 
 <body>
