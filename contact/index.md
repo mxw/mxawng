@@ -5,7 +5,7 @@ styles: [contact]
 ---
 
 If you'd like to communicate with me online, you can reach me at \[my
-second-level domain\] at <img id="gmail-icon" src="/img/icons/gmail.png"/>.
+second-level domain\] @ <img id="gmail-icon" src="/img/icons/gmail.png"/>.
 
 I exist elsewhere on the Internet as well, as __mxw__ or __mxawng__.
 
@@ -19,7 +19,7 @@ I exist elsewhere on the Internet as well, as __mxw__ or __mxawng__.
   about my Twitter is that it doesn't have <i>no</i> tweets.
 </li>
 <li class="li-icon github">
-  My navbar suggests that I have a <a href="https://github.com/mxw">GitHub</a>,
-  which as it turns out is the case.
+  My navbar suggests that I have a <a href="https://github.com/mxw">GitHub</a>
+  for code probably, which as it turns out is the case.
 </li>
 </ul>
