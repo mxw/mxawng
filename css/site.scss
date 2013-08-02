@@ -208,13 +208,13 @@ article {
       @include quote;
       content: "\201c";
       left: -48px;
-      top: 16px;
+      top: 14px;
     }
     &:after {
       @include quote;
       content: "\201d";
-      right: -36px;
-      bottom: -20px;
+      right: -38px;
+      bottom: -18px;
     }
 
     a, a:link, a:visited {
