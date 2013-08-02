@@ -1,8 +1,6 @@
 ---
-
 title: About
 layout: page
-
 ---
 
 My name is Max Wang, and this is a blog about me and some of the things I think
