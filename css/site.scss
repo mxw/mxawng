@@ -186,51 +186,6 @@ article {
     color: $base01;
     font-size: 16pt;
   }
-
-  blockquote {
-    color: $base01;
-    font-size: 16pt;
-    font-style: italic;
-    margin: 40px auto;
-    max-width: 400px;
-    position: relative;
-    text-align: center;
-    width: auto;
-
-    @mixin quote {
-      color: $base2;
-      display: block;
-      font-size: 80px;
-      font-family: "Trebuchet MS", sans-serif;
-      position: absolute;
-    }
-    &:before {
-      @include quote;
-      content: "\201c";
-      left: -48px;
-      top: 14px;
-    }
-    &:after {
-      @include quote;
-      content: "\201d";
-      right: -38px;
-      bottom: -18px;
-    }
-
-    a, a:link, a:visited {
-      color: $base01;
-    }
-
-    cite {
-      display: block;
-      font-size: 12pt;
-      margin-top: 8px;
-      text-align: right;
-    }
-    cite:before {
-      content: "\2014 \2009";
-    }
-  }
 }
 
 /*
