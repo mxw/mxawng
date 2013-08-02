@@ -21,7 +21,6 @@ module Jekyll
 
     def convert(content)
       begin
-        puts "Performing Sass Conversion."
         engine = Sass::Engine.new(
           content,
           :syntax => :scss,
@@ -29,7 +28,7 @@ module Jekyll
         )
         engine.render
       rescue StandardError => e
-        puts "!!! SASS Error: " + e.message
+        puts "SASS Error: " + e.message
       end
     end
   end
