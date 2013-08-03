@@ -31,7 +31,7 @@ paddles, by the `p` and `l` keys.
 </script>
 <script type="text/javascript" src="/js/canvas.js">
 </script>
-<script type="text/javascript" src="/js/pong.js">
+<script type="text/javascript" src="/js/posts/pong.js">
 </script>
 <noscript>Your browser does not support Javascript!  Sadface.</noscript>
 
