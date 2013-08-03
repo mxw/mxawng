@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {% if page.title == 'mxawng' %}
-  <title>mxawng</title>
+  {% if page.title %}
+  <title>{{ site.title }}: {{ page.title }}</title>
   {% else %}
-  <title>mxawng: {{ page.title }}</title>
+  <title>{{ site.title }}</title>
   {% endif %}
   <link rel="stylesheet" type="text/css" href="/css/site.css" />
   {% for css in page.styles %}
