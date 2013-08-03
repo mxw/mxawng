@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="author" content="{{ site.author }}">
+
   {% if page.title %}
   <title>{{ site.title }}: {{ page.title }}</title>
   {% else %}
   <title>{{ site.title }}</title>
   {% endif %}
+
   <link rel="stylesheet" type="text/css" href="/css/site.css" />
   {% for css in page.styles %}
   <link rel="stylesheet" type="text/css" href="/css/{{ css }}.css" />
@@ -16,22 +20,12 @@
   {% include header.html %}
 
   <div id="container">
-    <div id="content">
+    <div role="main" id="content">
       {{ content }}
     </div>
   </div>
 
   {% include footer.html %}
-
-  {% for js in page.scripts %}
-  {% if js == 'jquery' %}
-  <script
-    type="text/javascript"
-    src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-  </script>
-  {% else %}
-  <script type="text/javascript" src="/js/{{ js }}.js"></script>
-  {% endif %}
-  {% endfor %}
+  {% include js.html %}
 </body>
 </html>
