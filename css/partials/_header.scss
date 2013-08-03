@@ -1,0 +1,23 @@
+@mixin header-heading($font-size) {
+  color: $base2;
+  font: {
+    size: $font-size;
+    weight: normal;
+  }
+  text: {
+    align: center;
+    decoration: none;
+    shadow: 0 0 8px $base3, 0.1em 0.1em 0.1em rgba(0,0,0,0.4);
+  }
+}
+body > header {
+  margin: 0;
+  padding: 36px 0 42px 0;
+  h1, h1 a {
+    @include header-heading(48pt);
+  }
+  h2, h2 a {
+    padding-top: 8px;
+    @include header-heading(14pt);
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: Contact
 layout: page
-styles: [contact]
+styles: [pages/contact]
 ---
 
 If you'd like to communicate with me online, you can reach me at \[my

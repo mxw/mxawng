@@ -5,6 +5,9 @@
 @import "utils";
 @import "layout";
 
+@import "partials/header";
+@import "partials/navigation";
+
 $contentwidth: 740px;
 
 html {
@@ -30,30 +33,6 @@ hr {
 /*
  * Header and footer.
  */
-@mixin header-heading($font-size) {
-  color: $base2;
-  font: {
-    size: $font-size;
-    weight: normal;
-  }
-  text: {
-    align: center;
-    decoration: none;
-    shadow: 0 0 8px $base3, 0.1em 0.1em 0.1em rgba(0,0,0,0.4);
-  }
-}
-header {
-  margin: 0;
-  padding-top: 36px;
-  padding-bottom: 42px;
-  h1, h1 a {
-    @include header-heading(48pt);
-  }
-  h2, h2 a {
-    padding-top: 8px;
-    @include header-heading(14pt);
-  }
-}
 footer {
   font-size: 12pt;
   margin: 0 auto;
@@ -71,19 +50,6 @@ h4 { font-size: 14pt; }
 /*
  * Navigation.
  */
-nav {
-  background: $base1;
-  padding: 6pt 0;
-  text-align: center;
-  a {
-    background-color: transparent;
-    color: #eee;
-    font-size: 14pt;
-    padding: 6pt 12pt;
-    text-decoration: none;
-    &:hover { background-color: $base01; }
-  }
-}
 
 /*
  * Containers.

@@ -1,0 +1,12 @@
+body > nav {
+  background: $base1;
+  padding: 6pt 0;
+  text-align: center;
+  a {
+    color: #eee;
+    font-size: 14pt;
+    padding: 6pt 12pt;
+    text-decoration: none;
+    &:hover { background-color: $base01; }
+  }
+}
