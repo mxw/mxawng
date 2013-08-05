@@ -1,6 +1,8 @@
 ---
 ---
 
+@import "reset";
+
 @import "colors";
 @import "utils";
 @import "layout";
@@ -10,25 +12,21 @@
 
 $contentwidth: 740px;
 
-html {
-  margin: 0;
-}
 body {
   background: $base03;
   color: $base0;
   font-family: 'Palatino', 'Garamond', serif;
   font-size: 12pt;
-  margin: 0;
-  padding: 0;
+  line-height: 1.12;
   text-align: justify;
-}
-p {
-  margin: 1.25em auto;
 }
 hr {
   border-color: $base3;
   margin: 2px auto;
 }
+h3 { font-size: 18pt; }
+h4 { font-size: 14pt; }
+p { margin: 1.25em auto; }
 
 /*
  * Header and footer.
@@ -39,17 +37,6 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
-
-/*
- * Headings.
- */
-h1, h2, h3, h4 { margin: 0; }
-h3 { font-size: 18pt; }
-h4 { font-size: 14pt; }
-
-/*
- * Navigation.
- */
 
 /*
  * Containers.
