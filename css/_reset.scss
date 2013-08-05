@@ -33,9 +33,26 @@ footer, header, hgroup, main, menu, nav, section {
   display: block;
 }
 
-/* Normalize line heights. */
+/* Metrics. */
 body {
   line-height: 1;
+}
+hr {
+  border: 1px inset;
+  margin: 0.5em auto;
+}
+p, dl, pre {
+  margin: 1em 0;
+}
+dd {
+  padding-left: 40px;
+}
+blockquote, figure {
+  margin: 1em 40px;
+}
+ul, ol, menu, dir {
+  margin: 1em 0;
+  padding-left: 40px;
 }
 
 /* Font defaults. */
@@ -98,8 +115,6 @@ tr, td, th {
 /* Quote defaults. */
 blockquote {
   quotes: none;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
 }
 blockquote:before, blockquote:after {
   content: '';
