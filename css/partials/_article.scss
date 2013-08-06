@@ -1,0 +1,63 @@
+article {
+  margin: 3em 0 1em 0;
+
+  @mixin article-color {
+    color: $base03;
+    a { color: $base03; }
+    a:hover { color: $base00; }
+  }
+
+  & > header {
+    @include article-color;
+    margin: 1.5em auto 0 auto;
+
+    display: table;
+    width: 100%;
+    vertical-align: baseline;
+
+    .title, .date {
+      display: table-cell;
+    }
+    .subtitle {
+      display: table-row;
+    }
+
+    h1 a {
+      text-decoration: none;
+    }
+    time {
+      color: $base00;
+      font-style: italic;
+      text-align: right;
+    }
+    p {
+      color: $base02;
+      font: {
+        size: 14pt;
+        style: italic;
+        weight: bold;
+      }
+    }
+  }
+
+  & > footer {
+    @include article-color;
+    .post-nav, .post-links {
+      @extend %left-right;
+    }
+  }
+
+  .post-content {
+    h2 { padding-top: 0.3em; }
+    a:link { color: $blue; }
+    a:visited { color: $cyan; }
+  }
+
+  .page-content {
+    @extend .post-content;
+    h2 {
+      color: $base01;
+      font-size: 16pt;
+    }
+  }
+}

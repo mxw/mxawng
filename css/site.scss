@@ -9,6 +9,7 @@
 
 @import "partials/header";
 @import "partials/navigation";
+@import "partials/article";
 
 $contentwidth: 740px;
 
@@ -27,6 +28,7 @@ hr {
 h1 { font-size: 18pt; }
 h2 { font-size: 14pt; }
 p { margin: 1.25em auto; }
+section { margin: 1em 0; }
 
 /*
  * Header and footer.
@@ -51,88 +53,6 @@ body > footer {
 }
 .img-container {
   margin: 1.5em auto;
-}
-
-/*
- * Articles.
- */
-article {
-  margin: 3em 0 1em 0;
-
-  @mixin article-color {
-    color: $base03;
-    a { color: $base03; }
-    a:hover { color: $base00; }
-  }
-
-  & > header {
-    @include article-color;
-    margin: 1.5em auto 0 auto;
-
-    display: table;
-    width: 100%;
-    vertical-align: baseline;
-
-    .title, .date {
-      display: table-cell;
-    }
-    .subtitle {
-      display: table-row;
-    }
-
-    h1 a {
-      text-decoration: none;
-    }
-    time {
-      color: $base00;
-      font-style: italic;
-      text-align: right;
-    }
-    p {
-      color: $base02;
-      font: {
-        size: 14pt;
-        style: italic;
-        weight: bold;
-      }
-    }
-  }
-
-  & > footer {
-    @include article-color;
-    .post-nav, .post-links {
-      @extend %left-right;
-    }
-  }
-}
-
-section {
-  margin: 1em 0;
-}
-
-@mixin content {
-  h2 { padding-top: 0.3em; }
-  a:link { color: $blue; }
-  a:visited { color: $cyan; }
-}
-
-.post-content {
-  @include content;
-  h2 {
-    font-size: 14pt;
-  }
-}
-
-/*
- * Pages.
- */
-.page-content {
-  @include content;
-
-  h2 {
-    color: $base01;
-    font-size: 16pt;
-  }
 }
 
 /*
