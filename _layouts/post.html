@@ -12,11 +12,10 @@ scripts: [jquery, disqus/scroll]
   <footer>
     {% include post/prevnext.html %}
   </footer>
-
-  <hr />
-
-  {% if page.comments %}
-  <br />
-  {% include comments.html %}
-  {% endif %}
 </article>
+
+<hr />
+
+{% if page.comments %}
+{% include comments.html %}
+{% endif %}
