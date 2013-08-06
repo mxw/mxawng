@@ -2,6 +2,26 @@
  * utils.scss - Utility rules.
  */
 
+@mixin clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%left-right {
+  @include clearfix;
+  & > :last-child {
+    float: right;
+  }
+  & > :first-child {
+    float: left;
+  }
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;

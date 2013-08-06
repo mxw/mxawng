@@ -5,22 +5,11 @@ scripts: [jquery, disqus/scroll]
 
 <article>
   {% assign post = page %}
-  {% include post-header.html %}
-
+  {% include post/header.html %}
   <div class="post-content">{{ content }}</div>
-
-  <div class="post-nav">
-    {% if page.previous.url %}
-    <div class="prev">
-      <a href="{{ page.previous.url }}">&larr; prev</a>
-    </div>
-    {% endif %}
-    {% if page.next.url %}
-    <div class="next">
-      <a href="{{ page.next.url }}">next &rarr;</a>
-    </div>
-    {% endif %}
-  </div>
+  <footer>
+    {% include post/prevnext.html %}
+  </footer>
 
   <hr />
 

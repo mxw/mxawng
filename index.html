@@ -5,15 +5,17 @@ scripts: [disqus/count]
 
 {% for post in site.posts %}
   <article>
-    {% include post-header.html %}
+    {% include post/header.html %}
 
     <div class="post-content">{{ post.excerpt }}</div>
 
-    <div class="post-footer">
-      {% if post.content != post.excerpt %}
-        <a class="readmore" href="{{ post.url }}">Read more...</a>
-      {% endif %}
-      <a class="count" href="{{ post.url }}#disqus_thread"></a>
-    </div>
+    <footer>
+      <div class="post-footer">
+        <a href="{{ post.url }}#disqus_thread"></a>
+        {% if post.content != post.excerpt %}
+        <a href="{{ post.url }}">Read more...</a>
+        {% endif %}
+      </div>
+    </footer>
   </article>
 {% endfor %}

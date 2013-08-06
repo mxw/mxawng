@@ -31,9 +31,7 @@ p { margin: 1.25em auto; }
 /*
  * Header and footer.
  */
-footer {
-  font-size: 12pt;
-  margin: 0 auto;
+body > footer {
   padding: 10px 0;
   text-align: center;
 }
@@ -60,24 +58,29 @@ footer {
  */
 article {
   margin: 3em 0 1em 0;
-}
 
-@mixin hf-color {
-  color: $base03;
-  a { color: $base03; }
-  a:hover { color: $base00; }
+  @mixin article-color {
+    color: $base03;
+    a { color: $base03; }
+    a:hover { color: $base00; }
+  }
+
+  & > header {
+    @include article-color;
+    margin: 1.5em auto 0 auto;
+  }
+  & > footer {
+    @include article-color;
+    .post-nav, .post-footer {
+      @extend %left-right;
+    }
+  }
 }
 
 @mixin content {
   h2 { padding-top: 0.3em; }
   a:link { color: $blue; }
   a:visited { color: $cyan; }
-}
-
-.page-header, .post-header {
-  @include hf-color;
-  height: 100%;
-  margin: 1.5em auto 0 auto;
 }
 
 /*
@@ -104,22 +107,6 @@ article {
     color: $base02;
     font-style: italic;
   }
-}
-
-.post-footer {
-  @include hf-color;
-  display: inline-block;
-  width: 100%;
-  .count { float: left; }
-  .readmore { float: right; }
-}
-
-.post-nav {
-  display: inline-block;
-  margin-bottom: 0.5em;
-  width: 100%;
-  .prev { float: left; }
-  .next { float: right; }
 }
 
 .post-content {
