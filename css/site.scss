@@ -7,7 +7,7 @@
 @import "utils";
 @import "layout";
 
-@import "partials/header";
+@import "partials/running";
 @import "partials/navigation";
 @import "partials/article";
 
@@ -30,17 +30,6 @@ h2 { font-size: 14pt; }
 p { margin: 1.25em auto; }
 section { margin: 1em 0; }
 
-/*
- * Header and footer.
- */
-body > footer {
-  padding: 10px 0;
-  text-align: center;
-}
-
-/*
- * Containers.
- */
 #container {
   background: $base3;
 }
@@ -55,9 +44,6 @@ body > footer {
   margin: 1.5em auto;
 }
 
-/*
- * Canvases.
- */
 canvas {
   border: 1px solid;
   display: block;

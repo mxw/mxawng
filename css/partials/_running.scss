@@ -23,3 +23,7 @@ body > header {
     @include banner-heading(14pt);
   }
 }
+
+body > footer {
+  text-align: center;
+}
