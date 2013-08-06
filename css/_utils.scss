@@ -1,7 +1,31 @@
 /**
- * utils.scss - Utility rules.
+ * utils.scss - Layout utility rules.
  */
 
+/*
+ * Experimental selectors.
+ */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadows...) {
+  -webkit-box-shadow: $shadows;
+  -moz-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+@mixin transition($duration) {
+  -webkit-transition: $duration;
+  -moz-transition: $duration;
+  transition: $duration;
+}
+
+/*
+ * Non-legacy clearfix.
+ */
 @mixin clearfix {
   &:before, &:after {
     content: " ";
@@ -22,20 +46,70 @@
   }
 }
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
+/*
+ * Equidistant spacing.
+ */
+.equidist-center {
+  display: table;
+  & > * {
+    display: table-cell;
+    text-align: center;
+  }
+}
+.equidist-left {
+  font-size: 0.1pt;
+  text-align: justify;
+  & > * {
+    display: inline-block;
+  }
+}
+.equidist-left:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
 }
 
-@mixin box-shadow($shadows...) {
-  -webkit-box-shadow: $shadows;
-  -moz-box-shadow: $shadows;
-  box-shadow: $shadows;
+/*
+ * Image styling; for use with image-wrapper.js.
+ *
+ * Rules adapted from http://webdesignerwall.com/tutorials/css3-image-styles.
+ * A reasonable image size is assumed.
+ */
+.image-wrap {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  vertical-align: bottom;
+}
+.image-wrap:after {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.image-wrap img {
+  vertical-align: bottom;
 }
 
-@mixin transition($duration) {
-  -webkit-transition: $duration;
-  -moz-transition: $duration;
-  transition: $duration;
+.image-wrap.cutout:after, .image-wrap.cutout img {
+  @include box-shadow(
+    0 1px 0 rgba(255,255,255,.2),
+    inset 0 4px 5px rgba(0,0,0,.6),
+    inset 0 1px 0 rgba(0,0,0,.6)
+  );
+  @include border-radius(1000px);
+}
+
+.image-wrap.morphglow:after, .image-wrap.morphglow img {
+  @include transition(1s);
+  @include border-radius(20px);
+}
+.image-wrap.morphglow:hover:after, .image-wrap.morphglow:hover img {
+  @include box-shadow(
+    0 0 20px rgba(255,255,255,.6),
+    inset 0 0 20px rgba(255,255,255,1)
+  );
+  @include border-radius(1000px);
 }
