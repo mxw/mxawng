@@ -24,8 +24,8 @@ hr {
   border-color: $base3;
   margin: 2px auto;
 }
-h3 { font-size: 18pt; }
-h4 { font-size: 14pt; }
+h1 { font-size: 18pt; }
+h2 { font-size: 14pt; }
 p { margin: 1.25em auto; }
 
 /*
@@ -68,7 +68,36 @@ article {
   & > header {
     @include article-color;
     margin: 1.5em auto 0 auto;
+
+    display: table;
+    width: 100%;
+    vertical-align: baseline;
+
+    .title, .date {
+      display: table-cell;
+    }
+    .subtitle {
+      display: table-row;
+    }
+
+    h1 a {
+      text-decoration: none;
+    }
+    time {
+      color: $base00;
+      font-style: italic;
+      text-align: right;
+    }
+    p {
+      color: $base02;
+      font: {
+        size: 14pt;
+        style: italic;
+        weight: bold;
+      }
+    }
   }
+
   & > footer {
     @include article-color;
     .post-nav, .post-footer {
@@ -85,32 +114,6 @@ section {
   h2 { padding-top: 0.3em; }
   a:link { color: $blue; }
   a:visited { color: $cyan; }
-}
-
-/*
- * Posts.
- */
-.post-header {
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  td {
-    padding: 0;
-    vertical-align: baseline;
-  }
-  .title a {
-    text-decoration: none;
-  }
-  .date {
-    color: $base00;
-    font-style: italic;
-    text-align: right;
-  }
-  .subtitle {
-    color: $base02;
-    font-style: italic;
-  }
 }
 
 .post-content {
