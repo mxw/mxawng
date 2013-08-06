@@ -1,0 +1,46 @@
+/**
+ * typography.scss - Font selections and typographic defaults.  Some parts
+ * adapted from Octopress (https://github.com/imathis/octopress).
+ */
+
+$serif: 'Palatino', 'Garamond', serif;
+
+body {
+  font-family: $serif;
+}
+
+body > header {
+  %heading {
+    font-weight: normal;
+  }
+
+  h1 {
+    @extend %heading;
+    font-size: 2.667em;
+    line-height: 1.2em;
+  }
+  h2 {
+    @extend %heading;
+    font-size: 0.85em;
+  }
+}
+
+/* Headings. */
+h1 {
+  font-size: 1.85em;
+}
+h2, section h1 {
+  font-size: 1.4em;
+}
+h3, section h2, section section h1 {
+  font-size: 1.2em;
+}
+h4, section h3, section section h2 {
+  font-size: 1em;
+}
+h5, section h4, section section h3 {
+  font-size: 0.9em;
+}
+h6, section h5, section section h4 {
+  font-size: 0.8em;
+}

@@ -5,6 +5,13 @@
 /*
  * Experimental selectors.
  */
+@mixin text-size-adjust($adjust) {
+  text-size-adjust: $adjust;
+  -moz-text-size-adjust: $adjust;
+  -webkit-text-size-adjust: $adjust;
+  -ms-text-size-adjust: $adjust;
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;

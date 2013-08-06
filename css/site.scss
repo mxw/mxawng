@@ -6,27 +6,21 @@
 @import "colors";
 @import "utils";
 @import "layout";
+@import "typography";
 
 @import "partials/running";
 @import "partials/navigation";
 @import "partials/article";
 
-$contentwidth: 750px;
-
 body {
   background: $base03;
   color: $base0;
-  font-family: 'Palatino', 'Garamond', serif;
-  font-size: 12pt;
-  line-height: 1.12;
   text-align: justify;
 }
 hr {
   border-color: $base3;
   margin: 2px auto;
 }
-h1 { font-size: 18pt; }
-h2 { font-size: 14pt; }
 p { margin: 1.25em auto; }
 section { margin: 1em 0; }
 
@@ -35,10 +29,6 @@ section { margin: 1em 0; }
 }
 #content {
   color: $base02;
-  line-height: 125%;
-  margin: 0 auto;
-  padding: 8px 0 32px 0;
-  width: $contentwidth;
 }
 .img-container {
   margin: 1.5em auto;
