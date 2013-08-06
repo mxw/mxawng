@@ -100,7 +100,7 @@ article {
 
   & > footer {
     @include article-color;
-    .post-nav, .post-footer {
+    .post-nav, .post-links {
       @extend %left-right;
     }
   }
