@@ -1,0 +1,72 @@
+/**
+ * vrhythm.scss - Vertical rhythm based on rem units.
+ */
+
+$rhythm: 1.25rem;
+$default-font-size: 16px;
+$min-line-padding: 0.125rem;
+
+// Warn unless units are rem for a given number.
+@function enforce-rem($number) {
+  @if not unit($number) == "rem" {
+    @warn "All numbers should be given in rems."
+  }
+  @return 0;
+}
+
+// Strip units from a number.
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+// Convert a rem value to a px value, where the root font-size is specified as
+// as $base-multiplier of the browser default of 16px.
+@function rem-to-px($number, $base-multiplier: 1) {
+  $_: enforce-rem($number);
+  @return $base-multiplier * $default-font-size * strip-units($number);
+}
+
+// Calculate the minimum number of lines needed for a given $font-size, based
+// on the global $min-line-padding.  Lines can be partitioned into sub-lines.
+@function lines-for-font-size($font-size, $partitions: 1) {
+  $_: enforce-rem($font-size);
+
+  $lines: ceil($partitions * $font-size / $rhythm) / $partitions;
+
+  @if $lines * $rhythm - $font-size < $min-line-padding * 2 {
+    $lines: $lines + 1 / $partitions;
+  }
+  @return $lines;
+}
+
+// Simple function to compute line-height from $line count.
+@function rhythm($lines) {
+  @return $lines * $rhythm;
+}
+
+// Adjust font-size and line-height while maintaining vertical rhythm.
+@mixin rhythm($size, $lines: lines-for-font-size($size), $base-multiplier: 1) {
+  $_: enforce-rem($size);
+  font-size: rem-to-px($size, $base-multiplier);
+  font-size: $size;
+  line-height: rhythm($lines);
+}
+@mixin half-rhythm($size, $base-multiplier: 1) {
+  @include rhythm($size, lines-for-font-size($size, 2), $base-multiplier);
+}
+
+// Leader and trailer application.
+@mixin rhythm-leader($lines: 1, $property: margin) {
+  #{$property}-top: rhythm($lines);
+}
+@mixin rhythm-trailer($lines: 1, $property: margin) {
+  #{$property}-bottom: rhythm($lines);
+}
+@mixin rhythm-margins($lines: 1) {
+  margin-top: rhythm($lines);
+  margin-bottom: rhythm($lines);
+}
+@mixin rhythm-padding($lines: 1) {
+  padding-top: rhythm($lines);
+  padding-bottom: rhythm($lines);
+}
