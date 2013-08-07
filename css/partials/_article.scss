@@ -58,6 +58,10 @@ article {
   @include rhythm-border(top);
   text-align: justify;
 
+  & > p:first-child {
+    margin-top: 0;
+  }
+
   a:link { color: $blue; }
   a:visited { color: $cyan; }
 }
