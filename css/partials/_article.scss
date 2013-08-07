@@ -7,7 +7,7 @@ article {
     a:hover { color: $base00; }
   }
 
-  > header {
+  & > header {
     @include article-color;
     margin: 1.5em auto 0 auto;
     padding-top: 1.5em;
@@ -48,7 +48,7 @@ article {
     }
   }
 
-  > footer {
+  & > footer {
     @include article-color;
     .post-nav, .post-links {
       @extend %left-right;
