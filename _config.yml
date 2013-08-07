@@ -18,6 +18,7 @@ nav:
   - name: stuff
     url: /stuff/
 
+scripts: [rhythm]
 styles: [site]
 
 excerpt_separator: "<!--more-->"
