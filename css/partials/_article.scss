@@ -10,16 +10,26 @@ article {
   > header {
     @include article-color;
     margin: 1.5em auto 0 auto;
+    padding-top: 1.5em;
+    position: relative;
 
-    display: table;
-    width: 100%;
-    vertical-align: baseline;
-
-    .title, .date {
-      display: table-cell;
+    .date {
+      position: absolute;
+      top: 0;
     }
-    .subtitle {
-      display: table-row;
+
+    @include screen-normal {
+      display: table;
+      padding-top: 0;
+      width: 100%;
+
+      .title, .date {
+        display: table-cell;
+        position: static;
+      }
+      .subtitle {
+        display: table-row;
+      }
     }
 
     time {
@@ -34,6 +44,7 @@ article {
         style: italic;
         weight: bold;
       }
+      margin: 0;
     }
   }
 
@@ -45,6 +56,7 @@ article {
   }
 
   .post-content {
+    text-align: justify;
     h2 { padding-top: 0.3em; }
     a:link { color: $blue; }
     a:visited { color: $cyan; }
