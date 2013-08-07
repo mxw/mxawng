@@ -47,15 +47,11 @@ hr {
 p, dl, pre {
   margin: 1em 0;
 }
-dd {
-  padding-left: 40px;
-}
-blockquote, figure {
-  margin: 1em 40px;
-}
 ul, ol, menu, dir {
   margin: 1em 0;
-  padding-left: 40px;
+}
+blockquote, figure {
+  margin: 1em 2em;
 }
 
 /* Font defaults. */

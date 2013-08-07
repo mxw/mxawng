@@ -9,7 +9,7 @@ second-level domain\] @ <img id="gmail-icon" src="/img/icons/gmail.png"/>.
 
 I exist elsewhere on the Internet as well, as __mxw__ or __mxawng__.
 
-<ul style="list-style-type: none">
+<ul class="contacts">
 <li class="li-icon facebook">
   Friend me on <a href="https://www.facebook.com/mxw">Facebook</a> if we are
   friends!  But probably not if we aren't?
