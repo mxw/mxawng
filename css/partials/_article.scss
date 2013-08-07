@@ -51,24 +51,24 @@ article {
 
   & > footer {
     @include rhythm-margins();
-
-    .post-nav, .post-links {
-      @extend %left-right;
-    }
   }
+}
 
-  .post-content {
-    @include rhythm-border(top);
-    text-align: justify;
+.post-content {
+  @include rhythm-border(top);
+  text-align: justify;
 
-    a:link { color: $blue; }
-    a:visited { color: $cyan; }
+  a:link { color: $blue; }
+  a:visited { color: $cyan; }
+}
+
+.page-content {
+  @extend .post-content;
+  h2 {
+    color: $base01;
   }
+}
 
-  .page-content {
-    @extend .post-content;
-    h2 {
-      color: $base01;
-    }
-  }
+.post-nav, .post-links {
+  @extend %left-right;
 }
