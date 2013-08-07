@@ -1,16 +1,20 @@
 article {
-  margin: 3em 0 1em 0;
+  @include rhythm-leader(3);
+  &:first-child {
+    @include rhythm-leader(2);
+  }
+  @include rhythm-trailer(2);
 
-  @mixin article-color {
+  & > header, & > footer {
     color: $base03;
-    a { color: $base03; }
-    a:hover { color: $base00; }
+    a {
+      color: $base03;
+      &:hover { color: $base00; }
+    }
   }
 
   & > header {
-    @include article-color;
-    margin: 1.5em auto 0 auto;
-    padding-top: 1.5em;
+    @include rhythm-leader(1, padding);
     position: relative;
 
     .date {
@@ -38,26 +42,25 @@ article {
       text-align: right;
     }
     p {
+      @include rhythm(1.2rem, 1);
       color: $base02;
-      font: {
-        size: 14pt;
-        style: italic;
-        weight: bold;
-      }
+      font-style: italic;
       margin: 0;
     }
   }
 
   & > footer {
-    @include article-color;
+    @include rhythm-margins();
+
     .post-nav, .post-links {
       @extend %left-right;
     }
   }
 
   .post-content {
+    @include rhythm-border(top);
     text-align: justify;
-    h2 { padding-top: 0.3em; }
+
     a:link { color: $blue; }
     a:visited { color: $cyan; }
   }
@@ -66,7 +69,6 @@ article {
     @extend .post-content;
     h2 {
       color: $base01;
-      font-size: 16pt;
     }
   }
 }

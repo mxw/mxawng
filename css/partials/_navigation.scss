@@ -11,13 +11,12 @@ body > nav {
     overflow: hidden;
   }
   a {
+    @include rhythm(1.1rem);
     color: #eee;
-    font-size: 1.1em;
-    padding: 0.5em 1em;
+    padding: 0 1em;
     text-decoration: none;
     &:hover {
       background-color: $base01;
-      padding: 0.5em 1em;
     }
   }
 

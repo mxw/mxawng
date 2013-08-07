@@ -5,10 +5,8 @@
 
 $max-width: 750px;
 
-$header-font-size: 1em;
-$header-padding-top: 1.5em;
-$header-padding-bottom: 1.75em;
-$footer-padding: 0.667em;
+$header-font-size: 2.667rem;
+$footer-padding: 0.667rem;
 
 $pad-min: 16px;
 $pad-narrow: $pad-min * 2;
@@ -44,9 +42,8 @@ $screen-wide: 1720px;
 
 /* Main responsive layout. */
 body {
+  @include rhythm(1rem);
   @include text-size-adjust(none);
-
-  line-height: 1.25em;
 
   & > header, & > nav, & > footer, & > #container {
     padding-left: $pad-min;
@@ -67,32 +64,55 @@ body {
   }
 
   & > header {
-    font-size: $header-font-size;
+    @include half-rhythm($header-font-size);
+    @include rhythm-leader(2);
+    @include rhythm-trailer(2);
+
+    h1, h2 {
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
 
     @include screen-narrow {
-      font-size: $header-font-size * 1.2;
+      @include half-rhythm($header-font-size * 1.2);
     }
     @include screen-tablet {
-      font-size: $header-font-size * 1.3;
+      @include half-rhythm($header-font-size * 1.3);
     }
     @include screen-normal {
-      font-size: $header-font-size * 1.5;
+      @include half-rhythm($header-font-size * 1.5);
     }
 
-    padding-top: $header-padding-top;
-    padding-bottom: $header-padding-bottom;
+    h2 {
+      @include rhythm(1.25rem);
+    }
   }
 
   & > footer {
-    padding-top: $footer-padding;
-    padding-bottom: $footer-padding;
+    @include rhythm(1rem, 2);
   }
 }
 
-/* Content section layout. */
+/* Default element layouts. */
+p, dl, pre {
+  @include rhythm-margins();
+}
+ul, ol, menu, dir {
+  @include rhythm-margins();
+}
+blockquote, figure {
+  @include rhythm-margins();
+}
+section {
+  @include rhythm-border(top);
+  @include rhythm-trailer();
+}
+
+/* Content layout. */
 main#content {
+  @include rhythm-leader(0.5, padding);
+  @include rhythm-trailer(1.5, padding);
   margin: 0 auto;
   max-width: $max-width;
-  padding-top: 0.5em;
-  padding-bottom: 2em;
 }

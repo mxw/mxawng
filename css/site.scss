@@ -5,6 +5,7 @@
 
 @import "base/colors";
 @import "base/utils";
+@import "base/vrhythm";
 @import "base/layout";
 @import "base/typography";
 
@@ -16,13 +17,6 @@ body {
   background: $base03;
   color: $base0;
 }
-hr {
-  border-color: $base3;
-  margin: 2px auto;
-}
-p { margin: 1.25em auto; }
-section { margin: 1em 0; }
-
 #container {
   background: $base3;
 }
@@ -32,8 +26,6 @@ section { margin: 1em 0; }
 .img-container {
   margin: 1.5em auto;
 }
-
 canvas {
   border: 1px solid;
-  margin: 20px auto;
 }
