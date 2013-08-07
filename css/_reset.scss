@@ -62,10 +62,10 @@ ul, ol, menu, dir {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
-b, strong {
+b, strong, dfn {
   font-weight: bold;
 }
-i, em, dfn, var {
+i, em, var, dfn {
   font-style: italic;
 }
 s, strike, del {
@@ -87,6 +87,10 @@ sub {
 sup {
   vertical-align: super;
   font-size: smaller;
+}
+q {
+  &:before { content: "\201c"; }
+  &:after { content: "\201d"; }
 }
 
 /* List defaults. */
