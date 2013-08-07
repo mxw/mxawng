@@ -1,8 +1,10 @@
 ---
 ---
 
+@import "base/rhythm";
+
 #gmail-icon {
-  height: 12pt;
+  height: 16px;
   vertical-align: text-bottom;
   padding: 1px 2px;
 }
@@ -13,13 +15,13 @@ ul.contacts {
 }
 
 .li-icon {
+  @include rhythm-margins(0.5);
   background: {
     position: left top;
     repeat: no-repeat;
     size: 14pt;
   }
-  padding-left: 24pt;
-  margin: 12px 0;
+  padding-left: 2em;
 }
 .li-icon.facebook {
   background-image: url(/img/icons/facebook.png);

@@ -2,6 +2,8 @@
  * vrhythm.scss - Vertical rhythm based on rem units.
  */
 
+@import "base/colors";
+
 $rhythm: 1.25rem;
 $default-font-size: 16px;
 $min-line-padding: 1rem / 8;
