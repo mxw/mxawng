@@ -3,10 +3,10 @@
 
 @import "reset";
 
-@import "colors";
-@import "utils";
-@import "layout";
-@import "typography";
+@import "base/colors";
+@import "base/utils";
+@import "base/layout";
+@import "base/typography";
 
 @import "partials/running";
 @import "partials/navigation";
