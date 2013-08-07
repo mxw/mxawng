@@ -4,7 +4,9 @@
 
 $rhythm: 1.25rem;
 $default-font-size: 16px;
-$min-line-padding: 0.125rem;
+$min-line-padding: 1rem / 8;
+$default-border-width: 1rem / 16;
+$default-border-style: solid $base1;
 
 // Warn unless units are rem for a given number.
 @function enforce-rem($number) {
@@ -19,11 +21,10 @@ $min-line-padding: 0.125rem;
   @return $number / ($number * 0 + 1);
 }
 
-// Convert a rem value to a px value, where the root font-size is specified as
-// as $base-multiplier of the browser default of 16px.
-@function rem-to-px($number, $base-multiplier: 1) {
+// Convert a rem value to a px value, assuming $default-font-size at the root.
+@function rem-to-px($number) {
   $_: enforce-rem($number);
-  @return $base-multiplier * $default-font-size * strip-units($number);
+  @return $default-font-size * strip-units($number);
 }
 
 // Calculate the minimum number of lines needed for a given $font-size, based
@@ -40,19 +41,19 @@ $min-line-padding: 0.125rem;
 }
 
 // Simple function to compute line-height from $line count.
-@function rhythm($lines) {
-  @return $lines * $rhythm;
+@function rhythm($lines, $offset: 0rem) {
+  @return $lines * $rhythm - $offset;
 }
 
 // Adjust font-size and line-height while maintaining vertical rhythm.
-@mixin rhythm($size, $lines: lines-for-font-size($size), $base-multiplier: 1) {
+@mixin rhythm($size, $lines: lines-for-font-size($size), $offset: 0rem) {
   $_: enforce-rem($size);
-  font-size: rem-to-px($size, $base-multiplier);
+  font-size: rem-to-px($size);
   font-size: $size;
-  line-height: rhythm($lines);
+  line-height: rhythm($lines, $offset);
 }
-@mixin half-rhythm($size, $base-multiplier: 1) {
-  @include rhythm($size, lines-for-font-size($size, 2), $base-multiplier);
+@mixin half-rhythm($size) {
+  @include rhythm($size, lines-for-font-size($size, 2));
 }
 
 // Leader and trailer application.
@@ -69,4 +70,10 @@ $min-line-padding: 0.125rem;
 @mixin rhythm-padding($lines: 1) {
   padding-top: rhythm($lines);
   padding-bottom: rhythm($lines);
+}
+
+// Borders.
+@mixin rhythm-border($side, $lines: 1, $width: $default-border-width) {
+  border-#{$side}: $width $default-border-style;
+  padding-#{$side}: rhythm($lines, $offset: $width);
 }
