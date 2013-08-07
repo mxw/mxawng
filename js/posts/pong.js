@@ -3,15 +3,15 @@
  */
 
 /* Nab the canvas and context. */
-var c = document.getElementById("pong");
-var ctx = c.getContext("2d");
+var c = document.getElementById('pong');
+var ctx = c.getContext('2d');
 
 /* Constants. */
 const
-  keyA = "A".charCodeAt(),
-  keyQ = "Q".charCodeAt(),
-  keyL = "L".charCodeAt(),
-  keyP = "P".charCodeAt(),
+  keyA = 'A'.charCodeAt(),
+  keyQ = 'Q'.charCodeAt(),
+  keyL = 'L'.charCodeAt(),
+  keyP = 'P'.charCodeAt(),
 
   ineq = [ Compare.lte, Compare.gte ],
 
@@ -43,9 +43,9 @@ function Ball(theta) {
 
 function resizeCanvas() {
   // Adjust height to aspect ratio.
-  c.style.width = "100%";
-  c.style.width = c.clientWidth - 2 + "px";
-  c.style.height = Math.round(0.5625 * c.offsetWidth) + "px";
+  c.style.width = '100%';
+  c.style.width = c.clientWidth - 2 + 'px';
+  c.style.height = Math.round(0.5625 * c.offsetWidth) + 'px';
   c.width = c.clientWidth;
   c.height = c.clientHeight;
 
@@ -94,7 +94,7 @@ c.onclick = (function() {
 
   // Center our context and set the font.
   ctx.translate(c.width / 2, c.height / 2);
-  ctx.font = "bold 48pt sans-serif";
+  ctx.font = 'bold 48pt sans-serif';
 
   // Render the initial scores.
   ctx.textAlign = 'right';
