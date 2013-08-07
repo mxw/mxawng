@@ -18,5 +18,7 @@ nav:
   - name: stuff
     url: /stuff/
 
+styles: [site]
+
 excerpt_separator: "<!--more-->"
 exclude: [README.md]

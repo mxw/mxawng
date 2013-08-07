@@ -14,8 +14,8 @@
   <title>{{ site.title }}</title>
   {% endif %}
 
-  <link rel="stylesheet" type="text/css" href="/css/site.css" />
-  {% for css in page.styles %}
+  {% assign styles = site.styles | merge: page.styles %}
+  {% for css in styles %}
   <link rel="stylesheet" type="text/css" href="/css/{{ css }}.css" />
   {% endfor %}
 </head>

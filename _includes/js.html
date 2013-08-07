@@ -1,4 +1,5 @@
-{% for js in page.scripts %}
+{% assign scripts = site.scripts | merge: page.scripts %}
+{% for js in scripts %}
   {% if js == 'jquery' %}
     <script
       type="text/javascript"
