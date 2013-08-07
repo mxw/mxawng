@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="{{ site.author }}">
-
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {% if page.title %}
-  <title>{{ site.title }}: {{ page.title }}</title>
-  {% else %}
-  <title>{{ site.title }}</title>
-  {% endif %}
-
-  {% assign styles = site.styles | merge: page.styles %}
-  {% for css in styles %}
-  <link rel="stylesheet" type="text/css" href="/css/{{ css }}.css" />
-  {% endfor %}
-</head>
+{% include head.html %}
 
 <body>
   {% include header.html %}
