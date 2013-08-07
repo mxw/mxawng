@@ -11,7 +11,7 @@ body {
 
 /* Headings. */
 h1 {
-  @include rhythm(1.85rem);
+  @include rhythm(2.0rem);
 }
 h2, section h1 {
   @include rhythm(1.4rem);
@@ -33,5 +33,8 @@ h1, h2, h3, h4, h5, h6 {
   a { text-decoration: none; }
 }
 .subtitle {
+  @include rhythm(1.2rem, 1);
+  font-style: italic;
   font-weight: bold;
+  margin: 0;
 }
