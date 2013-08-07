@@ -20,6 +20,10 @@ body > nav {
     }
   }
 
+  /*
+   * Navigation dropdown hacks are from
+   * http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly.
+   */
   & > a, & > ul {
     display: none;
   }

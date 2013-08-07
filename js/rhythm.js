@@ -1,7 +1,7 @@
 /*
  * rhythm.js - Apply vertical rhythm to arbitrary DOM elements.
  *
- * Loosely adapted from baseline.js by Ben Howdle (http://twostepmedia.co.uk).
+ * Very loosely adapted from baseline.js by Ben Howdle.
  * https://github.com/daneden/Baseline.js/blob/master/baseline.js
  */
 

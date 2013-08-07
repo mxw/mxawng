@@ -40,6 +40,8 @@
 
 /*
  * Non-legacy clearfix.
+ *
+ * Based on http://nicolasgallagher.com/micro-clearfix-hack/.
  */
 @mixin clearfix {
   &:before, &:after {
@@ -63,6 +65,9 @@
 
 /*
  * Equidistant spacing.
+ *
+ * The left-aligned version is adapted from
+ * http://css-tricks.com/equidistant-objects-with-css/.
  */
 .equidist-center {
   display: table;
