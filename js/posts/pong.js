@@ -3,16 +3,11 @@
  */
 
 /* Nab the canvas and context. */
-var c = document.getElementById("c");
+var c = document.getElementById("pong");
 var ctx = c.getContext("2d");
 
 /* Constants. */
 const
-  dim = 300,
-  ballSize = 16,
-  paddleWidth = 10,
-  paddleLength = 60,
-
   keyA = "A".charCodeAt(),
   keyQ = "Q".charCodeAt(),
   keyL = "L".charCodeAt(),
@@ -27,6 +22,7 @@ const
 
 /* Globals and object definitions. */
 var sign, keydown, p, ball;
+var dim, ballSize, paddleWidth, paddleLength, textPos;
 
 function Player(corner, color, keyPlus, keyMinus) {
   this.corner = corner;
@@ -44,6 +40,27 @@ function Ball(theta) {
   this.vx = Math.cos(theta)
   this.vy = Math.sin(theta);
 }
+
+function resizeCanvas() {
+  // Adjust height to aspect ratio.
+  c.style.width = "100%";
+  c.style.width = c.clientWidth - 2 + "px";
+  c.style.height = Math.round(0.5625 * c.offsetWidth) + "px";
+  c.width = c.clientWidth;
+  c.height = c.clientHeight;
+
+  // Reset variables.
+  dim = 0.375 * c.width;
+  ballSize = 0.02 * c.width;
+  paddleWidth = 0.0125 * c.width;
+  paddleLength = 0.075 * c.width;
+  textPos = 0.35 * c.width;
+}
+
+// Resize now and set resize handler.
+window.onload = resizeCanvas;
+window.onresize = resizeCanvas;
+resizeCanvas();
 
 // Click to initialize and play.
 c.onclick = (function() {
@@ -81,9 +98,9 @@ c.onclick = (function() {
 
   // Render the initial scores.
   ctx.textAlign = 'right';
-  ctx.fillStyleText('0', -270, 0, p[0].color);
+  ctx.fillStyleText('0', -textPos, 0, p[0].color);
   ctx.textAlign = 'left';
-  ctx.fillStyleText('0', 270, 0, p[1].color);
+  ctx.fillStyleText('0', textPos, 0, p[1].color);
 
   // Render the gameboard in a loop.
   refresh();
@@ -171,7 +188,7 @@ function detectCollision(i, x, y) {
       ctx.setTransform(1, 0, 0, 1, c.width / 2, 0);
       ctx.clearRect(-signAdj * c.width / 2 - i * (c.width - c.height) / 2, 0,
                     (c.width - c.height) / 2, c.height);
-      ctx.fillStyleText(p[i].score, -signAdj * 250, c.height / 2, p[i].color);
+      ctx.fillStyleText(p[i].score, -signAdj * textPos, c.height / 2, p[i].color);
       ctx.restore();
 
       // Get a new ball!
