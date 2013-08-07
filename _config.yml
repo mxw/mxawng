@@ -3,5 +3,20 @@ subtitle: what do i put in this blog
 author: Max Wang
 url: http://www.mxawng.com
 
+nav:
+  - name: about
+    url: /about/
+  - name: blog
+    url: /
+  - name: contact
+    url: /contact/
+  - name: github
+    url: http://www.github.com/mxw/
+    tab: true
+  - name: r&#233;sum&#233;
+    url: /resume/
+  - name: stuff
+    url: /stuff/
+
 excerpt_separator: "<!--more-->"
 exclude: [README.md]

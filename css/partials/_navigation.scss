@@ -1,12 +1,50 @@
 body > nav {
   background: $base1;
   text-align: center;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    overflow: hidden;
+  }
   a {
     color: #eee;
-    display: inline-block;
-    font-size: 14pt;
-    padding: 8px 16px;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
     text-decoration: none;
-    &:hover { background-color: $base01; }
+    &:hover {
+      background-color: $base01;
+      padding: 0.5em 1em;
+    }
+  }
+
+  & > a, & > ul {
+    display: none;
+  }
+  li, li a {
+    display: block;
+  }
+  &:not(:target) > a:first-of-type,
+  &:target > a:last-of-type {
+    display: block;
+  }
+  &:target > ul {
+    display: block;
+  }
+
+  @media only screen and (min-width: 640px) {
+    & > ul {
+      display: block;
+    }
+    li, li a {
+      display: inline-block;
+    }
+    &:not(:target) > a:first-of-type,
+    &:target > a:last-of-type {
+      display: none;
+    }
   }
 }

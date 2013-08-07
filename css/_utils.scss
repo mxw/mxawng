@@ -24,6 +24,14 @@
   box-shadow: $shadows;
 }
 
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
 @mixin transition($duration) {
   -webkit-transition: $duration;
   -moz-transition: $duration;
@@ -74,6 +82,14 @@
   content: '';
   display: inline-block;
   width: 100%;
+}
+
+/*
+ * Flip text upside-down.
+ */
+.text-flip {
+  @include transform(rotate(180deg));
+  display: inline-block;
 }
 
 /*
