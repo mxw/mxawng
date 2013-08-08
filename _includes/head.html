@@ -6,11 +6,9 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% if page.title %}
-  <title>{{ site.title }}: {{ page.title }}</title>
-  {% else %}
-  <title>{{ site.title }}</title>
-  {% endif %}
+  <title>
+    {% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}
+  </title>
 
   {% capture description %}
     {% if page.description %}
