@@ -11,7 +11,7 @@ published: true
 Two weeks ago, on July 15th, I started work at a company called Stripe.
 Two days ago, I quit.
 
-## Wherefore art thou at Stripe? ##
+## Wherefore art thou Stripe? ##
 
 For those who haven't heard of it, [Stripe][1] is a small payments company
 geared at making it super easy for developers and online merchants to start
