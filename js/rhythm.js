@@ -13,12 +13,16 @@ var rhythm = function() {
       var elements = document.querySelectorAll(selector);
       var readjust = this._setmargins.bind(this, elements, rhythm);
 
-      if (window.addEventListener) {
-        window.addEventListener('resize', readjust, false);
-      } else if (window.attachEvent) {
-        window.attachEvent('onresize', readjust);
-      }
       readjust();
+      this._listen(window, 'resize', readjust);
+    },
+
+    _listen: function(target, event, handler) {
+      if (target.addEventListener) {
+        target.addEventListener(event, handler, false);
+      } else if (target.attachEvent) {
+        target.attachEvent('on' + event, handler);
+      }
     },
 
     _absolute: function(rhythm) {
@@ -50,7 +54,7 @@ var rhythm = function() {
         elt.style.marginBottom = margin / 2 + 'px';
         elt.style.maxHeight = 'none';
       }
-    }
+    },
   };
 }();
 
