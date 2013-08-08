@@ -87,12 +87,3 @@ article {
   @include rhythm-margins();
   @extend %left-right;
 }
-
-.sharing {
-  @include rhythm-border(top);
-  @include rhythm-trailer();
-}
-
-.fb-like span {
-  vertical-align: middle;
-}
