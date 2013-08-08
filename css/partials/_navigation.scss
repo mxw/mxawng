@@ -11,7 +11,7 @@ body > nav {
     overflow: hidden;
   }
   a {
-    @include rhythm(1.1rem);
+    @include rhythm(1.1rem, $subdiv: 1);
     color: #eee;
     padding: 0 1em;
     text-decoration: none;

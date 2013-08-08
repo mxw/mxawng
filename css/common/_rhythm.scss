@@ -31,13 +31,13 @@ $default-border-style: solid $base1;
 
 // Calculate the minimum number of lines needed for a given $font-size, based
 // on the global $min-line-padding.  Lines can be partitioned into sub-lines.
-@function lines-for-font-size($font-size, $partitions: 1) {
+@function lines-for-font-size($font-size, $subdiv: 1) {
   $_: enforce-rem($font-size);
 
-  $lines: ceil($partitions * $font-size / $rhythm) / $partitions;
+  $lines: ceil($subdiv * $font-size / $rhythm) / $subdiv;
 
   @if $lines * $rhythm - $font-size < $min-line-padding * 2 {
-    $lines: $lines + 1 / $partitions;
+    $lines: $lines + (1 / $subdiv);
   }
   @return $lines;
 }
@@ -48,14 +48,15 @@ $default-border-style: solid $base1;
 }
 
 // Adjust font-size and line-height while maintaining vertical rhythm.
-@mixin rhythm($size, $lines: lines-for-font-size($size), $offset: 0rem) {
+@mixin rhythm(
+    $size,
+    $subdiv: 2,
+    $lines: lines-for-font-size($size, $subdiv),
+    $offset: 0rem) {
   $_: enforce-rem($size);
   font-size: rem-to-px($size);
   font-size: $size;
   line-height: rhythm($lines, $offset);
-}
-@mixin half-rhythm($size) {
-  @include rhythm($size, lines-for-font-size($size, 2));
 }
 
 // Leader and trailer application.
