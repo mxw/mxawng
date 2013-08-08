@@ -66,10 +66,12 @@ article {
 
 .post-content {
   @include rhythm-border(top);
-  text-align: justify;
 
-  & > p:first-child {
-    margin-top: 0;
+  & > p {
+    text-align: justify;
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   a:link { color: $blue; }
