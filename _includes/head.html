@@ -12,6 +12,16 @@
   <title>{{ site.title }}</title>
   {% endif %}
 
+  {% capture description %}
+    {% if page.description %}
+      {{ page.description }}
+    {% else %}
+      {{ content | raw_content | strip_html | condense_spaces }}
+    {% endif %}
+  {% endcapture %}
+
+  <meta name="description" content="{{ description | truncate_sentences: 2 }}">
+
   {% assign styles = site.styles | merge: page.styles %}
   {% for css in styles %}
   <link rel="stylesheet" type="text/css" href="/css/{{ css }}.css" />
