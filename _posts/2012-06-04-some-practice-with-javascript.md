@@ -20,10 +20,12 @@ sense that it is less flashy.  It is, of course, many more bytes.
 The purple paddles are controlled by the `a` and `q` keys; the turquoise
 paddles, by the `p` and `l` keys.
 
-<canvas id="pong" class="jsdemo" width="400" height="225">
-  Your browser does not support the <code>&lt;canvas&gt;</code> tag!
-  Sadface.
-</canvas>
+<div class="media">
+  <canvas id="pong" width="400" height="225">
+    Your browser does not support the <code>&lt;canvas&gt;</code> tag!
+    Sadface.
+  </canvas>
+</div>
 
 <script type="text/javascript" src="/js/common.js">
 </script>

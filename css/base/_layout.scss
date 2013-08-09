@@ -116,3 +116,6 @@ main#content {
   margin: 0 auto;
   max-width: $max-width;
 }
+.media {
+  @include rhythm-margins();
+}

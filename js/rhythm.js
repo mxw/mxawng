@@ -8,10 +8,11 @@
 var rhythm = function() {
   return {
     adjust: function(selector, rhythm) {
-      if (selector === undefined || rhythm === undefined) return false;
+      if (selector === undefined) return false;
+      rhythm = rhythm || '1.25rem';
 
       var elements = document.querySelectorAll(selector);
-      var readjust = this._setmargins.bind(this, elements, rhythm);
+      var readjust = this._pad.bind(this, elements, rhythm);
 
       readjust();
       this._listen(window, 'resize', readjust);
@@ -41,21 +42,21 @@ var rhythm = function() {
       return lineheight;
     },
 
-    _setmargins: function(elements, rhythm) {
+    _pad: function(elements, rhythm) {
       var lineheight = this._absolute(rhythm);
 
       for (var i = 0; i < elements.length; i++) {
         var elt = elements[i];
 
         var lines = Math.ceil(elt.offsetHeight / lineheight);
-        var margin = lines * lineheight - elt.offsetHeight;
+        var padding = lines * lineheight - elt.offsetHeight;
 
-        elt.style.marginTop = margin / 2 + 'px';
-        elt.style.marginBottom = margin / 2 + 'px';
+        elt.style.paddingTop = padding / 2 + 'px';
+        elt.style.paddingBottom = padding / 2 + 'px';
         elt.style.maxHeight = 'none';
       }
     },
   };
 }();
 
-rhythm.adjust('canvas', '1.25rem');
+rhythm.adjust('.media');
