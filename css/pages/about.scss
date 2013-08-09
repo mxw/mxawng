@@ -2,13 +2,17 @@
 ---
 
 @import "common/colors";
+@import "common/rhythm";
 
 .page-content {
   blockquote {
+    @include rhythm(1.25rem);
+    @include rhythm-margins(2);
+    margin-left: auto;
+    margin-right: auto;
+
     color: $base01;
-    font-size: 16pt;
     font-style: italic;
-    margin: 40px auto;
     max-width: 400px;
     position: relative;
     text-align: center;
@@ -17,7 +21,7 @@
     @mixin quote {
       color: $base2;
       display: block;
-      font-size: 80px;
+      font-size: 5rem;
       font-family: "Trebuchet MS", sans-serif;
       position: absolute;
     }
@@ -31,7 +35,7 @@
       @include quote;
       content: "\201d";
       right: -38px;
-      bottom: -18px;
+      bottom: -24px;
     }
 
     a, a:link, a:visited {
@@ -39,9 +43,8 @@
     }
 
     cite {
+      @include rhythm(1rem);
       display: block;
-      font-size: 12pt;
-      margin-top: 8px;
       text-align: right;
     }
     cite:before {
