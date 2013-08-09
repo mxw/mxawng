@@ -68,7 +68,9 @@ article {
   @include rhythm-border(top);
 
   & > p {
-    text-align: justify;
+    @include screen-narrow {
+      text-align: justify;
+    }
     &:first-child {
       margin-top: 0;
     }
