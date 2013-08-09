@@ -3,6 +3,7 @@
  */
 
 @import "common/colors";
+@import "common/utils";
 
 $rhythm: 1.25rem;
 $default-font-size: 16px;
@@ -79,4 +80,16 @@ $default-border-style: solid $base1;
 @mixin rhythm-border($side, $lines: 1, $width: $default-border-width) {
   border-#{$side}: $width $default-border-style;
   padding-#{$side}: rhythm($lines, $offset: $width);
+}
+
+// Rhythm baseline background.  Fragile because we don't have Compass's fancy
+// experimental builtins.
+@mixin rhythm-baseline-background(
+    $baseline: $rhythm / 2,
+    $color: rgba(0, 0, 0, 0.25)
+) {
+  $gradient: -webkit-linear-gradient(bottom, $color 5%, rgba($color, 0) 5%);
+  @include background-size(100% $baseline);
+  background-image: $gradient;
+  background-position: left top;
 }
