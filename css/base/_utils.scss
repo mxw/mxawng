@@ -17,10 +17,16 @@
  * http://css-tricks.com/equidistant-objects-with-css/.
  */
 .equidist-center {
-  display: table;
+  text-align: center;
   & > * {
-    display: table-cell;
-    text-align: center;
+    @include rhythm-margins();
+  }
+
+  @include screen-tablet {
+    display: table;
+    & > * {
+      display: table-cell;
+    }
   }
 }
 .equidist-left {
