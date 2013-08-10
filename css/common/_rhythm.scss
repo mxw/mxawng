@@ -2,14 +2,11 @@
  * rhythm.scss - Vertical rhythm based on rem units.
  */
 
-@import "common/colors";
-@import "common/utils";
-
-$rhythm: 1.25rem;
-$default-font-size: 16px;
-$min-line-padding: 1rem / 8;
-$default-border-width: 1rem / 16;
-$default-border-style: solid $base1;
+$rhythm: 1.25rem !default;
+$default-font-size: 16px !default;
+$min-line-padding: 1rem / 8 !default;
+$default-border-width: 1rem / 16 !default;
+$default-border-style: solid $base1 !default;
 
 // Warn unless units are rem for a given number.
 @function enforce-rem($number) {

@@ -1,0 +1,43 @@
+/**
+ * css3.scss - Experimental CSS3 selectors.
+ */
+
+@mixin background-size($sizes...) {
+  -webkit-background-size: $sizes;
+  -moz-background-size: $sizes;
+  -o-background-size: $sizes;
+  background-size: $sizes;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadows...) {
+  -webkit-box-shadow: $shadows;
+  -moz-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+@mixin text-size-adjust($adjust) {
+  -webkit-text-size-adjust: $adjust;
+  -moz-text-size-adjust: $adjust;
+  -ms-text-size-adjust: $adjust;
+  text-size-adjust: $adjust;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition($duration) {
+  -webkit-transition: $duration;
+  -moz-transition: $duration;
+  transition: $duration;
+}
