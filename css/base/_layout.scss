@@ -12,33 +12,6 @@ $pad-narrow: $pad-min * 2;
 $pad-tablet: $pad-min * 3;
 $pad-normal: $pad-min * 4;
 
-$screen-narrow: 480px;
-$screen-tablet: 768px;
-$screen-normal: 992px;
-$screen-wide: 1720px;
-
-/* Media selectors. */
-@mixin screen-narrow {
-  @media only screen and (min-width: $screen-narrow) {
-    @content
-  }
-}
-@mixin screen-tablet {
-  @media only screen and (min-width: $screen-tablet) {
-    @content
-  }
-}
-@mixin screen-normal {
-  @media only screen and (min-width: $screen-normal) {
-    @content
-  }
-}
-@mixin screen-wide {
-  @media only screen and (min-width: $screen-wide) {
-    @content
-  }
-}
-
 /* Main responsive layout. */
 body {
   @include rhythm(1rem);
@@ -101,8 +74,13 @@ p, dl, pre {
 ul, ol, menu, dir {
   @include rhythm-margins();
 }
-blockquote, figure {
+figure {
   @include rhythm-margins();
+}
+blockquote {
+  @include rhythm-margins();
+  margin-left: 2em;
+  margin-right: 2em;
 }
 section {
   @include rhythm-border(top);
