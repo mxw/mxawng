@@ -76,8 +76,8 @@ another.
 
 This blog post has a thesis in addition to a story, and this is it:
 
-> _There is a tradeoff between (1) maintaining and reaping the benefits of
-> startup values and (2) scaling the onboarding process._
+> There is a tradeoff between (1) maintaining and reaping the benefits of
+> startup values and (2) scaling the onboarding process.
 
 Let's consider Facebook.  It's easy, for example, to imagine how Facebook's
 motto of "Move fast, break things" might have made onboarding tricky as they

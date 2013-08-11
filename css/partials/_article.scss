@@ -64,7 +64,7 @@ article {
   }
 }
 
-.post-content {
+%content {
   @include rhythm-border(top);
 
   & > p {
@@ -80,8 +80,17 @@ article {
   a:visited { color: $cyan; }
 }
 
+.post-content {
+  @extend %content;
+
+  blockquote {
+    font-style: italic;
+    text-align: justify;
+  }
+}
+
 .page-content {
-  @extend .post-content;
+  @extend %content;
   h2 {
     color: $base01;
   }
