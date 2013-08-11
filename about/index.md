@@ -41,7 +41,7 @@ If given the choice, I'd choose this life to live again every time.
 
 Some prime real estate for some [stuff](/stuff/) I like.
 
-<div class="media equidist-center" style="width: 100%">
+<figure class="equidist-center">
   <div><a href="http://www.realcty.org">
     <img class="image-wrap cutout" src="/img/logos/realcty.png"/>
   </a></div>
@@ -51,7 +51,7 @@ Some prime real estate for some [stuff](/stuff/) I like.
   <div><a href="https://www.facebook.com/Engineering">
     <img class="image-wrap cutout" src="/img/logos/fb-eng.jpg"/>
   </a></div>
-</div>
+</figure>
 
 ## Testimonials ##
 

@@ -59,4 +59,4 @@ var rhythm = function() {
   };
 }();
 
-rhythm.adjust('.media');
+rhythm.adjust('figure');
