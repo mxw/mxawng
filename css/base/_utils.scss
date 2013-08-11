@@ -68,13 +68,22 @@
   vertical-align: bottom;
 }
 
-.image-wrap.cutout:after, .image-wrap.cutout img {
+%cutout {
   @include box-shadow(
     0 1px 0 rgba(255,255,255,.2),
     inset 0 4px 5px rgba(0,0,0,.6),
     inset 0 1px 0 rgba(0,0,0,.6)
   );
+}
+
+.image-wrap.cutout:after, .image-wrap.cutout img {
+  @extend %cutout;
   @include border-radius(1000px);
+}
+
+.image-wrap.rounded:after, .image-wrap.rounded img {
+  @extend %cutout;
+  @include border-radius(50px);
 }
 
 .image-wrap.morphglow:after, .image-wrap.morphglow img {

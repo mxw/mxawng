@@ -74,13 +74,16 @@ p, dl, pre {
 ul, ol, menu, dir {
   @include rhythm-margins();
 }
-figure {
-  @include rhythm-margins();
-}
 blockquote {
   @include rhythm-margins();
   margin-left: 2em;
   margin-right: 2em;
+}
+figure {
+  @include rhythm-margins();
+}
+figcaption {
+  @include rhythm-margins(0.5);
 }
 section {
   @include rhythm-border(top);
