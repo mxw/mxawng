@@ -28,7 +28,6 @@ I exist elsewhere on the Internet as well, as __mxw__ or __mxawng__.
 </li>
 <li class="li-icon pandora">
   Music is hard; adopt others' tastes as your own on <a
-  href="https://www.pandora.com/profile/mxawng">Pandora</a>, just like I used
-  to do.
+  href="https://www.pandora.com/profile/mxawng">Pandora</a>.
 </li>
 </ul>
