@@ -14,8 +14,8 @@ There's some okay stuff in there, though.
 ## Bio ##
 
 I'm a recent graduate of Harvard with a degree in computer science.  While not
-coding or reading CS papers (or just chilling, which I'm sure I did more of), I
-also studied mathematics, linguistics, and chemistry---in roughly descending
+coding or reading CS papers (or just "chilling", which I'm sure I did more of),
+I also studied mathematics, linguistics, and chemistry---in roughly descending
 order of diligence---and I continue to do all these things regularly, though
 not generally all at the same time.  I also enjoy writing (mostly exposition
 and autobiographical fiction), and I'm a musician, with some degree of
