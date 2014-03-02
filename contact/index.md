@@ -22,4 +22,13 @@ I exist elsewhere on the Internet as well, as __mxw__ or __mxawng__.
   My navbar suggests that I have a <a href="https://github.com/mxw">GitHub</a>
   for code probably, which as it turns out is the case.
 </li>
+<li class="li-icon steam">
+  I also have a <a href="https://steamcommunity.com/id/mxawng">Steam</a> handle
+  I originally named while in middle school.
+</li>
+<li class="li-icon pandora">
+  Music is hard; adopt others' tastes as your own on <a
+  href="https://www.pandora.com/profile/mxawng">Pandora</a>, just like I used
+  to do.
+</li>
 </ul>
