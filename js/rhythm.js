@@ -16,6 +16,7 @@ var rhythm = function() {
 
       readjust();
       this._listen(window, 'resize', readjust);
+      this._listen(document, 'load', readjust);
     },
 
     _listen: function(target, event, handler) {
