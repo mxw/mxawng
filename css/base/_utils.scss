@@ -83,7 +83,7 @@
 
 .image-wrap.rounded:after, .image-wrap.rounded img {
   @extend %cutout;
-  @include border-radius(50px);
+  @include border-radius(24px);
 }
 
 .image-wrap.morphglow:after, .image-wrap.morphglow img {
