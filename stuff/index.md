@@ -6,7 +6,7 @@ styles: [pages/stuff]
 
 There are a lot of things on the Internet and this is some of them.
 
-## Notes ##
+## Course Notes ##
 
 After my freshman year at Harvard, I decided to start live-TeXing notes for all
 the courses I was taking that I cared to take notes in.  Here are the results
