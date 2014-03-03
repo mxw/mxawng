@@ -15,9 +15,9 @@ of these efforts:
 - [Math 122][math122]: Algebra I
 - [Math 123][math123]: Algebra II
 - [Math 131][math131]: Topology I
-- [Statistics 110][stat110]: Intro to Probability
-- [Linguistics 107][ling107]: Intro to Indo-European&nbsp;
-                              **<small>(UNFINISHED)</small>**
+- [Stat 110][stat110]: Intro to Probability
+- [Ling 107][ling107]: Intro to Indo-European&nbsp;
+                       **<small>(UNFINISHED)</small>**
 
 [math122]: notes/math122.pdf    "Math 122"
 [math123]: notes/math123.pdf    "Math 123"
@@ -30,9 +30,9 @@ of these efforts:
 
 I occasionally make things for my own amusement.
 
-- [Reibar][reibar] is a program I originally wrote in CS 187---
-  Computational Linguistics at Harvard, which attempts to generate X-bar syntax
-  trees from arbitrary sentences.  It is a work in progress.
+- [Reibar][reibar] is a program I originally wrote in CS 187--- Computational
+  Linguistics at Harvard.  It attempts to generate X-bar syntax trees from
+  arbitrary sentences, and is a work in progress.
 
 <figure id="reibar">
   <a href="/img/stuff/reibar.png">
