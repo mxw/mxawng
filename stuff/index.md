@@ -16,8 +16,7 @@ of these efforts:
 - [Math 123][math123]: Algebra II
 - [Math 131][math131]: Topology I
 - [Stat 110][stat110]: Intro to Probability
-- [Ling 107][ling107]: Intro to Indo-European&nbsp;
-                       **<small>(UNFINISHED)</small>**
+- [Ling 107][ling107]: Intro to Indo-European
 
 [math122]: notes/math122.pdf    "Math 122"
 [math123]: notes/math123.pdf    "Math 123"
