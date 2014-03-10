@@ -47,7 +47,7 @@ other: lots of grey.  A wisp of mushy green here and there---a tree or two,
 maybe, in the distance.  Nothing more.
 
 <figure>
-  <img class="image-wrap rounded" src="/img/posts/2013-08-11-1.jpg" />
+  <img class="image-wrap rounded" src="/img/posts/2013-08-11-a.jpg" />
   <figcaption>Ohai the sun.  Why are you hiding?</figcaption>
 </figure>
 
