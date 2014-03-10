@@ -166,7 +166,7 @@ gems include:
   over the door because the ground was dirty and put it on the ground where it
   is useful.
 
-- Look at what is happening in my bank account.
+- Know what is happening in my bank account.
 
 I have always been pretty good at not putting things off, or at least not in a
 way that manages to affect my ability to continue living other parts of my
@@ -188,7 +188,8 @@ The basic thought process went like this:
 
 2.  Wait, I have to ~look at my bank account~.
 
-3.  How the hell do I do that?  What does that even mean?
+3.  How the hell do I do that?  What does that even mean?  How do I process all
+    this data?
 
 4.  Ugh, I guess I shouldn't get invested doing anything else yet.  I should
     really look at my bank account first.
@@ -211,11 +212,11 @@ do other things!
 Empirically, this was _such a drag_ that my reaction to it was, "Well, better
 do zero things, then."
 
-I had similar reactions in response to other tasks.  While my mail was piled on
-my desk, my response was, "Guess I can't use my desk ever."  And of course,
-during all the time I put off opening my mail, I couldn't just go do other
-things, because---of course!---opening my mail was the thing that should come
-first.
+I had similar self-paralyzing reactions in response to other tasks.  While my
+mail was piled on my desk, my response was, "Guess I can't use my desk ever."
+And of course, during all the time I put off opening my mail, I couldn't just
+go do other things, because---of course!---opening my mail was the thing that
+should come first.
 
 This is clearly just a psychological failure on my part.  Each task which
 prevented me from doing all the other interesting and satisfying things I would
@@ -239,7 +240,7 @@ I believe that this is probably the closest approximation we have as a society
 to the Platonic form of unproductivity.  Reading anything on the Internet at
 all is probably ill-advised, because so much of it does not actually enrich
 one's life, and it's nearly impossible to discern what does without just
-consuming the content.  Reading some random link I found for a second just
+consuming the content.  Reading some random link I found for a second time just
 because reading a new link _offended my sense of priorities_ must needs be an
 active vice.
 
@@ -281,6 +282,14 @@ new content to the world, and I am very glad that I have returned from the
 stupid depths of doing no things because _bleh_, to the world of
 content-producing humans.
 
+<br />
+
+_P.S._: I was partly impelled to write this because I read [John Campbell's
+final Kickstarter update][sad] and became very deeply upset and felt the need
+to put something into the world, and that something ended up being this blog
+post.  That happens sometimes; you would maybe rather have something better but
+you just sort of end up with blog posts.  Okay.
+
 
 [waitbut]:  http://waitbutwhy.com/2013/09/why-generation-y-yuppies-are-unhappy.html
   "I like Wait But Why, and this post is entertaining but still sort of stupid."
@@ -299,3 +308,6 @@ content-producing humans.
 
 [louisck]:  http://www.youtube.com/watch?v=BGDPme0JN5g
   "Not Futurama."
+
+[sad]: https://www.kickstarter.com/projects/73258510/sad-pictures-for-children/posts/759318
+  "Yeah fuck you, guy."
