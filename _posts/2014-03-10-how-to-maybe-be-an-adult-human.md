@@ -81,8 +81,8 @@ disinteresting, because it was not enough of an endeavor at all.  But this is
 not a piece about privilege; it is a piece which stops briefly, spots some
 privilege flying overhead, screeching into the mountain wind, and then
 continues on its trail talking about whatever it was talking about instead of
-<span id="link">[giving up on talking about anything at all as soon as
-disparity in privilege comes up][poverty]</span>.  Privilege is something worth
+[<span id="link">giving up on talking about anything at all as soon as
+disparity in privilege comes up</span>][poverty].  Privilege is something worth
 grappling with, but fortunately I have consumed some nice content recently
 which grapples with it and I have presented it to you in the form of a
 "[hyperlink][link]".
