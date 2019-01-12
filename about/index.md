@@ -19,13 +19,15 @@ I also studied mathematics, linguistics, and chemistry---in roughly descending
 order of diligence---and I continue to do all these things regularly, though
 not generally all at the same time.  I also enjoy writing (mostly exposition
 and autobiographical fiction), and I'm a musician, with some degree of
-competency in classical sax, some degree of incomptency in piano, and some
+competency in classical sax, some degree of incompetency in piano, and some
 degree of ownership of an acoustic guitar.
 
 I am a proud alum of the [Center for Talented Youth][1] and am the maintainer
 of [RealCTY][2], the CTY wiki; I also held the [Duck][3] there.  I was a member
 of the [Harvard University Band][4] in all my four years at Harvard and
-conducted the Band in my final semesters.
+conducted the Band in my final semesters.  I am currently an avid Pokemon Go
+player, and I help run [Valor of Boston][5], one of Boston's biggest PoGo
+communities.
 
 I hoard my own data and have kept all the schoolwork I've produced since middle
 school (and much of it from earlier) organized into collections of binders,
@@ -84,3 +86,4 @@ what's he all about?
 [3]: http://www.realcty.org/mw/index.php?title=Trinity_(Session_2)#The_Holder_of_the_Duck
   "The Holder of the Duck"
 [4]: http://www.harvardband.org/    "Harvard University Band"
+[5]: https://www.valorofboston.com/ "Valor of Boston"
