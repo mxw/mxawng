@@ -23,3 +23,6 @@ styles: [site]
 
 excerpt_separator: "<!--more-->"
 exclude: [README.md]
+
+sass:
+  sass_dir: ./css
