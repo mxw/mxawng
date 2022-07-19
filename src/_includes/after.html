@@ -1,0 +1,13 @@
+{% include social/facebook.html %}
+
+{% assign scripts = site.scripts | merge: layout.scripts | merge: page.scripts %}
+{% for js in scripts %}
+  {% if js == 'jquery' %}
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+  {% else %}
+    <script type="text/javascript" src="/js/{{ js }}.js"></script>
+  {% endif %}
+{% endfor %}

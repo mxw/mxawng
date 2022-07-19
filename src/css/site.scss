@@ -1,0 +1,12 @@
+---
+---
+
+@use 'reset';
+@use 'base';
+
+@use 'partials/main';
+@use 'partials/running';
+
+canvas {
+  border: 1px solid var(--fg-color);
+}

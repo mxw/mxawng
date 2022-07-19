@@ -1,0 +1,53 @@
+/*
+ * site CYM colorscheme
+ */
+
+@use 'sass:color';
+
+//----------------------------------------------------------
+
+$teal: #00bfbf;
+$fuchsia: #bf008c;
+$gold: #bfa000;
+
+$blue: #006599;
+$green: #009961;
+
+@function lighten-accent($color) {
+  @return color.scale($color, $blackness: -33.33%);
+}
+
+@function with-alpha($color, $alpha) {
+  @return rgba(
+    color.red($color),
+    color.green($color),
+    color.blue($color),
+    $alpha
+  );
+}
+
+//----------------------------------------------------------
+
+:root {
+  --bg-color:   #161615;
+  --fg-color:   #fbfbfb;
+  --fg-dark:    #bbbbbb;
+  --fg-darker:  #888888;
+  --fg-darkest: #515151;
+
+  --accent-color: #{$teal};
+  --accent-dark: #067373;
+  --accent-lite: #{lighten-accent($teal)};
+  --accent-desat: #{color.scale($teal, $blackness: 42%, $whiteness: 31%)};
+  --accent-alpha: #{with-alpha($teal, 0.42)};
+
+  --accent-left: #{$fuchsia};
+  --accent-left-dark: #730B57;
+  --accent-left-lite: #{lighten-accent($fuchsia)};
+  --accent-left-alpha: #{with-alpha($fuchsia, 0.42)};
+
+  --accent-right: #{$gold};
+  --accent-right-dark: #736000;
+  --accent-right-lite: #{lighten-accent($gold)};
+  --accent-right-alpha: #{with-alpha($fuchsia, 0.42)};
+}

@@ -1,0 +1,73 @@
+/*
+ * list-of-posts styles
+ */
+@use 'common/rhythm';
+
+@use 'partials/post';
+
+article.post {
+  @include rhythm.leader(2.5);
+
+  // post permalink header layout, either
+  //
+  // title                  date
+  // └──subtitle
+  //
+  // or, in the unlikely degenerate case,
+  //
+  // title
+  //                        date
+  // └──subtitle
+  & > header {
+    & > h1.title {
+      order: 1;
+    }
+    & > h2.subtitle {
+      order: 3;
+      flex-basis: 100%;
+    }
+    & > time.date {
+      order: 2;
+      margin-left: auto;
+    }
+  }
+}
+
+// header link styling for a DOM hierarchy of
+//
+//  h1
+//    span
+//    svg
+//
+h1.title {
+  color: var(--fg-color);
+  transition: color var(--defocus-time);
+
+  &:hover {
+    color: var(--accent-left-lite);
+
+    & > a, & > svg {
+      color: var(--accent-left-lite);
+      transition: color var(--focus-time);
+    }
+  }
+
+  & > a {
+    text-decoration: none;
+
+    & > span {
+      text-decoration: underline var(--accent-left-lite) solid 3px;
+      font-weight: 600;
+    }
+  }
+}
+
+// indent post excerpts
+section.post-content {
+  margin-left: 1.5rem;
+}
+
+// outindent post titles?
+//h1.title {
+//  margin-left: -1.5rem;
+//}

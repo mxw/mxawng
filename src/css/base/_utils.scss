@@ -1,0 +1,57 @@
+/*
+ * DEPRECATED utility layout classes
+ */
+
+/*
+ * image styling, for use with image-wrapper.js.
+ *
+ * rules adapted from http://webdesignerwall.com/tutorials/css3-image-styles.
+ * a reasonable image size is assumed.
+ */
+.image-wrap {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  vertical-align: bottom;
+}
+.image-wrap:after {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.image-wrap img {
+  vertical-align: bottom;
+}
+
+%cutout {
+  box-shadow: #{
+    0 1px 0 rgba(255,255,255,.2),
+    inset 0 4px 5px rgba(0,0,0,.6),
+    inset 0 1px 0 rgba(0,0,0,.6)
+  };
+}
+
+.image-wrap.cutout:after, .image-wrap.cutout img {
+  @extend %cutout;
+  border-radius: 1000px;
+}
+
+.image-wrap.rounded:after, .image-wrap.rounded img {
+  @extend %cutout;
+  border-radius: 24px;
+}
+
+.image-wrap.morphglow:after, .image-wrap.morphglow img {
+  transition: 1s;
+  border-radius: 20px;
+}
+.image-wrap.morphglow:hover:after, .image-wrap.morphglow:hover img {
+  box-shadow: #{
+    0 0 20px rgba(255,255,255,.6),
+    inset 0 0 20px rgba(255,255,255,1)
+  };
+  border-radius: 1000px;
+}

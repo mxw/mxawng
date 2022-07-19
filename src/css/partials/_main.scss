@@ -1,0 +1,100 @@
+/*
+ * body, main, and article styles
+ */
+
+@use 'common/flex';
+@use 'common/media';
+@use 'common/rhythm';
+
+//----------------------------------------------------------
+// body colors and fonts
+//
+// much of this file assumes an overall DOM hierarchy of
+//
+//  body
+//    header
+//    main
+//      article
+//        header
+//        section
+//          (maybe more articles)
+//        footer
+//    footer
+//
+
+body {
+  @include rhythm.rhythm(1.25rem);
+  font-weight: 300;
+
+  background: var(--bg-color);
+  color: var(--fg-color);
+
+  & > main {
+    @include flex.vertical;
+    gap: 2rem;
+
+    margin: auto;
+
+    & > article {
+      width: 100%;
+
+      // page headers only!
+      //
+      // @see partials/_running for site headers
+      // @see partials/_feed and layouts/_post for post headers
+      & > header {
+        color: var(--accent-color);
+        a {
+          color: var(--accent-color);
+          transition: color var(--defocus-time);
+
+          &:hover {
+            color: var(--accent-lite);
+            transition: color var(--focus-time);
+          }
+        }
+      }
+    }
+  }
+}
+
+//----------------------------------------------------------
+// styles for /all/ articles
+//
+// all page content lives in an article > section somewhere.
+
+article {
+  & > section, & > footer {
+    a {
+      font-weight: 400;
+
+      text-decoration: underline var(--accent-lite) solid 2.5px;
+      text-decoration-skip-ink: none;
+      text-underline-offset: 0.0625em;
+      transition: color var(--defocus-time);
+
+      &:hover {
+        color: var(--accent-lite);
+        transition: color var(--focus-time);
+      }
+    }
+  }
+
+  & > section {
+    & > h2 {
+      color: var(--accent-desat);
+      margin-top: rhythm.rh(2.5);
+      margin-bottom: rhythm.rh(1);
+    }
+
+    & > p:first-child,
+    & > h1 + p, & > h2 + p, & > h3 + p,
+    & > h4 + p, & > h5 + p, & > h6 + p {
+      margin-top: rhythm.rh(0.5);
+    }
+  }
+
+  & > footer {
+    @include rhythm.margins();
+  }
+}

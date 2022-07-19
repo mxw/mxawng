@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2019",
+    "jsx": "react",
+    "outDir": "./src/js/",
+
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*", "src/ts/*"]
+    },
+
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}

@@ -1,0 +1,138 @@
+/*
+ * responsive metrics and core layout
+ */
+
+@use 'sass:math';
+
+@use 'common/media';
+@use 'common/rhythm';
+
+//----------------------------------------------------------
+// main responsive layout
+
+$max-width: 720px;
+
+$pad-min: 16px;
+$pad-narrow: $pad-min * 2;
+$pad-tablet: $pad-min * 4;
+$pad-normal: $pad-min * 8;
+
+body {
+  text-size-adjust: none;
+
+  & > header, & > footer, & > main {
+    max-width: $max-width;
+
+    padding-left: $pad-min;
+    padding-right: $pad-min;
+
+    @include media.screen-narrow {
+      padding-left: $pad-narrow;
+      padding-right: $pad-narrow;
+    }
+    @include media.screen-tablet {
+      padding-left: $pad-tablet;
+      padding-right: $pad-tablet;
+    }
+    @include media.screen-normal {
+      padding-left: $pad-normal;
+      padding-right: $pad-normal;
+    }
+  }
+}
+
+//----------------------------------------------------------
+// text element rhythm
+
+p, dl, pre {
+  @include rhythm.margins(1.5);
+}
+ul, ol, menu, dir {
+  @include rhythm.margins();
+}
+blockquote {
+  @include rhythm.margins();
+  margin-left: 2em;
+  margin-right: 2em;
+}
+figcaption {
+  @include rhythm.margins(0.5);
+}
+
+ul, ol {
+  padding-left: 2.5rem;
+}
+
+//----------------------------------------------------------
+// figures
+
+figure {
+  &:not(.norhythm) {
+    @include rhythm.margins();
+  }
+
+  &:not(.noaccent) {
+    iframe, img {
+      box-shadow: #{
+        5px 5px var(--accent-left),
+        10px 10px var(--accent-right)
+      };
+    }
+  }
+
+  text-align: center;
+}
+
+/*
+ * default margins
+ */
+.h-margins {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+.v-margins {
+  @include rhythm.margins();
+}
+
+/*
+ * floats
+ */
+.left {
+  float: left;
+
+  &.bleed {
+    margin-left: - math.div($max-width, 6);
+  }
+}
+.right {
+  float: right;
+
+  &.bleed {
+    margin-right: - math.div($max-width, 6);
+  }
+}
+
+/*
+ * sizes
+ */
+figure.full {
+  margin-left: auto;
+  margin-right: auto;
+  img { width: 100%; }
+}
+
+$figsizes: (
+  'tiny': math.div(1, 8),
+  'small': math.div(1, 6),
+  'mid-small': math.div(1, 5),
+  'medium': math.div(1, 4),
+  'mid-large': math.div(1, 3),
+  'large': math.div(1, 2),
+  'xl': math.div(2, 3),
+);
+@each $sz, $scale in $figsizes {
+  figure.#{$sz} {
+    width: $max-width * $scale;
+    img { width: 100%; }
+  }
+}

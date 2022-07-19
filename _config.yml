@@ -1,28 +1,52 @@
 title: mxawng
-subtitle: what do i put in this blog
+subtitle: no longer solarized!
 author: Max Wang
 url: http://www.mxawng.com
+
+source: src
+exclude: [ts]
+
+collections_dir: collections
+collections:
+  externals: ~
+  code:
+    sort_by: order
+
+sass:
+  implementation: sass-embedded
+  sass_dir: ./css
+
+scripts: [main, rhythm]
+styles: [site]
 
 nav:
   - name: about
     url: /about/
-  - name: blog
-    url: /
-  - name: contact
-    url: /contact/
-  - name: github
-    url: http://www.github.com/mxw/
-    tab: true
-  - name: r&#233;sum&#233;
-    url: /resume/
+    submenu:
+      - name: contact
+        url: /contact/
+      - name: this site
+        url: /about/site/
+  - name: writing
+    url: /writing/
+    submenu:
+      - name: poetry
+        url: /writing/poetry/
   - name: stuff
     url: /stuff/
-
-scripts: [rhythm]
-styles: [site]
+    submenu:
+      - name: code
+        url: /stuff/code/
+      - name: music
+        url: /stuff/music/
+      - name: dance
+        url: /stuff/dance/
+  - name: things
+    url: /things/
+    submenu:
+      - name: opinions
+        url: /things/opinions/
+      - name: unthings
+        url: /things/unthings/
 
 excerpt_separator: "<!--more-->"
-exclude: [README.md]
-
-sass:
-  sass_dir: ./css

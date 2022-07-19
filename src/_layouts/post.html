@@ -1,0 +1,22 @@
+---
+layout: default
+scripts: [jquery, disqus/scroll]
+styles: [layouts/post]
+---
+
+<article class="post">
+  {% assign post = page %}
+  {% include post/header.html %}
+
+  <section class="post-content">{{ content }}</section>
+
+  <footer>
+    {% include post/prevnext.html %}
+    <hr class="post-footer-hr1">
+    {% include post/sharing.html %}
+    <hr class="post-footer-hr2">
+    {% if page.comments %}
+      {% include post/comments.html %}
+    {% endif %}
+  </footer>
+</article>

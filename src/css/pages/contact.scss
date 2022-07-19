@@ -1,0 +1,44 @@
+---
+---
+
+@use "common/rhythm";
+
+#gmail-icon {
+  height: 20px;
+  vertical-align: text-bottom;
+  padding: 0.25rem 0.125rem;
+}
+
+ul.contacts {
+  list-style-type: none;
+  padding-left: 2em;
+}
+
+.li-icon {
+  @include rhythm.margins(0.5);
+  background: {
+    position: left 4px;
+    repeat: no-repeat;
+    size: 22px;
+  }
+  padding-left: 2em;
+}
+
+$icons:
+  messenger, discord,
+  facebook, instagram, twitter,
+  github, youtube, twitch, spotify, steam;
+
+@each $icon in $icons {
+  .li-icon.#{$icon} {
+    background-image: url(/img/icons/#{$icon}.svg);
+  }
+}
+
+$png-icons: mtg-arena;
+
+@each $icon in $png-icons {
+  .li-icon.#{$icon} {
+    background-image: url(/img/icons/#{$icon}.png);
+  }
+}

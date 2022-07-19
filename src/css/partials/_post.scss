@@ -1,0 +1,46 @@
+/*
+ * post-specific styles
+ */
+
+@use 'common/flex';
+@use 'common/media';
+@use 'common/rhythm';
+
+//----------------------------------------------------------
+// post header
+
+article.post {
+  // rule for the post header layout:
+  //
+  // title                    date
+  // └──subtitle
+  //
+  // @see partials/_feed and layouts/post for the rest.
+  & > header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+h2.subtitle {
+  color: var(--fg-color);
+  font-weight: 500;
+
+  &:before {
+    color: var(--accent-right);
+    content: "\2514\2500"; // L-shaped box-drawing characters
+    padding-right: 0.25em;
+  }
+}
+
+time.date {
+  color: var(--accent-right-lite);
+  font-style: italic;
+}
+
+svg.external-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

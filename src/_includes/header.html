@@ -1,0 +1,44 @@
+<header role="banner">
+  <div>
+    <h1><a href="/">mxawng</a></h1>
+    <nav role="navigation">
+      <ul>
+        {% for link in site.nav %}
+          <li
+            {% if link.url == page.url %}
+              class="here"
+            {% endif %}
+          >
+            <a href={{ link.url }}
+              {% if link.tab %}
+                target="_blank"
+              {% endif %}
+            >
+              {{ link.name }}
+            </a>
+            {% if link.submenu %}
+              <ul class="submenu">
+                {% for sublink in link.submenu %}
+                  <li
+                    {% if sublink.url == page.url %}
+                      class="here"
+                    {% endif %}
+                  >
+                    <a href={{ sublink.url }}>{{ sublink.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <h2>
+    {% if page.subtitle or page.nosubtitle %}
+      {{ page.subtitle }}
+    {% else %}
+      {{ site.subtitle }}
+    {% endif %}
+  </h2>
+</header>

@@ -1,0 +1,18 @@
+---
+---
+
+@use 'common/flex';
+
+// rule for the page header layout:
+//
+// title -------------------------
+main > article > header {
+  @include flex.row-center;
+  gap: 1.5rem;
+
+  & > hr {
+    width: 100%;
+    height: 2px;
+    background: #444455;
+  }
+}

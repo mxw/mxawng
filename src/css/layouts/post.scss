@@ -1,0 +1,96 @@
+---
+---
+
+@use 'common/flex';
+@use 'common/rhythm';
+
+@use 'partials/post';
+@use 'partials/sharing';
+
+//----------------------------------------------------------
+// post body
+
+main > article.post > header {
+  margin-bottom: rhythm.rh(1);
+
+  // post permalink header styling and layout, either
+  //
+  // title                  date
+  //
+  // or
+  //
+  // title
+  // └──subtitle
+  //                        date
+  //
+  // which is sussy but accommodates long titles & subtitles.
+  & > h1.title {
+    order: 1;
+
+    text-decoration: underline var(--accent-left-lite) solid 3px;
+    text-underline-offset: 0.0625em;
+  }
+  & > h2.subtitle {
+    order: 2;
+  }
+  & > time.date {
+    order: 3;
+    margin-left: auto;
+
+    color: var(--fg-dark);
+  }
+}
+
+//----------------------------------------------------------
+// post body and footer
+
+.post-content {
+  blockquote {
+    font-style: italic;
+    text-align: justify;
+  }
+}
+
+main > article.post > footer {
+  @include rhythm.leader(3);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > hr {
+    width: 66.67%;
+  }
+  & > hr.post-footer-hr1 {
+    border: 1.5px solid var(--accent-left);
+  }
+  & > hr.post-footer-hr2 {
+    border: 1.5px solid var(--accent-right);
+  }
+}
+
+.post-nav, .sharing, .comments {
+  @include rhythm.margins(1.5);
+}
+
+.post-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & > *:first-child {
+    align-self: flex-start;
+  }
+  & > *:last-child {
+    align-self: flex-end;
+  }
+}
+
+.sharing {
+  vertical-align: middle;
+  width: 168px;
+}
+
+.comments {
+  width: 100%;
+}
