@@ -8,11 +8,19 @@ image: /img/cover.png
 source: src
 exclude: [ts]
 
-collections_dir: collections
-collections:
-  externals: ~
-  code:
-    sort_by: order
+# during development, run:
+#
+# jekyll serve --config _config.yml,_config_dev.yml
+dev: false
+
+#-------------------------------------------------
+# static resources
+#
+# static_version adds a version number to all static resource files.
+# bumping it forces clients to bypass cache.  see the rewrite rule
+# in mxawng.nginx.
+
+static_version: 1
 
 sass:
   implementation: sass-embedded
@@ -20,6 +28,20 @@ sass:
 
 scripts: [main, rhythm]
 styles: [site]
+
+#-------------------------------------------------
+# posts & collections
+
+collections_dir: collections
+collections:
+  externals: ~
+  code:
+    sort_by: order
+
+excerpt_separator: "<!--more-->"
+
+#-------------------------------------------------
+# site content
 
 nav:
   - name: about
@@ -50,5 +72,3 @@ nav:
         url: /things/opinions/
       - name: unthings
         url: /things/unthings/
-
-excerpt_separator: "<!--more-->"

@@ -8,6 +8,14 @@
       src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
     </script>
   {% else %}
-    <script type="text/javascript" src="/js/{{ js }}.js"></script>
+    <script
+      type="text/javascript"
+      {% if site.dev %}
+        src="/js/{{ js }}.js"
+      {% else %}
+        src="/js/{{ js }}.{{ site.static_version }}.js"
+      {% endif %}
+    >
+    </script>
   {% endif %}
 {% endfor %}

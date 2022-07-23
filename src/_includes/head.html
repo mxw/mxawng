@@ -43,7 +43,15 @@
   {% comment %} <!-- css --> {% endcomment %}
   {% assign styles = site.styles | merge: layout.styles | merge: page.styles %}
   {% for css in styles %}
-  <link rel="stylesheet" type="text/css" href="/css/{{ css }}.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      {% if site.dev %}
+        href="/css/{{ css }}.css"
+      {% else %}
+        href="/css/{{ css }}.{{ site.static_version }}.css"
+      {% endif %}
+    >
   {% endfor %}
 
   {% comment %} <!-- webfonts --> {% endcomment %}
