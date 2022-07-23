@@ -2,13 +2,9 @@
   <meta charset="utf-8">
   <meta name="author" content="{{ site.author }}">
 
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>
+  {% capture title %}
     {% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}
-  </title>
+  {% endcapture %}
 
   {% capture description %}
     {% if page.description %}
@@ -17,14 +13,40 @@
       {{ content | raw_content | strip_html | condense_spaces }}
     {% endif %}
   {% endcapture %}
+  {% assign desc = description | truncate_sentences: 2 %}
 
-  <meta name="description" content="{{ description | truncate_sentences: 2 }}">
+  {% assign image = site.url | append: site.image %}
 
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ desc }}">
+  <meta name="image" content="{{ image }}">
+
+  {% comment %} <!-- what are these i forget --> {% endcomment %}
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% comment %} <!-- social media --> {% endcomment %}
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:description" content="{{ desc }}">
+  <meta property="og:image" content="{{ image }}">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:creator" content="@mxawng">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ desc }}">
+  <meta name="twitter:image" content="{{ image }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  {% comment %} <!-- css --> {% endcomment %}
   {% assign styles = site.styles | merge: layout.styles | merge: page.styles %}
   {% for css in styles %}
-  <link rel="stylesheet" type="text/css" href="/css/{{ css }}.css" />
+  <link rel="stylesheet" type="text/css" href="/css/{{ css }}.css">
   {% endfor %}
 
+  {% comment %} <!-- webfonts --> {% endcomment %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link

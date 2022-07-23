@@ -1,7 +1,8 @@
 title: mxawng
 subtitle: no longer solarized!
 author: Max Wang
-url: http://www.mxawng.com
+url: https://mxawng.com
+image: /img/cover.png
 
 source: src
 exclude: [ts]
