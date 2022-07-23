@@ -49,5 +49,5 @@ $green: #009961;
   --accent-right: #{$gold};
   --accent-right-dark: #736000;
   --accent-right-lite: #{lighten-accent($gold)};
-  --accent-right-alpha: #{with-alpha($fuchsia, 0.42)};
+  --accent-right-alpha: #{with-alpha($gold, 0.42)};
 }
