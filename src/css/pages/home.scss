@@ -19,8 +19,8 @@ figure {
 figcaption {
   @include rhythm.rhythm(1rem);
   flex-basis: 100%;
-  padding-left: math.div(layout.$max-width, 5);
-  padding-right: math.div(layout.$max-width, 5);
+  padding-left: 20%;
+  padding-right: 20%;
   text-align: center;
   font-style: italic;
 }
