@@ -12,10 +12,10 @@
 
 $max-width: 720px;
 
-$pad-min: 16px;
+$pad-min: 20px;
 $pad-narrow: $pad-min * 2;
-$pad-tablet: $pad-min * 4;
-$pad-normal: $pad-min * 8;
+$pad-tablet: $pad-min * 3; // should remain under 24px = (768 - 720) / 2
+$pad-normal: $pad-min * 4;
 
 body {
   text-size-adjust: none;
@@ -26,15 +26,15 @@ body {
     padding-left: $pad-min;
     padding-right: $pad-min;
 
-    @include media.screen-narrow {
+    @include media.narrow {
       padding-left: $pad-narrow;
       padding-right: $pad-narrow;
     }
-    @include media.screen-tablet {
+    @include media.tablet {
       padding-left: $pad-tablet;
       padding-right: $pad-tablet;
     }
-    @include media.screen-normal {
+    @include media.desktop {
       padding-left: $pad-normal;
       padding-right: $pad-normal;
     }
@@ -67,6 +67,13 @@ ul, ol {
 // figures
 
 figure {
+  max-width: 90%;
+  @include media.tablet {
+    max-width: none;
+  }
+
+  text-align: center;
+
   &:not(.norhythm) {
     @include rhythm.margins();
   }
@@ -79,8 +86,6 @@ figure {
       };
     }
   }
-
-  text-align: center;
 }
 
 /*

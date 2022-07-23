@@ -1,6 +1,7 @@
 ---
 ---
 
+@use "common/media";
 @use "common/rhythm";
 
 #gmail-icon {
@@ -11,7 +12,11 @@
 
 ul.contacts {
   list-style-type: none;
-  padding-left: 2em;
+
+  padding-left: 1em;
+  @include media.tablet {
+    padding-left: 2em;
+  }
 }
 
 .li-icon {

@@ -7,22 +7,22 @@ $screen-tablet: 768px;
 $screen-normal: 992px;
 $screen-wide: 1720px;
 
-@mixin screen-narrow {
+@mixin narrow {
   @media only screen and (min-width: $screen-narrow) {
     @content
   }
 }
-@mixin screen-tablet {
+@mixin tablet {
   @media only screen and (min-width: $screen-tablet) {
     @content
   }
 }
-@mixin screen-normal {
+@mixin desktop {
   @media only screen and (min-width: $screen-normal) {
     @content
   }
 }
-@mixin screen-wide {
+@mixin wide {
   @media only screen and (min-width: $screen-wide) {
     @content
   }

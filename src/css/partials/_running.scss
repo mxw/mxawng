@@ -3,6 +3,7 @@
  */
 
 @use 'common/flex';
+@use 'common/media';
 @use 'common/rhythm';
 
 @use 'base/fonts';
@@ -24,14 +25,20 @@ body > header {
   margin: auto;
 
   @include rhythm.rhythm(fonts.$h1);
-  @include rhythm.margins(4);
+
+  @include rhythm.margins(3);
+  @include media.tablet {
+    @include rhythm.margins(4);
+  }
 
   // rule for site header layout:
   //
   // m x a w n g             about  writing  etc.
   & > div {
-    @include flex.row-center;
-    justify-content: space-between;
+    @include media.tablet {
+      @include flex.row-center;
+      justify-content: space-between;
+    }
     width: 100%;
 
     @include rhythm.trailer(1, "padding");
@@ -60,7 +67,7 @@ body > header {
 //----------------------------------------------------------
 // site nav
 
-nav { // body > header > div > nav
+nav.sitenav { // body > header > div > nav
   @mixin nav-ul {
     margin: 0;
     padding: 0;
@@ -139,12 +146,16 @@ nav { // body > header > div > nav
 // site footer
 
 body > footer {
-  @include flex.row-center;
-  justify-content: center;
-  gap: 1.5em;
+  @include flex.vertical;
+  align-items: center;
+
+  @include media.tablet {
+    @include flex.row-center;
+    justify-content: center;
+    gap: 1.5em;
+  }
 
   margin: auto;
-  width: 100%;
 
   @include rhythm.rhythm(1rem);
   @include rhythm.margins(2);
@@ -153,5 +164,26 @@ body > footer {
   color: var(--fg-darker);
   a {
     text-decoration: none;
+  }
+
+  & > nav.footnav {
+    @include flex.row-center;
+    gap: 1.5em;
+  }
+
+  & > hr {
+    width: 50%;
+    border: 0.5px solid var(--fg-darker);
+
+    @include media.tablet {
+      display: inline;
+      width: auto;
+      margin: 0;
+      border: 0;
+      color: inherit;
+      &:after {
+        content: "|";
+      }
+    }
   }
 }

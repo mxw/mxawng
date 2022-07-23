@@ -1,8 +1,10 @@
 ---
 ---
 
-@use 'common/rhythm';
+@use 'common/media';
 
 figure#not-found {
-  max-width: 552px;
+  @include media.tablet {
+    max-width: 552px;
+  }
 }

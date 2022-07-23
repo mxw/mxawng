@@ -12,15 +12,30 @@
 article.post {
   // rule for the post header layout:
   //
+  // on mobile:
+  //
+  // title
+  // └──subtitle
+  //                          date
+  //
+  // and elsewhere, optimistically:
+  //
   // title                    date
   // └──subtitle
+  //
+  // i.e., we basically don't want long titles in the presence of subtitles,
+  // which seems reasonable enough since that's a lot of title text.
   //
   // @see partials/_feed and layouts/post for the rest.
   & > header {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
+
+    @include media.tablet {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 }
 

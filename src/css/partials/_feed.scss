@@ -1,6 +1,8 @@
 /*
  * list-of-posts styles
  */
+
+@use 'common/media';
 @use 'common/rhythm';
 
 @use 'partials/post';
@@ -19,16 +21,26 @@ article.post {
   //                        date
   // └──subtitle
   & > header {
-    & > h1.title {
-      order: 1;
-    }
-    & > h2.subtitle {
-      order: 3;
-      flex-basis: 100%;
-    }
     & > time.date {
-      order: 2;
-      margin-left: auto;
+      align-self: flex-end;
+
+      @include media.tablet {
+        align-self: auto;
+      }
+    }
+
+    @include media.tablet {
+      & > h1.title {
+        order: 1;
+      }
+      & > h2.subtitle {
+        order: 3;
+        flex-basis: 100%;
+      }
+      & > time.date {
+        order: 2;
+        margin-left: auto;
+      }
     }
   }
 }
