@@ -45,7 +45,7 @@ my visibility.  I could see every detail on one side of the glass.  On the
 other: lots of grey.  A wisp of mushy green here and there---a tree or two,
 maybe, in the distance.  Nothing more.
 
-<figure class="full" style="max-width: 570px;">
+<figure class="full" style="width: 570px;">
   <img src="/img/posts/2013-08-11-a.jpg" />
   <figcaption>Ohai the sun.  Why are you hiding?</figcaption>
 </figure>

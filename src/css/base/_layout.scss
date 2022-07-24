@@ -67,11 +67,6 @@ ul, ol {
 // figures
 
 figure {
-  max-width: 90%;
-  @include media.tablet {
-    max-width: none;
-  }
-
   text-align: center;
 
   &:not(.norhythm) {
@@ -79,6 +74,13 @@ figure {
   }
 
   &:not(.noaccent) {
+    // make room for the accent box-shadow on narrow screens
+    max-width: 90%;
+    @include media.narrow {
+      max-width: initial;
+    }
+
+    // theme accent for figure content
     iframe, img {
       box-shadow: #{
         5px 5px var(--accent-left),

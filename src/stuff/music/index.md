@@ -19,7 +19,7 @@ anyway here's some stuff.
 two pieces i'm proud of from an electronic music class i took at MIT (21M.361),
 both using recorded sound as the source material:
 
-<figure>
+<figure class="full">
   <iframe
     width="100%"
     height="128"
@@ -30,7 +30,7 @@ both using recorded sound as the source material:
   </iframe>
 </figure>
 
-<figure>
+<figure class="full">
   <iframe
     width="100%"
     height="128"
@@ -44,7 +44,7 @@ both using recorded sound as the source material:
 a video of me dressed as a frog singing a frog song after the first few months
 of regular vocal training:
 
-<figure>
+<figure class="full">
   <iframe
     width="560"
     height="315"

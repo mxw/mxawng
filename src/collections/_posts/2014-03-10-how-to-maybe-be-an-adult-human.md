@@ -140,7 +140,7 @@ So anyway, two weeks later I moved into an apartment somehow.
 
 <figure
   class="right h-margins"
-  style="max-width: 200px;"
+  style="max-width: min(240px, 50%);"
 >
   <img
     alt="Green is even my favorite color!"
