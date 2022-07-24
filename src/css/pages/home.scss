@@ -3,35 +3,42 @@
 
 @use 'sass:math';
 
+@use 'common/media';
 @use 'common/rhythm';
-@use 'base/layout';
 
-figure {
-  display: flex;
-  flex-flow: row wrap;
+.portrait-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "nw ne"
+    "sw se";
+  grid-auto-flow: row;
+
   margin: 0 auto;
 
-  & > a {
+  a {
     line-height: 0;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  & > *:last-child {
+    img {
+      height: 100%;
+    }
   }
 }
 
 figcaption {
   @include rhythm.rhythm(1rem);
-  flex-basis: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
+
+  @include media.tablet {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   text-align: center;
   font-style: italic;
-}
-
-picture {
-  width: math.div(layout.$max-width, 2);
-  height: math.div(layout.$max-width, 2);
-
-  & > img {
-    width: math.div(layout.$max-width, 2);
-    height: math.div(layout.$max-width, 2);
-    object-fit: cover;
-  }
 }
