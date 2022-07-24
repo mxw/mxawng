@@ -2,6 +2,6 @@ _site/
 .jekyll-cache/
 .sass-cache/
 node_modules/
+src/js/gen/
 TODO.md
 
-src/js/main.js

@@ -26,7 +26,7 @@ sass:
   implementation: sass-embedded
   sass_dir: ./css
 
-scripts: [main, rhythm]
+scripts: [rhythm]
 styles: [site]
 
 #-------------------------------------------------
@@ -37,6 +37,7 @@ collections:
   externals: ~
   code:
     sort_by: order
+  recs: ~
 
 excerpt_separator: "<!--more-->"
 

@@ -16,9 +16,7 @@ const resolve_path = (() => {
   }
 })();
 
-module.exports = {
-  entry: './src/ts/index.ts',
-
+const common = outfile => ({
   mode: 'production',
   devtool: 'source-map',
 
@@ -49,7 +47,12 @@ module.exports = {
     'react-dom': 'ReactDOM',
   },
   output: {
-    path: path.resolve(__dirname, './src/js'),
-    filename: 'main.js',
+    path: path.resolve(__dirname, './src/js/gen'),
+    filename: outfile,
   },
+});
+
+module.exports = {
+  entry: './src/ts/entries/wireeater.tsx',
+  ...common('wireeater.js')
 };

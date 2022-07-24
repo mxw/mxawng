@@ -1,12 +1,15 @@
 {% include social/facebook.html %}
 
-{% assign scripts = site.scripts | merge: layout.scripts | merge: page.scripts %}
+{% assign scripts = site.scripts | merge: layout.scripts | merge: page.scripts | uniq %}
 {% for js in scripts %}
   {% if js == 'jquery' %}
     <script
       type="text/javascript"
       src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
     </script>
+  {% elsif js == 'react' %}
+    {% comment %} <!-- handled in head.html --> {% endcomment %}
+    {% continue %}
   {% else %}
     <script
       type="text/javascript"
