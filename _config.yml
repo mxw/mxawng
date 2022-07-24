@@ -68,7 +68,7 @@ nav:
   - name: things
     url: /things/
     submenu:
-      - name: opinions
-        url: /things/opinions/
+      - name: wireeater
+        url: /things/wireeater/
       - name: unthings
         url: /things/unthings/

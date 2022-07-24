@@ -1,5 +1,5 @@
 ---
-title: opinions
+title: wireeater
 layout: page
 styles: [404]
 ---
