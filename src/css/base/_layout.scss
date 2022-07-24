@@ -81,7 +81,7 @@ figure {
     }
 
     // theme accent for figure content
-    iframe, img {
+    iframe, img, .figcontent {
       box-shadow: #{
         5px 5px var(--accent-left),
         10px 10px var(--accent-right)
@@ -141,5 +141,23 @@ $figsizes: (
   figure.#{$sz} {
     width: $max-width * $scale;
     img { width: 100%; }
+  }
+}
+
+/*
+ * external content
+ */
+.youtube {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }

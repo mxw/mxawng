@@ -44,7 +44,8 @@ both using recorded sound as the source material:
 a video of me dressed as a frog singing a frog song after the first few months
 of regular vocal training:
 
-<figure class="full">
+<figure class="full yt-container">
+<div class="figcontent youtube">
   <iframe
     width="560"
     height="315"
@@ -54,6 +55,7 @@ of regular vocal training:
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+</div>
 </figure>
 
 ## supplement
