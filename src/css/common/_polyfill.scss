@@ -1,0 +1,11 @@
+/*
+ * webdev cope
+ */
+
+@mixin text-decoration($line, $style, $color, $thickness) {
+  text-decoration: $line;
+  // iOS webkit doesn't support text-decoration shorthand consistently
+  text-decoration-style: $style;
+  text-decoration-color: $color;
+  text-decoration-thickness: $thickness;
+}

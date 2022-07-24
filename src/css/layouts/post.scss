@@ -3,6 +3,7 @@
 
 @use 'common/flex';
 @use 'common/rhythm';
+@use 'common/polyfill' as pf;
 
 @use 'partials/post';
 @use 'partials/sharing';
@@ -27,7 +28,7 @@ main > article.post > header {
   & > h1.title {
     order: 1;
 
-    text-decoration: underline var(--accent-left-lite) solid 3px;
+    @include pf.text-decoration(underline, solid, var(--accent-left-lite), 3px);
     text-underline-offset: 0.0625em;
   }
   & > h2.subtitle {

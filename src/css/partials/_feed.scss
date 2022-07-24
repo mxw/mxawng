@@ -4,6 +4,7 @@
 
 @use 'common/media';
 @use 'common/rhythm';
+@use 'common/polyfill' as pf;
 
 @use 'partials/post';
 
@@ -68,7 +69,7 @@ h1.title {
     text-decoration: none;
 
     & > span {
-      text-decoration: underline var(--accent-left-lite) solid 3px;
+      @include pf.text-decoration(underline, solid, var(--accent-left-lite), 3px);
       font-weight: 600;
     }
   }
