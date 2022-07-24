@@ -48,6 +48,10 @@ h2.subtitle {
     content: "\2514\2500"; // L-shaped box-drawing characters
     padding-right: 0.25em;
   }
+
+  // offset for the L; convenient the characters are exactly 1em
+  text-indent: -2.25em;
+  padding-left: 2.25em;
 }
 
 time.date {
