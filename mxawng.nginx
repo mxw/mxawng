@@ -10,7 +10,8 @@ server {
 
   error_page 404 /404.html;
 
-  rewrite ^/(css|js)/(\w+)\.(\d+)\.\1$ /$1/$2.$1 last;
+  # static resource cache-bypass versioning
+  rewrite ^/(css|js)/(.+)\.(\d+)\.\1$ /$1/$2.$1 last;
 
   # managed by certbot
   ssl_certificate /etc/letsencrypt/live/mxawng.com/fullchain.pem;
