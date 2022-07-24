@@ -10,6 +10,9 @@ module RawContent
       site.posts.docs.each do |post|
         post.data['raw_content'] = post.content
       end
+      site.collections['externals'].docs.each do |post|
+        post.data['raw_content'] = post.content
+      end
     end
   end
 end
