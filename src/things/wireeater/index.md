@@ -35,6 +35,10 @@ styles: [pages/wireeater]
           data-title="{{ rec.title }}"
           data-categories="{{ rec.categories | join: " " }}"
           data-tags="{{ rec.tags | join: " " }}"
+          data-pics='{{ rec.pics | jsonify }}'
+          {% if rec.link %}
+          data-link="{{ rec.link }}"
+          {% endif %}
         >
           {{ rec.content | markdownify }}
         </div>

@@ -174,7 +174,7 @@ export class Wireeater extends React.Component<
       ).filter(
         opt => tags.includes(opt.value)
       )}
-      placeholder={spannify('click here')}
+      placeholder={spannify(category ? 'click here' : 'not yet...')}
       value={this.state.selected.tags.map(this.tagOption)}
       noOptionsMessage={() => "click above first"}
       onChange={this.onChangeTag}
@@ -198,16 +198,17 @@ export class Wireeater extends React.Component<
   }
 
   render() {
-    console.log(this.state.selected, this.props.data);
     return (
       <div id="wireeater">
         {this.renderSelectors()}
-        {this.props.data.filter(
-          item => item.categories.includes(this.state.selected.category) &&
-                  item.tags.some(t => this.state.selected.tags.includes(t))
-        ).map((item, i) => (
-          <ContentCard key={i} {...item} />
-        ))}
+        <div id="wireeater-collection">
+          {this.props.data.filter(
+            item => item.categories.includes(this.state.selected.category) &&
+                    item.tags.some(t => this.state.selected.tags.includes(t))
+          ).map((item, i) => (
+            <ContentCard key={i} {...item} />
+          ))}
+          </div>
       </div>
     );
   }
