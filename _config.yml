@@ -37,7 +37,33 @@ collections:
   externals: ~
   code:
     sort_by: order
-  recs: ~
+  recs:
+    categories:
+      - name: brain
+        display: headspace
+        tags: [words, music, clothes, software]
+      - name: bos
+        display: college town
+        tags: [food]
+      - name: nyc
+        display: favorite city
+        tags: [food]
+      - name: la
+        display: wasteland of cars
+        tags: [food]
+    tags:
+      - name: food
+        display: put in my mouth
+      - name: words
+        display: read
+      - name: music
+        display: put in my ears
+      - name: watch
+        display: put in my eyes
+      - name: clothes
+        display: wear
+      - name: software
+        display: install
 
 excerpt_separator: "<!--more-->"
 

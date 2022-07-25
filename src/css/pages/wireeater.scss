@@ -1,6 +1,86 @@
 ---
 ---
 
+@use 'sass:math';
+
+@use 'common/flex';
+@use 'common/rhythm';
+
+//----------------------------------------------------------
+// layout for this DOM hierarchy:
+//
+//  #wireeater
+//    #wireeater-selectors
+//      #wireeater-category
+//        #select-category
+//          [react-select stuff]
+//      #wireeater-tag
+//        #select-tag
+//          [react-select stuff]
+//    #wireeater-collection
+//      #wireeater-card
+//      ...
+
+// hide the data payload we render for the react component
 #wireeater-data {
   display: none;
+}
+
+#wireeater-container {
+  margin: auto;
+}
+
+#wireeater-selectors {
+  @include flex.vertical;
+  gap: rhythm.rh(1);
+
+  margin: auto;
+  max-width: 400px;
+}
+
+//----------------------------------------------------------
+// text animations
+//
+// @see: https://codemyui.com/rainbow-text-animation/
+
+$max-elements: 50;
+$total-delay: 5;
+$delay-between: math.div($total-delay, $max-elements);
+
+@mixin text-color-animation {
+  animation-name: color-flow;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+
+  @for $i from 1 through $max-elements {
+    &:nth-of-type(#{$i}) {
+      animation-delay: #{($i * $delay-between) - $total-delay}s;
+    }
+  }
+}
+
+@keyframes color-flow {
+  @for $i from 0 through 20 {
+    #{percentage($i * (math.div(1, 20)))} {
+      color: hsla(random(365), 80%, 60%, 1);
+    }
+  }
+}
+
+.category__placeholder, .category__single-value, .category__option:hover {
+  & span {
+    @include text-color-animation;
+    transition: 1s;
+  }
+}
+
+.select-tags.active {
+  .tags__placeholder, .tags__single-value, .tags__option:hover {
+    & span {
+      @include text-color-animation;
+      transition: 1s;
+    }
+  }
 }

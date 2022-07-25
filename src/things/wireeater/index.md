@@ -1,20 +1,44 @@
 ---
 title: wireeater
-layout: page
+subtitle: look at me! i'm a publication!
+layout: default
 scripts: [react, gen/wireeater]
 styles: [pages/wireeater]
 ---
 
+{% assign recmeta = site.collections | where: "label", "recs" | first %}
+
 <div id="wireeater-container">
   <div id="wireeater-data">
-    {% for rec in site.recs %}
-      <div
-        data-title="{{ rec.title }}"
-        data-categories="{{ rec.categories | join: " " }}"
-        data-tags="{{ rec.tags | join: " " }}"
-      >
-        {{ rec.content | markdownify }}
-      </div>
-    {% endfor %}
+    <div id="wireeater-data-categories">
+      {% for category in recmeta.categories %}
+        <div
+          data-name="{{ category.name }}"
+          data-display="{{ category.display }}"
+          data-tags="{{ category.tags | join: " " }}"
+        >
+        </div>
+      {% endfor %}
+    </div>
+    <div id="wireeater-data-tags">
+      {% for tag in recmeta.tags %}
+        <div
+          data-name="{{ tag.name }}"
+          data-display="{{ tag.display }}"
+        >
+        </div>
+      {% endfor %}
+    </div>
+    <div id="wireeater-data-recs">
+      {% for rec in site.recs %}
+        <div
+          data-title="{{ rec.title }}"
+          data-categories="{{ rec.categories | join: " " }}"
+          data-tags="{{ rec.tags | join: " " }}"
+        >
+          {{ rec.content | markdownify }}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
