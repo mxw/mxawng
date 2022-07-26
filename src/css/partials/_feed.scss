@@ -4,7 +4,7 @@
 
 @use 'common/media';
 @use 'common/rhythm';
-@use 'common/polyfill' as pf;
+@use 'common/theme';
 
 @use 'partials/post';
 
@@ -53,26 +53,9 @@ article.post {
 //    svg
 //
 h1.title {
-  color: var(--fg-color);
-  transition: color var(--defocus-time);
+  @include theme.link-container(var(--accent-left-lite), 3px);
 
-  &:hover {
-    color: var(--accent-left-lite);
-
-    & > a, & > svg {
-      color: var(--accent-left-lite);
-      transition: color var(--focus-time);
-    }
-  }
-
-  & > a {
-    text-decoration: none;
-
-    & > span {
-      @include pf.text-decoration(underline, solid, var(--accent-left-lite), 3px);
-      font-weight: 600;
-    }
-  }
+  & > a { font-weight: 600; }
 }
 
 // indent post excerpts

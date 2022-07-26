@@ -5,6 +5,7 @@
 
 @use 'common/flex';
 @use 'common/rhythm';
+@use 'common/theme';
 
 //----------------------------------------------------------
 // layout for this DOM hierarchy:
@@ -119,9 +120,21 @@ img.wireeater-card-img {
   object-fit: cover;
 }
 
-.wireeater-card-title {
+.wireeater-card-header {
   @include rhythm.rhythm(1.75rem);
   @include rhythm.margins(0.9);
+}
+
+.wireeater-card-title {
+  @include theme.link-container(var(--accent-color), 3px);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.0625em;
+}
+
+svg.external-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.25em;
 }
 
 .wireeater-card-content {

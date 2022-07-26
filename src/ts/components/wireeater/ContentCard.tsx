@@ -14,14 +14,40 @@ export class ContentCard extends React.Component<
     super(props);
   }
 
+  renderTitle() {
+    if (this.props.link) {
+      return (
+        <h2 className="wireeater-card-title">
+          <a href={this.props.link} target="_blank">
+            <span>{this.props.title}</span>
+            <svg
+              className="external-icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"></path>
+            </svg>
+          </a>
+        </h2>
+      );
+    } else {
+      return (
+        <h2 className="wireeater-card-title">
+          {this.props.title}
+        </h2>
+      );
+    }
+  }
+
   render() {
     return (
       <div className="wireeater-card-container">
         <CardCover pics={this.props.pics} />
         <header className="wireeater-card-header">
-          <h2 className="wireeater-card-title">
-            {this.props.title}
-          </h2>
+          {this.renderTitle()}
         </header>
         <div
           className="wireeater-card-content"
