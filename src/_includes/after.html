@@ -1,4 +1,6 @@
-{% include social/facebook.html %}
+{% if page.collection == 'posts' %}
+  {% include social/facebook.html %}
+{% endif %}
 
 {% assign scripts = site.scripts | merge: layout.scripts | merge: page.scripts | uniq %}
 {% for js in scripts %}
