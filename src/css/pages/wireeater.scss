@@ -94,6 +94,13 @@ $delay-between: math.div($total-delay, $max-elements);
 }
 
 //----------------------------------------------------------
+// card grid
+
+.wireeater-card-grid, .wireeater-card-column {
+  gap: 1rem;
+}
+
+//----------------------------------------------------------
 // cards
 
 .wireeater-card-container {

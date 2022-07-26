@@ -6,6 +6,7 @@ import * as React from 'react';
 import Select, * as ReactSelect from 'react-select';
 
 import { ContentCard } from 'components/wireeater/ContentCard';
+import { Bricklayer } from 'components/utils/Bricklayer';
 
 import spannify from 'utils/spannify';
 
@@ -202,13 +203,22 @@ export class Wireeater extends React.Component<
       <div id="wireeater">
         {this.renderSelectors()}
         <div id="wireeater-collection">
-          {this.props.data.filter(
-            item => item.categories.includes(this.state.selected.category) &&
-                    item.tags.some(t => this.state.selected.tags.includes(t))
-          ).map((item, i) => (
-            <ContentCard key={i} {...item} />
-          ))}
-          </div>
+          <Bricklayer
+            className="wireeater-card-grid"
+            columnClassName="wireeater-card-column"
+            sizeHint={(elem: ContentCard) =>
+              elem.props.innerHTML.length / 2 + 400
+            }
+            columnSpec={{0: 1, 860: 2}}
+          >
+            {this.props.data.filter(
+              item => item.categories.includes(this.state.selected.category) &&
+                      item.tags.some(t => this.state.selected.tags.includes(t))
+            ).map((item, i) => (
+              <ContentCard key={i} {...item} />
+            ))}
+          </Bricklayer>
+        </div>
       </div>
     );
   }
