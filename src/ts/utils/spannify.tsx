@@ -6,7 +6,7 @@ import * as React from 'react';
 
 const spannify = (text: string) => (
   <>
-    {[...text].map(c => (<span>{c}</span>))}
+    {[...text].map((c, i) => (<span key={i}>{c}</span>))}
   </>
 );
 

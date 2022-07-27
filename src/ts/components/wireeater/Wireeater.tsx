@@ -58,8 +58,8 @@ const styles: ReactSelect.StylesConfig = {
   }),
   menu: (provided, state) => ({
     ...provided,
-    backgroundColor: 'rgba(81,81,81,0.2)',
-    backdropFilter: 'blur(1.5px)',
+    backgroundColor: 'rgba(81,81,81,0.25)',
+    backdropFilter: 'blur(5px)',
     border: 'initial',
     width: '200px',
   }),
