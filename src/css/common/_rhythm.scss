@@ -36,7 +36,7 @@ $default-font-size: 16px;
 // math
 
 $rhythm: 1rem !default;
-$px: 1rem * math.div(1px, $default-font-size);
+$px: px-to-rem(1px);
 
 // simple function to compute line-height from $line count
 @function rh($lines, $offset: 0rem) {

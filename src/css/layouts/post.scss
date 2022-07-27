@@ -28,7 +28,8 @@ main > article.post > header {
   & > h1.title {
     order: 1;
 
-    @include pf.text-decoration(underline, solid, var(--accent-left-lite), 3px);
+    @include pf.text-decoration(underline, solid, var(--accent-left-lite),
+                                3 * rhythm.$px);
     text-underline-offset: 0.0625em;
   }
   & > h2.subtitle {

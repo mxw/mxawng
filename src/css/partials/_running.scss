@@ -5,6 +5,7 @@
 @use 'common/flex';
 @use 'common/media';
 @use 'common/rhythm';
+@use 'common/theme';
 
 @use 'base/fonts';
 
@@ -89,7 +90,7 @@ nav.sitenav { // body > header > div > nav
       color: var(--accent-color);
     }
     &:not(.here) > a:hover {
-      box-shadow: 0 -3px var(--accent-color) inset;
+      box-shadow: 0 #{-3 * rhythm.$px} var(--accent-color) inset;
     }
   };
 
@@ -130,8 +131,7 @@ nav.sitenav { // body > header > div > nav
 
         box-shadow: #{
           0 0 2px 1px rgb(white, 0.25),
-          5px 5px var(--accent-left),
-          10px 10px var(--accent-right)
+          theme.accent-shadow(5px)
         };
 
         & > li {

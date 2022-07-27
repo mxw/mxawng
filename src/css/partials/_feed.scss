@@ -53,7 +53,7 @@ article.post {
 //    svg
 //
 h1.title {
-  @include theme.link-container(var(--accent-left-lite), 3px);
+  @include theme.link-container(var(--accent-left-lite), 3 * rhythm.$px);
 
   & > a { font-weight: 600; }
 }

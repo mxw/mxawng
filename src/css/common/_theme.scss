@@ -2,7 +2,15 @@
  * theme utilities
  */
 
+@use 'common/rhythm';
 @use 'common/polyfill' as pf;
+
+@function accent-shadow($off-px) {
+  @return #{
+    rhythm.px-to-rem($off-px)     rhythm.px-to-rem($off-px)     var(--accent-left),
+    rhythm.px-to-rem(2 * $off-px) rhythm.px-to-rem(2 * $off-px) var(--accent-right)
+  };
+}
 
 @mixin link-container($accent-color, $line-weight) {
   transition: color var(--defocus-time);

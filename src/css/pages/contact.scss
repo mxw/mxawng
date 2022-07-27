@@ -5,7 +5,7 @@
 @use "common/rhythm";
 
 #gmail-icon {
-  height: 20px;
+  height: 1.25rem;
   vertical-align: text-bottom;
   padding: 0.25rem 0.125rem;
 }
@@ -22,9 +22,9 @@ ul.contacts {
 .li-icon {
   @include rhythm.margins(0.5);
   background: {
-    position: left 4px;
+    position: left 0.25rem;
     repeat: no-repeat;
-    size: 22px;
+    size: 22 * rhythm.$px;
   }
   padding-left: 2em;
 }

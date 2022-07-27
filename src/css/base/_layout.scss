@@ -6,6 +6,7 @@
 
 @use 'common/media';
 @use 'common/rhythm';
+@use 'common/theme';
 
 //----------------------------------------------------------
 // main responsive layout
@@ -82,10 +83,7 @@ figure {
 
     // theme accent for figure content
     iframe, img, .figcontent {
-      box-shadow: #{
-        5px 5px var(--accent-left),
-        10px 10px var(--accent-right)
-      };
+      box-shadow: #{theme.accent-shadow(5px)};
     }
   }
 }

@@ -69,7 +69,8 @@ article {
     a {
       font-weight: 400;
 
-      @include pf.text-decoration(underline, solid, var(--accent-lite), 2.5px);
+      @include pf.text-decoration(underline, solid, var(--accent-lite),
+                                  2.5 * rhythm.$px);
       text-decoration-skip-ink: none;
       text-underline-offset: 0.0625em;
       transition: color var(--defocus-time);
