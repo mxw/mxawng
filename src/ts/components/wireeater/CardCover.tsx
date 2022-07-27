@@ -25,9 +25,13 @@ export class CardCover extends React.Component<
     return (
       <div className="wireeater-card-cover">
         <picture className="wireeater-card-picture">
+          <source
+            srcSet={`/img/wireeater/${this.props.pics[0].filename}.webp`}
+            type="image/webp"
+          />
           <img
             className="wireeater-card-img"
-            src={`/img/wireeater/${this.props.pics[0].subpath}`}
+            src={`/img/wireeater/${this.props.pics[0].filename}.jpg`}
             title={this.props.pics[0].title}
             style={styleFor(this.props.pics[0])}
           />
@@ -39,7 +43,7 @@ export class CardCover extends React.Component<
 
 export namespace CardCover {
   export interface PicDesc {
-    subpath: string;
+    filename: string;
     title: string;
     crop_pos?: string;
   };

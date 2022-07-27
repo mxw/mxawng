@@ -154,3 +154,12 @@ svg.external-icon {
     margin-bottom: rhythm.rh(0.25);
   }
 }
+
+mark {
+  color: var(--fg-color);
+  background-color: var(--accent-left-lite);
+  font-weight: 400;
+
+  border-radius: 4px;
+  padding: 0 0.125em;
+}
