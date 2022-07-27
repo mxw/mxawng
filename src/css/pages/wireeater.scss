@@ -127,7 +127,7 @@ img.wireeater-card-img {
 }
 
 .wireeater-card-title {
-  @include theme.link-container(var(--accent-color), 3px);
+  @include theme.link-container(var(--accent-color), 3 * rhythm.$px);
   text-decoration-skip-ink: none;
   text-underline-offset: 0.0625em;
 }
@@ -161,7 +161,7 @@ mark {
   background-color: var(--accent-left-lite);
   font-weight: 400;
 
-  border-radius: 4px;
+  border-radius: 0.25rem;
   padding: 0 0.125em;
 }
 
