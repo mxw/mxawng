@@ -118,6 +118,7 @@ img.wireeater-card-img {
   aspect-ratio: 3 / 2;
   border-radius: 0.5rem;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .wireeater-card-header {
@@ -162,4 +163,35 @@ mark {
 
   border-radius: 4px;
   padding: 0 0.125em;
+}
+
+//----------------------------------------------------------
+// photo viewer
+
+.wireeater-viewer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  @include flex.row-center;
+
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+.wireeater-viewer {
+  margin: auto;
+  overflow: auto;
+  outline: none;
+}
+
+.wireeater-viewer-container {
+  margin: 1.5rem;
+}
+
+img.wireeater-viewer-img {
+  max-width: calc(100vw - 3rem);
+  max-height: calc(100vh - 3rem);
+  object-fit: scale-down;
 }

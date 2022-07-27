@@ -4,8 +4,12 @@
 
 import * as React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
+import ReactModal from 'react-modal';
 
 import { Wireeater } from 'components/wireeater/Wireeater';
+
+
+ReactModal.setAppElement('body');
 
 function data_map<T>(id: string, func: (elem: HTMLElement) => T): T[] {
   const data_container = document.getElementById(id);
