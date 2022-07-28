@@ -88,61 +88,81 @@ export class Wireeater extends React.Component<
     this.onChangeCategory = this.onChangeCategory.bind(this);
     this.onChangeTag = this.onChangeTag.bind(this);
 
+    const [category, tags] = this.parseHash();
+
     this.state = {
       selected: {
-        category: null,
-        tags: [],
+        category: category,
+        tags: tags ?? [],
       }
     };
   }
 
+  /*
+   * package values into Option objects for react-select
+   */
   categoryOption(category: string | null) {
     return category
       ? { value: category, label: spannify(this.props.categories[category].display) }
       : null;
   }
-
   tagOption(tag: string | null) {
     return tag
       ? { value: tag, label: spannify(this.props.tags[tag]) }
       : null;
   }
 
+  /*
+   * parse and pack the URI hash fragment for our selectors
+   */
+  parseHash(): [string | null, string[] | null] {
+    const [category, rest] = window.location.hash.substr(1).split(':')
+    if (!(category in this.props.categories)) return [null, null];
+
+    const tags = rest!.split('-');
+    if (!(
+      tags.length > 0 &&
+      tags.every(t => t in this.props.tags)
+    )) return [category, null];
+
+    return [category, tags];
+  };
+  setHash(category: string | null, tags: string[] | null) {
+    window.location.hash = category
+      ? `${category}:${tags?.join('-') ?? ''}`
+      : '';
+  }
+
   onChangeCategory(option: SelectOption | null) {
     this.setState((state, props) => {
-      if (!option) {
-        return {
-          ...state,
-          selected: { category: null, tags: [] }
-        }
-      }
-
-      return {
-        ...state,
-        selected: {
-          category: option.value,
-          tags: state.selected.tags.filter(
-            t => props.categories[option.value].tags.includes(t)
-          )
-        }
-      }
+      const s = option
+        ? { ...state,
+            selected: {
+              category: option?.value,
+              tags: state.selected.tags.filter(
+                t => props.categories[option.value].tags.includes(t)
+              )
+            }
+          }
+        : { ...state,
+            selected: { category: null, tags: [] }
+          }
+        ;
+      this.setHash(s.selected.category, s.selected.tags);
+      return s;
     });
     return;
   }
 
   onChangeTag(option: SelectOption | null) {
     this.setState((state, props) => {
-      if (!option) {
-        return {
-          ...state,
-          selected: { ...state.selected, tags: [] }
+      const s = { ...state,
+        selected: { ...state.selected,
+          tags: option ? [option.value] : []
         }
-      }
-
-      return {
-        ...state,
-        selected: { ...state.selected, tags: [option.value] }
-      }
+      };
+      this.setHash(s.selected.category, s.selected.tags);
+      return s;
     });
     return;
   }
