@@ -15,9 +15,11 @@ i had cha bei bei for the first time in early 2020, and tbh it's ruined all
 other boba for me.  the owner tonie makes all her boba by hand, entirely from
 scratch---just tapioca, water, and a starchy vegetable for color and texture,
 not hydrated from a powder mix like most "homemade" boba.  she uses
-custom-balanced blends of imported leaf teas assembled with care, with even the
-ice cubes made of frozen tea.  the milk teas are served with cream for extra
-richness, or with a homemade nut milk for the dairy-averse.
+custom-balanced blends of imported leaf teas assembled with astonishing
+attention to detail---the ice cubes are made of frozen tea.  the drinks are
+sweetened with maple syrup to layer in flavor.  the milk teas are served with
+cream for extra richness.  she even makes nut milk in-house for the
+dairy-averse.
 
 i'm not a regular!tea drinker, but drinking tonie's teas has given me a better
 understanding of what quality tea can taste like and how it can stand up to all
