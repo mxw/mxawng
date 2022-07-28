@@ -18,8 +18,9 @@ sale in EU size 45, please [contact me](/contact/)).
 the two portraits on the [homepage](/) were painted by [my friend][feilin], and
 the doodle was done by [another friend][jgriego] and former colleague.
 
-i remade this website so i could create [this page](/things/wireeater/), and of
-course i have not done so yet.
+i remade this website so i could create [this page](/things/wireeater/), and am
+surprised to find that i've done so instead of just saying "coming soon!" for
+nine years like i did on my old résumé page.
 
 the source (and additional credits) for the site can be found [on github][gh].
 
