@@ -96,6 +96,7 @@ export class CardCover extends React.Component<
         className="wireeater-card-img"
         src={`/img/wireeater/${this.props.pics[0].filename}.jpg`}
         title={this.props.pics[0].title}
+        width={480}
         style={styleFor(this.props.pics[0])}
         onClick={() => this.setState(
           (state) => ({...state, viewer_open: true})
