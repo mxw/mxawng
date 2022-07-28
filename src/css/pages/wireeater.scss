@@ -113,6 +113,11 @@ $delay-between: math.div($total-delay, $max-elements);
   border-radius: 1rem;
 }
 
+.wireeater-card-embed {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
 img.wireeater-card-img {
   width: 100%;
   aspect-ratio: 3 / 2;
@@ -128,6 +133,10 @@ img.wireeater-card-img {
 
 .wireeater-card-title {
   @include theme.link-container(var(--accent-color), 3 * rhythm.$px);
+
+  @media only screen and (min-width: 1200px) {
+    white-space: nowrap;
+  }
 }
 
 svg.external-icon {
@@ -140,7 +149,7 @@ svg.external-icon {
   @include rhythm.rhythm(1.125rem, $lines: 1.8);
 
   @include theme.link(var(--accent-right-lite), 2 * rhythm.$px);
-  a { font-weight: 400; }
+  a { font-weight: 500; }
 
   & > p {
     @include rhythm.margins(0.9);

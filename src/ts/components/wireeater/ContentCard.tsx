@@ -45,7 +45,10 @@ export class ContentCard extends React.Component<
   render() {
     return (
       <div className="wireeater-card-container">
-        <CardCover pics={this.props.pics} />
+        <CardCover
+          pics={this.props.pics}
+          embed={this.props.embed}
+        />
         <header className="wireeater-card-header">
           {this.renderTitle()}
         </header>
@@ -63,7 +66,8 @@ export namespace ContentCard {
     title: string;
     categories: string[];
     tags: string[];
-    pics: CardCover.PicDesc[];
+    pics: CardCover.PicDesc[] | null;
+    embed: CardCover.EmbedDesc | null;
     link: string | null;
     innerHTML: string;
   };

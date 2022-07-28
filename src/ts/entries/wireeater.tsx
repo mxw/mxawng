@@ -42,7 +42,8 @@ const recs = data_map('wireeater-data-recs', elem => ({
   title: elem.dataset.title,
   categories: elem.dataset.categories.split(/\s+/),
   tags: elem.dataset.tags.split(/\s+/),
-  pics: JSON.parse(elem.dataset.pics),
+  pics: elem.dataset.pics ? JSON.parse(elem.dataset.pics) : null,
+  embed: elem.dataset.embed ? JSON.parse(elem.dataset.embed) : null,
   link: elem.dataset.link ?? null,
   innerHTML: elem.innerHTML,
 }));

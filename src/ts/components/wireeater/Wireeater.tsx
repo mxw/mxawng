@@ -226,9 +226,10 @@ export class Wireeater extends React.Component<
           <Bricklayer
             className="wireeater-card-grid"
             columnClassName="wireeater-card-column"
-            sizeHint={(elem: ContentCard) =>
-              elem.props.innerHTML.length / 2 + 400
-            }
+            sizeHint={(elem: ContentCard) => (
+              elem.props.innerHTML.length / 2 +
+              (elem.props.embed?.kind == 'youtube' ? 325 : 390)
+            )}
             columnSpec={{0: 1, 860: 2}}
           >
             {this.props.data.filter(

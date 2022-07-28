@@ -35,7 +35,12 @@ styles: [pages/wireeater]
           data-title="{{ rec.title }}"
           data-categories="{{ rec.categories | join: " " }}"
           data-tags="{{ rec.tags | join: " " }}"
+          {% if rec.pics %}
           data-pics='{{ rec.pics | jsonify }}'
+          {% endif %}
+          {% if rec.embed %}
+          data-embed='{{ rec.embed | jsonify }}'
+          {% endif %}
           {% if rec.link %}
           data-link="{{ rec.link }}"
           {% endif %}
