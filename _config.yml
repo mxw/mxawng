@@ -64,6 +64,7 @@ collections:
         display: wear
       - name: software
         display: install
+    sort_by: rank
 
 excerpt_separator: "<!--more-->"
 

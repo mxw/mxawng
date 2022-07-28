@@ -8,6 +8,7 @@ pics:
     title: house milk tea outside the wilshire location
     crop_pos: 50% 67%
 link: https://www.chabeibeiteahouse.com/
+rank: 1
 ---
 
 i had cha bei bei for the first time in early 2020, and tbh it's ruined all

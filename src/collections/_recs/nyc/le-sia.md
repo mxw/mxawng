@@ -8,6 +8,7 @@ pics:
     title: 鸡肉串儿 at le sia
     crop_pos: 50% 33.33%
 link: https://www.lesianyc.com/
+rank: 1
 ---
 
 one time, a friend i'd then just met on hinge invited me to get dinner at le
