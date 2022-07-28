@@ -128,8 +128,6 @@ img.wireeater-card-img {
 
 .wireeater-card-title {
   @include theme.link-container(var(--accent-color), 3 * rhythm.$px);
-  text-decoration-skip-ink: none;
-  text-underline-offset: 0.0625em;
 }
 
 svg.external-icon {
@@ -140,6 +138,9 @@ svg.external-icon {
 
 .wireeater-card-content {
   @include rhythm.rhythm(1.125rem, $lines: 1.8);
+
+  @include theme.link(var(--accent-right-lite), 2 * rhythm.$px);
+  a { font-weight: 400; }
 
   & > p {
     @include rhythm.margins(0.9);
