@@ -41,7 +41,7 @@ collections:
     categories:
       - name: brain
         display: headspace
-        tags: [words, music, clothes, software]
+        tags: [words, music, watch, clothes, software]
       - name: bos
         display: college town
         tags: [food]
@@ -55,15 +55,15 @@ collections:
       - name: food
         display: put in my mouth
       - name: words
-        display: read
+        display: consume textually
       - name: music
-        display: put in my ears
+        display: stick in my ears
       - name: watch
-        display: put in my eyes
+        display: put in my eyeballs
       - name: clothes
-        display: wear
+        display: cover my body with
       - name: software
-        display: install
+        display: stuff inside my laptop
     sort_by: rank
 
 excerpt_separator: "<!--more-->"
