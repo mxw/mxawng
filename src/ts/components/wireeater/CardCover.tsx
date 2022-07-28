@@ -39,10 +39,8 @@ const PhotoViewer: React.FC<{pics: CardCover.PicDesc[]}> = ({ pics }) => {
 
 const YoutubeEmbed: React.FC<{handle: string}> = ({ handle }) => {
   return <iframe
-    className="wireeater-card-embed"
+    className="wireeater-card-embed youtube"
     src={`https://www.youtube-nocookie.com/embed/${handle}`}
-    width="480"
-    height="270"
     title="YouTube video player"
     frameBorder="0"
     allowFullScreen={true}
@@ -52,10 +50,8 @@ const YoutubeEmbed: React.FC<{handle: string}> = ({ handle }) => {
 
 const SpotifyEmbed: React.FC<{handle: string}> = ({ handle }) => {
   return <iframe
-    className="wireeater-card-embed"
+    className="wireeater-card-embed spotify"
     src={`https://open.spotify.com/embed/track/${handle}?utm_source=generator`}
-    width="480"
-    height="320"
     frameBorder="0"
     allowFullScreen={false}
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
@@ -96,7 +92,6 @@ export class CardCover extends React.Component<
         className="wireeater-card-img"
         src={`/img/wireeater/${this.props.pics[0].filename}.jpg`}
         title={this.props.pics[0].title}
-        width={480}
         style={styleFor(this.props.pics[0])}
         onClick={() => this.setState(
           (state) => ({...state, viewer_open: true})

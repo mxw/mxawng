@@ -113,13 +113,23 @@ $delay-between: math.div($total-delay, $max-elements);
   border-radius: 1rem;
 }
 
+.wireeater-card-cover {
+  width: 100%;
+}
+
 .wireeater-card-embed {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 0.5rem;
+
+  &.spotify {
+    aspect-ratio: 3 / 2;
+  }
 }
 
 img.wireeater-card-img {
   width: 100%;
+  height: auto;
   aspect-ratio: 3 / 2;
   border-radius: 0.5rem;
   object-fit: cover;

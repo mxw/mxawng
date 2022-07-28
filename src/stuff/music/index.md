@@ -45,8 +45,8 @@ a video of me dressed as a frog singing a frog song after the first few months
 of regular vocal training:
 
 <figure class="full youtube-figure">
-<div class="figcontent youtube-embed">
   <iframe
+    class="youtube"
     width="560"
     height="315"
     src="https://www.youtube-nocookie.com/embed/ek_0vgJyiAE"
@@ -55,7 +55,6 @@ of regular vocal training:
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
-</div>
 </figure>
 
 ## supplement
