@@ -89,12 +89,12 @@ body > header {
     & > input {
       position: absolute;
 
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 2rem;
+      height: 2rem;
       margin: auto;
 
-      top: calc(50% - 0.75rem);
-      left: calc(50% - 0.75rem);
+      top: calc(50% - 1rem);
+      left: calc(50% - 1rem);
 
       z-index: 3;
       opacity: 0;
@@ -161,7 +161,7 @@ body > header {
       margin-top: -7rem;
 
       transform-origin: 0% 0%;
-      transform: translate(100%, 0);
+      transform: translate(5rem, 0);
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
       background-color: var(--bg-alpha);
