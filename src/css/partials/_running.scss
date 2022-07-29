@@ -89,12 +89,12 @@ body > header {
     & > input {
       position: absolute;
 
-      width: 1rem;
-      height: 1rem;
+      width: 1.5rem;
+      height: 1.5rem;
       margin: auto;
 
-      top: calc(50% - 0.5rem);
-      left: calc(50% - 0.5rem);
+      top: calc(50% - 0.75rem);
+      left: calc(50% - 0.75rem);
 
       z-index: 3;
       opacity: 0;
