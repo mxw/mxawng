@@ -16,7 +16,7 @@
 {%- else %}
   <script
       type="text/javascript"
-    {%- if site.dev %}
+    {%- if jekyll.environment == 'development' %}
       src="/js/{{ js }}.js"
     {%- else %}
       src="/js/{{ js }}.{{ site.static_version }}.js"

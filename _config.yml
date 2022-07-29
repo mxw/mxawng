@@ -8,11 +8,6 @@ image: /img/cover.png
 source: src
 exclude: [ts]
 
-# during development, run:
-#
-# jekyll serve --config _config.yml,_config_dev.yml
-dev: false
-
 #-------------------------------------------------
 # static resources
 #
@@ -20,7 +15,7 @@ dev: false
 # bumping it forces clients to bypass cache.  see the rewrite rule
 # in mxawng.nginx.
 
-static_version: 9
+static_version: 10
 
 sass:
   implementation: sass-embedded

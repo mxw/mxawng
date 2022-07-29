@@ -50,7 +50,7 @@
 
   {%- for css in styles -%}
   {%- capture href -%}
-    {%- if site.dev -%}
+    {%- if jekyll.environment == 'development' %}
       /css/{{ css }}.css
     {%- else -%}
       /css/{{ css }}.{{ site.static_version }}.css
@@ -67,7 +67,7 @@
   {%- comment %} <!-- external scripts --> {% endcomment %}
   {%- assign scripts = site.scripts | merge: layout.scripts | merge: page.scripts | uniq -%}
   {%- if scripts contains 'react' -%}
-    {%- if site.dev %}
+    {%- if jekyll.environment == 'development' %}
       <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
       <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     {%- else %}

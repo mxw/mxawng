@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "mxawng's personal website",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "webpack && JEKYLL_ENV=production jekyll build"
   },
   "repository": {
     "type": "git",
