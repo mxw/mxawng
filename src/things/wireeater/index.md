@@ -1,6 +1,7 @@
 ---
 title: wireeater
 subtitle: look at me! i'm a publication!
+description: various recommendations from me, max!
 layout: default
 scripts: [react, gen/wireeater]
 styles: [pages/wireeater]

@@ -1,6 +1,7 @@
 ---
 title: contact
 subtitle: talk to me, i'm an extrovert!
+description: "sooo many ways to contact me :0"
 layout: page
 styles: [pages/contact]
 ---

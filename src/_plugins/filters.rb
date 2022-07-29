@@ -40,7 +40,7 @@ module Jekyll
 
     # replace all extents of whitespace with ' '
     def condense_spaces(input)
-      input.gsub(/\s{2,}/, ' ')
+      input.gsub(/\n/, ' ').gsub(/\s{2,}/, ' ')
     end
 
     def raw_content(input)
