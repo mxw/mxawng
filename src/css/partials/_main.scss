@@ -36,12 +36,11 @@ body {
   }
 
   & > main {
-    margin-bottom: rhythm.rh(2);
+    margin-bottom: auto;
   }
 
   & > footer {
-    margin-top: auto;
-    margin-bottom: rhythm.rh(2);
+    @include rhythm.margins(2);
   }
 }
 
