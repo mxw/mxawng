@@ -7,6 +7,10 @@ figure#sib {
   width: 560px;
 }
 
+iframe.soundcloud {
+  border-radius: 3px; // soundcloud sets this on some inner div
+}
+
 .youtube-figure {
   @include media.tablet {
     width: 80%;

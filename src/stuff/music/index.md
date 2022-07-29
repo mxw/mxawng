@@ -21,6 +21,7 @@ both using recorded sound as the source material:
 
 <figure class="full">
   <iframe
+    class="soundcloud"
     width="100%"
     height="128"
     scrolling="no"
@@ -32,6 +33,7 @@ both using recorded sound as the source material:
 
 <figure class="full">
   <iframe
+    class="soundcloud"
     width="100%"
     height="128"
     scrolling="no"
