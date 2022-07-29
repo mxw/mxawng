@@ -29,6 +29,8 @@ sass:
 scripts: [rhythm]
 styles: [site]
 
+root_dir: _root   # for favicons, etc.; @see: _plugins/copy-root.rb
+
 #-------------------------------------------------
 # posts & collections
 

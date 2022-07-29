@@ -21,10 +21,15 @@
   <meta name="description" content="{{ desc }}">
   <meta name="image" content="{{ image }}">
 
-  {% comment %} <!-- mobile metas --> {% endcomment %}
+  {% comment %} <!-- mobile --> {% endcomment %}
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% comment %} <!-- icons --> {% endcomment %}
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
 
   {% comment %} <!-- social media --> {% endcomment %}
   <meta property="og:title" content="{{ title | strip }}">
