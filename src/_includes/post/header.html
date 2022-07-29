@@ -1,21 +1,22 @@
-{% if post.cover %}
-  <figure class="cover norhythm right h-margins {{post.cover.css-classes}}">
-    {% if post.cover.link %}
-      <a href="{{ post.cover.path }}">
-    {% endif %}
-      <img
-        title="{{ post.cover.title }}"
-        src="{{ post.cover.path }}"
-        style="width: 100%;" />
-    {% if post.cover.link %}
-      </a>
-    {% endif %}
-  </figure>
-{% endif %}
+{%- if post.cover %}
+<figure class="cover norhythm right h-margins {{post.cover.css-classes}}">
+  {%- if post.cover.link %}
+  <a href="{{ post.cover.path }}">
+  {%- endif %}
+    <img
+      title="{{ post.cover.title }}"
+      src="{{ post.cover.path }}"
+      style="width: 100%;" />
+  {%- if post.cover.link %}
+  </a>
+  {%- endif %}
+</figure>
+{%- endif %}
+
 <header>
   <h1 class="title">
-    {% if post.url != page.url %}
-      {% if post.external %}
+    {%- if post.url != page.url -%}
+      {%- if post.external %}
         <a href="{{ post.external }}" target="_blank">
           <span>{{ post.title }}</span>
           <svg
@@ -29,22 +30,22 @@
             <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"></path>
           </svg>
         </a>
-      {% else %}
+      {%- else %}
         <a href="{{ post.url }}"><span>{{ post.title }}</span></a>
-      {% endif %}
-    {% else %}
+      {%- endif -%}
+    {%- else %}
       {{ post.title }}
-    {% endif %}
+    {%- endif %}
   </h1>
-  {% if post.title2 %}
+  {% if post.title2 -%}
     <h2 class="subtitle">{{ post.title2 }}</h2>
-  {% endif %}
+  {%- endif -%}
 
-  {% if post.date %}
-    {% unless post.nodate %}
+  {%- if post.date -%}
+    {%- unless post.nodate %}
       <time class="date" datetime="{{ post.date | date: "%Y-%m-%d" }}">
         {{ post.date | date: "%A, %B %e, %Y" | downcase }}
       </time>
-    {% endunless %}
-  {% endif %}
+    {%- endunless -%}
+  {%- endif %}
 </header>

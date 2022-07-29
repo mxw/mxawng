@@ -3,13 +3,13 @@
 {% include head.html %}
 
 <body>
-  {% include header.html %}
+{% include header.html %}
 
-  <main role="main">
-    {{ content }}
-  </main>
+<main role="main">
+  {{ content | indent: 2 | strip }}
+</main>
 
-  {% include footer.html %}
-  {% include after.html %}
+{% include footer.html %}
+{% include after.html %}
 </body>
 </html>

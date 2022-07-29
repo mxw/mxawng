@@ -1,79 +1,78 @@
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="{{ site.author }}">
 
-  {% capture title %}
-    {% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}
-  {% endcapture %}
+  {%- capture title -%}
+    {%- if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}
+  {%- endcapture -%}
 
-  {% capture description %}
-    {% if page.description %}
+  {%- capture description -%}
+    {%- if page.description -%}
       {{ page.description }}
-    {% else %}
+    {%- else -%}
       {{ content | raw_content | strip_html | condense_spaces }}
-    {% endif %}
-  {% endcapture %}
-  {% assign desc = description | truncate_sentences: 2 %}
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- assign desc = description | truncate_sentences: 2 -%}
 
-  {% assign image = site.url | append: site.image %}
+  {%- assign image = site.url | append: site.image -%}
 
-  <title>{{ title | strip }}</title>
+  {%- comment %} <!-- front matter --> {% endcomment %}
+  <meta name="author" content="{{ site.author }}">
+  <title>{{ title }}</title>
   <meta name="description" content="{{ desc }}">
   <meta name="image" content="{{ image }}">
 
-  {% comment %} <!-- mobile --> {% endcomment %}
+  {%- comment %} <!-- mobile --> {% endcomment %}
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% comment %} <!-- icons --> {% endcomment %}
+  {%- comment %} <!-- icons --> {% endcomment %}
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
 
-  {% comment %} <!-- social media --> {% endcomment %}
-  <meta property="og:title" content="{{ title | strip }}">
+  {%- comment %} <!-- social media --> {% endcomment %}
+  <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:description" content="{{ desc }}">
   <meta property="og:image" content="{{ image }}">
   <meta property="og:locale" content="en_US">
-
   <meta name="twitter:creator" content="@mxawng">
-  <meta name="twitter:title" content="{{ title | strip }}">
+  <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ desc }}">
   <meta name="twitter:image" content="{{ image }}">
   <meta name="twitter:card" content="summary_large_image">
 
-  {% comment %} <!-- css --> {% endcomment %}
-  {% assign styles = site.styles | merge: layout.styles | merge: page.styles %}
-  {% for css in styles %}
-    <link
-      rel="stylesheet"
-      type="text/css"
-      {% if site.dev %}
-        href="/css/{{ css }}.css"
-      {% else %}
-        href="/css/{{ css }}.{{ site.static_version }}.css"
-      {% endif %}
-    >
-  {% endfor %}
+  {%- comment %} <!-- css --> {% endcomment %}
+  {%- assign styles = site.styles | merge: layout.styles | merge: page.styles -%}
 
-  {% comment %} <!-- webfonts --> {% endcomment %}
+  {%- for css in styles -%}
+  {%- capture href -%}
+    {%- if site.dev -%}
+      /css/{{ css }}.css
+    {%- else -%}
+      /css/{{ css }}.{{ site.static_version }}.css
+    {%- endif -%}
+  {%- endcapture %}
+  <link rel="stylesheet" type="text/css" href="{{ href }}">
+  {%- endfor -%}
+
+  {%- comment %} <!-- webfonts --> {% endcomment %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
-  {% comment %} <!-- external scripts --> {% endcomment %}
-  {% assign scripts = site.scripts | merge: layout.scripts | merge: page.scripts | uniq %}
-  {% if scripts contains 'react' %}
-    {% if site.dev %}
+  {%- comment %} <!-- external scripts --> {% endcomment %}
+  {%- assign scripts = site.scripts | merge: layout.scripts | merge: page.scripts | uniq -%}
+  {%- if scripts contains 'react' -%}
+    {%- if site.dev %}
       <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
       <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    {% else %}
+    {%- else %}
       <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
       <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    {% endif %}
-  {% endif %}
+    {%- endif -%}
+  {%- endif %}
 </head>

@@ -14,44 +14,34 @@
       <span></span>
       <span></span>
       <ul>
-        {% for link in site.nav %}
-          <li
-            {% if link.url == page.url %}
-              class="here"
-            {% endif %}
-          >
-            <span>
-              <a href="{{ link.url }}"
-                {% if link.tab %}
-                  target="_blank"
-                {% endif %}
-              >{{ link.name }}</a>
-            </span>
-            {% if link.submenu %}
-              <ul class="submenu">
-                {% for sublink in link.submenu %}
-                  <li
-                    {% if sublink.url == page.url %}
-                      class="here"
-                    {% endif %}
-                  >
-                    <span>
-                      <a href="{{ sublink.url }}">{{ sublink.name }}</a>
-                    </span>
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
+        {%- for link in site.nav %}
+        <li {%- if link.url == page.url %} class="here" {%- endif -%}>
+          <span>
+            <a href="{{ link.url }}" {%- if link.tab %} target="_blank" {%- endif -%}>
+              {{ link.name }}
+            </a>
+          </span>
+          {%- if link.submenu %}
+            <ul class="submenu">
+              {%- for sublink in link.submenu %}
+              <li {%- if sublink.url == page.url %} class="here" {%- endif -%}>
+                <span>
+                  <a href="{{ sublink.url }}">{{ sublink.name }}</a>
+                </span>
+              </li>
+              {%- endfor %}
+            </ul>
+          {%- endif %}
+        </li>
+        {%- endfor %}
       </ul>
     </nav>
   </div>
   <h2>
-    {% if page.subtitle or page.nosubtitle %}
+    {%- if page.subtitle or page.nosubtitle -%}
       {{ page.subtitle }}
-    {% else %}
+    {%- else -%}
       {{ site.subtitle }}
-    {% endif %}
+    {%- endif -%}
   </h2>
 </header>

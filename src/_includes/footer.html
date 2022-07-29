@@ -1,15 +1,15 @@
 <footer role="contentinfo">
   <nav class="footnav">
     <a href="/">&#x22c8;</span>
-    {% for link in site.nav %}
-      {% if link.tab %}
+    {%- for link in site.nav -%}
+      {%- if link.tab %}
         <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
-      {% elsif link.url == page.url %}
+      {%- elsif link.url == page.url %}
         <a href="{{ link.url }}">{{ link.name }}</a>
-      {% else %}
+      {%- else %}
         <a href="{{ link.url }}">{{ link.name }}</a>
-      {% endif %}
-    {% endfor %}
+      {%- endif -%}
+    {%- endfor %}
   </nav>
   <hr />
   <span class="copyright">

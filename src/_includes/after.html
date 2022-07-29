@@ -1,26 +1,26 @@
-{% if page.collection == 'posts' %}
+{%- if page.collection == 'posts' -%}
   {% include social/facebook.html %}
-{% endif %}
+{%- endif -%}
 
-{% assign scripts = site.scripts | merge: layout.scripts | merge: page.scripts | uniq %}
-{% for js in scripts %}
-  {% if js == 'jquery' %}
-    <script
+{%- assign scripts = site.scripts | merge: layout.scripts | merge: page.scripts | uniq -%}
+
+{%- for js in scripts -%}
+{%- if js == 'jquery' %}
+  <script
+    type="text/javascript"
+    src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+{%- elsif js == 'react' -%}
+  {%- comment -%} <!-- handled in head.html --> {%- endcomment -%}
+  {%- continue -%}
+{%- else %}
+  <script
       type="text/javascript"
-      src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-    </script>
-  {% elsif js == 'react' %}
-    {% comment %} <!-- handled in head.html --> {% endcomment %}
-    {% continue %}
-  {% else %}
-    <script
-      type="text/javascript"
-      {% if site.dev %}
-        src="/js/{{ js }}.js"
-      {% else %}
-        src="/js/{{ js }}.{{ site.static_version }}.js"
-      {% endif %}
-    >
-    </script>
-  {% endif %}
-{% endfor %}
+    {%- if site.dev %}
+      src="/js/{{ js }}.js"
+    {%- else %}
+      src="/js/{{ js }}.{{ site.static_version }}.js"
+    {%- endif -%}>
+  </script>
+{%- endif -%}
+{%- endfor -%}

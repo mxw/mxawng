@@ -43,6 +43,11 @@ module Jekyll
       input.gsub(/\n/, ' ').gsub(/\s{2,}/, ' ')
     end
 
+    # add `num` spaces in front of every line in `input`
+    def indent(input, num)
+      input.gsub(/^/, ' ' * num)
+    end
+
     def raw_content(input)
       /<section class="\w*-content">(?<raw>.*?)<\/section>\s*<(footer|\/article)>/m =~ input
       return (raw.nil?) ? input : strip_headings(raw)

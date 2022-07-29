@@ -1,30 +1,33 @@
-{% for post in include.posts %}
-  <article class="post">
-    {% include post/header.html %}
-    <section class="post-content">
-      {% assign has_excerpt = post.raw_content | has_excerpt %}
-      {% if has_excerpt %}
-        {%
+{%- for post in include.posts %}
+<article class="post">
+  {% include post/header.html %}
+  <section class="post-content">
+    {%- capture excerpt -%}
+      {%- assign has_excerpt = post.raw_content | has_excerpt -%}
+      {%- if has_excerpt -%}
+        {%-
           assign stuff = post.raw_content
             | excerpt
             | strip
             | prepend: "&hellip; "
             | markdownify
-        %}
-        {% unless post.keepcase %}
+        -%}
+        {%- unless post.keepcase -%}
           {{ stuff | downcase }}
-        {% else %}
+        {%- else -%}
           {{ stuff }}
-        {% endunless %}
-      {% elsif post.content contains site.excerpt_separator %}
-        {% unless post.keepcase %}
+        {%- endunless -%}
+      {%- elsif post.content contains site.excerpt_separator -%}
+        {%- unless post.keepcase -%}
           {{ post.excerpt | downcase }}
-        {% else %}
+        {%- else -%}
           {{ post.excerpt }}
-        {% endunless %}
-      {% else %}
+        {%- endunless -%}
+      {%- else -%}
         {{ post.content }}
-      {% endif %}
-    </section>
-  </article>
+      {%- endif -%}
+    {%- endcapture %}
+    {{ excerpt | indent: 4 | strip }}
+  </section>
+</article>
 {% endfor %}
