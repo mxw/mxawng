@@ -21,7 +21,7 @@
             {% endif %}
           >
             <span>
-              <a href={{ link.url }}
+              <a href="{{ link.url }}"
                 {% if link.tab %}
                   target="_blank"
                 {% endif %}
@@ -36,7 +36,7 @@
                     {% endif %}
                   >
                     <span>
-                      <a href={{ sublink.url }}>{{ sublink.name }}</a>
+                      <a href="{{ sublink.url }}">{{ sublink.name }}</a>
                     </span>
                   </li>
                 {% endfor %}
