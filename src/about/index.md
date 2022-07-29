@@ -91,7 +91,7 @@ all about?
 > you should piece together some choice quotes from a Q review or something.
 > <cite>anonymous</cite>
 
-> there are other people about whom I have worse things to say.
+> there are other people about whom i have worse things to say.
 > <cite>anonymous</cite>
 
 > we're all born ted cruz and we all aspire to become max wang.
