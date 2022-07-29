@@ -34,6 +34,7 @@ $green: #009961;
   --fg-dark:    #bbbbbb;
   --fg-darker:  #888888;
   --fg-darkest: #515151;
+  --bg-alpha: #{with-alpha(#161615, 0.88)};
 
   --accent-color: #{$teal};
   --accent-dark: #067373;

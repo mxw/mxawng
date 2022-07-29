@@ -1,7 +1,18 @@
 <header role="banner">
   <div>
     <h1><a href="/">mxawng</a></h1>
-    <nav role="navigation" class="sitenav">
+    <nav role="navigation" id="sitenav">
+      <input
+        type="checkbox"
+        onclick="(() => {
+          const overflow = this.checked ? 'hidden' : '';
+          document.documentElement.style.overflow = overflow;
+          document.body.style.overflow = overflow;
+        })();"
+      />
+      <span></span>
+      <span></span>
+      <span></span>
       <ul>
         {% for link in site.nav %}
           <li
@@ -9,13 +20,15 @@
               class="here"
             {% endif %}
           >
-            <a href={{ link.url }}
-              {% if link.tab %}
-                target="_blank"
-              {% endif %}
-            >
-              {{ link.name }}
-            </a>
+            <span>
+              <a href={{ link.url }}
+                {% if link.tab %}
+                  target="_blank"
+                {% endif %}
+              >
+                {{ link.name }}
+              </a>
+            </span>
             {% if link.submenu %}
               <ul class="submenu">
                 {% for sublink in link.submenu %}
@@ -24,7 +37,9 @@
                       class="here"
                     {% endif %}
                   >
-                    <a href={{ sublink.url }}>{{ sublink.name }}</a>
+                    <span>
+                      <a href={{ sublink.url }}>{{ sublink.name }}</a>
+                    </span>
                   </li>
                 {% endfor %}
               </ul>
