@@ -61,4 +61,4 @@ const rhythm = function() {
   };
 }();
 
-rhythm.adjust('figure');
+window.addEventListener('load', ev => rhythm.adjust('figure'));
