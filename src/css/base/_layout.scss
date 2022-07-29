@@ -20,25 +20,27 @@ $pad-normal: $pad-min * 4;
 
 body {
   text-size-adjust: none;
+  min-height: 100vh;
+
+  padding-left: $pad-min;
+  padding-right: $pad-min;
+
+  @include media.narrow {
+    padding-left: $pad-narrow;
+    padding-right: $pad-narrow;
+  }
+  @include media.tablet {
+    padding-left: $pad-tablet;
+    padding-right: $pad-tablet;
+  }
+  @include media.desktop {
+    padding-left: $pad-normal;
+    padding-right: $pad-normal;
+  }
 
   & > header, & > footer, & > main {
     max-width: $max-width;
-
-    padding-left: $pad-min;
-    padding-right: $pad-min;
-
-    @include media.narrow {
-      padding-left: $pad-narrow;
-      padding-right: $pad-narrow;
-    }
-    @include media.tablet {
-      padding-left: $pad-tablet;
-      padding-right: $pad-tablet;
-    }
-    @include media.desktop {
-      padding-left: $pad-normal;
-      padding-right: $pad-normal;
-    }
+    width: 100%;
   }
 }
 

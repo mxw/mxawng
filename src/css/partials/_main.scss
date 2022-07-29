@@ -24,6 +24,31 @@
 //
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > header {
+    @include rhythm.margins(3);
+    @include media.tablet {
+      @include rhythm.margins(4);
+    }
+  }
+
+  & > main {
+    margin-bottom: rhythm.rh(2);
+  }
+
+  & > footer {
+    margin-top: auto;
+    margin-bottom: rhythm.rh(2);
+  }
+}
+
+//----------------------------------------------------------
+// body colors and fonts
+
+body {
   @include rhythm.rhythm(1.25rem);
   font-weight: 300;
 
@@ -33,8 +58,6 @@ body {
   & > main {
     @include flex.vertical;
     gap: 2rem;
-
-    margin: auto;
 
     & > article {
       width: 100%;

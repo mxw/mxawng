@@ -26,14 +26,8 @@
 
 body > header {
   @include flex.vertical;
-  margin: auto;
 
   @include rhythm.rhythm(fonts.$h1);
-
-  @include rhythm.margins(3);
-  @include media.tablet {
-    @include rhythm.margins(4);
-  }
 
   // rule for site header layout:
   //
@@ -70,11 +64,6 @@ body > header {
 // mobile nav
 //
 // modified from: https://codepen.io/shieldsma91/pen/zLpbLX
-
-.nav-noscroll {
-  overflow: hidden;
-  height: 100%;
-}
 
 @media (hover: none) {
   nav#sitenav {
@@ -298,10 +287,7 @@ body > footer {
     gap: 1.5em;
   }
 
-  margin: auto;
-
   @include rhythm.rhythm(1rem);
-  @include rhythm.margins(2);
   text-align: center;
 
   color: var(--fg-darker);
