@@ -194,22 +194,22 @@ mark {
   left: 0;
   right: 0;
   bottom: 0;
+  padding: 2rem;
 
   z-index: 5; // to go over hamburger menu
 
   @include flex.row-center;
+  justify-content: center;
 
   background-color: rgba(0, 0, 0, 0.69);
 }
 
 .wireeater-viewer {
-  margin: auto;
   overflow: auto;
   outline: none;
 }
 
 .wireeater-viewer-container {
-  margin: 1.5rem;
 }
 
 img.wireeater-viewer-img {
