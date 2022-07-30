@@ -17,9 +17,10 @@
         {%- for link in site.nav %}
         <li {%- if link.url == page.url %} class="here" {%- endif -%}>
           <span>
-            <a href="{{ link.url }}" {%- if link.tab %} target="_blank" {%- endif -%}>
-              {{ link.name }}
-            </a>
+            <a href="{{ link.url }}"
+              {%- if link.tab %} target="_blank" {%- endif -%}
+              {%- comment -%} the following must be one-line! {%- endcomment -%}
+            >{{ link.name }}</a>
           </span>
           {%- if link.submenu %}
             <ul class="submenu">
