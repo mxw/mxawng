@@ -16,7 +16,7 @@ surprised when i say that i consider my primary artistry to be my performance
 of my self.
 
 what does that mean?  well, you can watch this instructional video to learn
-more.
+more!
 
 i am in fact a wholly aesthetics-driven person and pretty much all my beliefs,
 ethics, and interests are just aesthetic taste if you look under the hood.

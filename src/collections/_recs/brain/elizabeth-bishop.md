@@ -21,7 +21,7 @@ every portrayal and how it also portrays herself has changed the way i write,
 to be at once more decisive and more orbital.
 
 representation is fraught work, and too stable a word risks really _capturing_
-the subject, which, you know, is really you, or whatever.
+the subject, which, you know, is also you, or whatever.
 
 on a lighter note, peter sacks also taught me the word "poiesis", which i now
 use all over in the privacy of my own digital organization systems.
