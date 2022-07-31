@@ -4,6 +4,8 @@
 
 import * as React from 'react';
 
+import kk from 'utils/karmarkar-karp';
+
 export class Bricklayer extends React.Component<
   Bricklayer.Props,
   Bricklayer.State
@@ -54,18 +56,11 @@ export class Bricklayer extends React.Component<
   }
 
   renderColumns() {
-    const ncolumns = this.state.ncolumns;
-
-    const cols: (typeof this.props.children)[][] =
-      Array.from({length: ncolumns}, () => []);
-
-    const colsizes = cols.map(_ => 0);
-
-    React.Children.forEach(this.props.children, (child) => {
-      const idx = colsizes.indexOf(Math.min(...colsizes));
-      colsizes[idx] += this.props.sizeHint?.(child) ?? 1;
-      cols[idx].push(child);
-    });
+    const cols = kk(
+      this.props.children as (typeof this.props.children)[],
+      this.state.ncolumns,
+      this.props.sizeHint ?? (_ => 1)
+    );
 
     const { useStyles = true } = this.props;
 
