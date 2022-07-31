@@ -20,14 +20,16 @@ and with self-representation.  the delicateness with which bishop investigates
 every portrayal and how it also portrays herself has changed the way i write,
 to be at once more decisive and more orbital.
 
-representation is fraught work, and too stable a word risks really _capturing_
-the subject, which, you know, is also you, or whatever.
+art is fraught work, in which the same precision we use to represent a subject
+also _captures_ that subject, and also ourselves (if, in representation, it's
+even possible to make such a distinction).
 
-on a lighter note, peter sacks also taught me the word "poiesis", which i now
-use all over in the privacy of my own digital organization systems.
+on a lighter note, peter sacks also taught me the word "[poiesis][poiesis]",
+which i now use all over in the privacy of my own digital organization systems.
 
 my favorite of bishop's poems is the very last one she published during her
 lifetime,  <mark>five flights up</mark>, which you can read [here][ffu].
 
 
+[poiesis]: https://en.wikipedia.org/wiki/Poiesis
 [ffu]: https://fsgworkinprogress.com/2015/04/14/five-flights-up/

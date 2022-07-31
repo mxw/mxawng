@@ -16,9 +16,9 @@ other boba for me.  the owner tonie makes all her boba by hand, entirely from
 scratch---just tapioca, water, and a starchy vegetable for color and texture,
 not hydrated from a powder mix like most "homemade" boba.  she uses
 custom-balanced blends of imported leaf teas assembled with astonishing
-attention to detail---the ice cubes are made of frozen tea.  the drinks are
-sweetened with maple syrup to layer in flavor.  the milk teas are served with
-cream for extra richness.  she even makes nut milk in-house for the
+attention to detail---the ice cubes are even made of frozen tea.  the drinks
+are sweetened with maple syrup to layer in flavor.  the milk teas are served
+with cream for extra richness.  she even makes nut milk in-house for the
 dairy-averse.
 
 i'm not a regular!tea drinker, but drinking tonie's teas has given me a better

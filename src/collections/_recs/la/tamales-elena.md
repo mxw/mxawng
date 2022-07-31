@@ -18,6 +18,6 @@ every order comes with salsa rojo and salsa verde in little baggies.  the rojo
 is, i think, habanero based, and was way too hot for me (especially in the
 summer heat).  the jalapeno and cilantro <mark>salsa verde</mark> was perfect.
 
-when i went, the little restaurant had closed and only the truck was open.
-it's open until it sells out, which was around 11 a.m. on weekdays and 12.30
-p.m. on weekends.
+when i was in town, the little restaurant had shut down but the food truck was
+running.  it's open until it sells out, which was around 11 a.m. on weekdays
+and 12.30 p.m. on weekends.

@@ -20,7 +20,7 @@ over lamb raised a bit of an eyebrow.  but growing up, there was a whole decade
 where, whenever i'd visit family in beijing, chicken skewers from street
 vendors was all i'd eat outside of my mom's cooking.  le sia nails its beijing
 flavors---and to be honest, in {{ 'now' | date: "%Y" }}, it pretty much nails
-the price, too.
+the beijing prices, too.
 
 i go to le sia for beijing food every few days whenever i'm in new york (and
 even more if i'm dancing at BDC, since it's literally around the corner).  if

@@ -25,11 +25,11 @@ connectedness that hideo kuze wanted to facilitate, or to symbolize, or to
 simply become.
 
 aesthetically, it also invents a vision of the future that's at once visually
-thrilling, optimistic, and unsettling, and the animation is solid quality and
-surprisingly soulful.
+thrilling, optimistic, and unsettling, and the animation is fluid, blocked well
+and surprisingly soulful.
 
 i like the dub for this one because i think the voice acting interprets the
-tone of the show quite well---togusa's journalistic recounting, batou's
+tone of the show thoughtfully---togusa's journalistic recounting, batou's
 confident and impassioned introspectiveness, and aramaki's... idk, but his
 voice matches his hair.  both <mark>ghost in the shell: stand alone
 complex</mark> and <mark>ghost in the shell: s.a.c. 2nd gig</mark> are

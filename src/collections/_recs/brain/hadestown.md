@@ -18,8 +18,8 @@ not to be a fuckin' hipster, but imo the broadway version of the show is... not
 great.  for me, what made the show such a vital evolution of the [concept
 album][ca] were the chants and the further development of the epics.  in the
 NYTW and NT versions of the show, chant ii and epic iii in particular manage to
-portray the varied complexity of relationship conflicts, and then draw an
-in-story parallel between the troubles of the gods and those of orpheus and
+portray the varied complexity of relationship conflicts, and then draw a
+narrative parallel between the troubles of the gods and those of orpheus and
 eurydice.  what results is a timeless (and authentically greek myth!) sense of
 relatability---love is hard, trying, laborious, and ultimately, rejuvenating,
 for gods, men, and the earth alike.
