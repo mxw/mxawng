@@ -17,22 +17,40 @@ function styleFor(pic: CardCover.PicDesc) {
   return style;
 }
 
-const PhotoViewer: React.FC<{pics: CardCover.PicDesc[]}> = ({ pics }) => {
-  return <>
-    <div className="wireeater-viewer-container">
-      <picture className="wireeater-viewer-picture">
-        <source
-          srcSet={`/img/wireeater/${pics[0].filename}.webp`}
-          type="image/webp"
-        />
-        <img
-          className="wireeater-viewer-img"
-          src={`/img/wireeater/${pics[0].filename}.jpg`}
-          title={pics[0].title}
-        />
-      </picture>
-    </div>
-  </>;
+const PhotoViewer: React.FC<CardCover.Props> = ({ pics, embed }) => {
+  if (pics) {
+    return <>
+      <div className="wireeater-viewer-container">
+        <picture className="wireeater-viewer-picture">
+          <source
+            srcSet={`/img/wireeater/${pics[0].filename}.webp`}
+            type="image/webp"
+          />
+          <img
+            className="wireeater-viewer-img"
+            src={`/img/wireeater/${pics[0].filename}.jpg`}
+            title={pics[0].title}
+          />
+        </picture>
+      </div>
+    </>;
+  }
+
+  if (embed) {
+    return <>
+      <div className="wireeater-viewer-container">
+        <picture className="wireeater-viewer-picture">
+          <img
+            className="wireeater-viewer-img"
+            src={embed.handle}
+            title={embed.desc}
+          />
+        </picture>
+      </div>
+    </>;
+  }
+
+  return null;
 }
 
 //-----------------------------------------------------------------------------
@@ -76,11 +94,25 @@ export class CardCover extends React.Component<
     const embed = this.props.embed!;
 
     switch (embed.kind) {
+      case 'image':   return this.renderExternalImage(embed);
       case 'youtube': return <YoutubeEmbed handle={embed.handle} />;
       case 'spotify': return <SpotifyEmbed handle={embed.handle} />;
     }
     return null;
   }
+
+  renderExternalImage(embed: CardCover.EmbedDesc) {
+    return <picture className="wireeater-card-picture">
+      <img
+        className="wireeater-card-img"
+        src={embed.handle}
+        title={embed.desc}
+        onClick={() => this.setState(
+          (state) => ({...state, viewer_open: true})
+        )}
+      />
+    </picture>;
+  };
 
   renderCoverPhoto() {
     return <picture className="wireeater-card-picture">
@@ -137,11 +169,12 @@ export namespace CardCover {
     crop_pos?: string;
   };
 
-  export type EmbedKind = 'youtube' | 'spotify';
+  export type EmbedKind = 'image' | 'youtube' | 'spotify';
 
   export interface EmbedDesc {
     kind: EmbedKind;
     handle: string;
+    desc?: string;
   };
 
   export type Props = {
