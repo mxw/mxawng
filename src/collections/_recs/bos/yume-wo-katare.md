@@ -25,7 +25,7 @@ been improving his craft.
 i can't say i remember just how yume ramen tasted ten years ago compared to
 today, except that it was delicious.  but i know that it's still improving, and
 it's easily the best in town today (and currently it's the only boston-area
-ramen i really like.)
+ramen i really like).
 
 the recent changes that stand out to me: the chashu has gotten a lot better in
 both texture and flavor; and something about the balance of the dish has made
