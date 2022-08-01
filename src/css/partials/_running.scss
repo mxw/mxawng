@@ -215,6 +215,7 @@ body > header {
       font-weight: 700;
 
       & > span > a {
+        display: inline-block;
         text-decoration: none;
       }
       &.here > span > a {
@@ -236,7 +237,6 @@ body > header {
         @include nav-li;
 
         & > span > a {
-          display: block;
           @include rhythm.margins(0.5);
         }
 
