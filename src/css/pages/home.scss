@@ -17,6 +17,15 @@
 
   margin: 0 auto;
 
+  // -layout.$pad-min for full-bleed on mobile
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include media.narrow {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   a {
     line-height: 0;
   }
