@@ -7,6 +7,11 @@ pics:
   - filename: le-sia
     title: 鸡肉串儿 at le sia
     crop_pos: 50% 33.33%
+  - filename: le-sia-gedetang
+    title: 疙瘩汤 at le sia
+    crop_pos: 50% 40%
+  - filename: le-sia-feiniu
+    title: 锡纸金针菇肥牛 at le sia
 link: https://www.lesianyc.com/
 rank: 1
 ---

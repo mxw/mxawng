@@ -6,6 +6,8 @@ tags: [food]
 pics:
   - filename: tortas-ahogadas-ameca
     title: pozole at tortas ahogadas ameca
+  - filename: tortas-ahogadas-ameca-pescado
+    title: taco de pescado at tortas ahogadas ameca
 link: https://www.instagram.com/tortasahogadasameca/
 ---
 
