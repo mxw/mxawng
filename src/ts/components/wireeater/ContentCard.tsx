@@ -46,6 +46,7 @@ export class ContentCard extends React.Component<
     return (
       <div className="wireeater-card-container">
         <CardCover
+          key={this.props.title}
           pics={this.props.pics}
           embed={this.props.embed}
         />
