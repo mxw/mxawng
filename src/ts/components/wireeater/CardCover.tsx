@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 import ReactModal from 'react-modal';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import CSS from 'csstype';
 
 
@@ -17,19 +18,22 @@ function styleFor(pic: CardCover.PicDesc) {
   return style;
 }
 
-const PhotoViewer: React.FC<CardCover.Props> = ({ pics, embed }) => {
-  if (pics) {
+const PhotoViewer: React.FC<{
+  pic: CardCover.PicDesc | null;
+  embed: CardCover.EmbedDesc | null;
+}> = ({ pic, embed }) => {
+  if (pic) {
     return <>
       <div className="wireeater-viewer-container">
         <picture className="wireeater-viewer-picture">
           <source
-            srcSet={`/img/wireeater/${pics[0].filename}.webp`}
+            srcSet={`/img/wireeater/${pic.filename}.webp`}
             type="image/webp"
           />
           <img
             className="wireeater-viewer-img"
-            src={`/img/wireeater/${pics[0].filename}.jpg`}
-            title={pics[0].title}
+            src={`/img/wireeater/${pic.filename}.jpg`}
+            title={pic.title}
           />
         </picture>
       </div>
@@ -57,7 +61,7 @@ const PhotoViewer: React.FC<CardCover.Props> = ({ pics, embed }) => {
 
 const YoutubeEmbed: React.FC<{handle: string}> = ({ handle }) => {
   return <iframe
-    className="wireeater-card-embed youtube"
+    className="wireeater-cover-embed youtube"
     src={`https://www.youtube-nocookie.com/embed/${handle}`}
     title="YouTube video player"
     frameBorder="0"
@@ -68,7 +72,7 @@ const YoutubeEmbed: React.FC<{handle: string}> = ({ handle }) => {
 
 const SpotifyEmbed: React.FC<{handle: string}> = ({ handle }) => {
   return <iframe
-    className="wireeater-card-embed spotify"
+    className="wireeater-cover-embed spotify"
     src={`https://open.spotify.com/embed/track/${handle}?utm_source=generator`}
     frameBorder="0"
     allowFullScreen={false}
@@ -86,8 +90,40 @@ export class CardCover extends React.Component<
     super(props);
 
     this.state = {
+      cur_photo: 0,
       viewer_open: false,
     };
+  }
+
+  renderExternalImage(embed: CardCover.EmbedDesc) {
+    return <picture className="wireeater-cover-picture">
+      <img
+        className="wireeater-cover-img"
+        src={embed.handle}
+        title={embed.desc}
+        onClick={() => this.setState(
+          (state) => ({...state, viewer_open: true})
+        )}
+      />
+    </picture>;
+  };
+
+  renderLocalImage(i: number) {
+    return <picture className="wireeater-cover-picture">
+      <source
+        srcSet={`/img/wireeater/${this.props.pics[i].filename}.webp`}
+        type="image/webp"
+      />
+      <img
+        className="wireeater-cover-img"
+        src={`/img/wireeater/${this.props.pics[i].filename}.jpg`}
+        title={this.props.pics[i].title}
+        style={styleFor(this.props.pics[i])}
+        onClick={() => this.setState(
+          (state) => ({...state, viewer_open: true})
+        )}
+      />
+    </picture>;
   }
 
   renderCoverEmbed() {
@@ -101,35 +137,40 @@ export class CardCover extends React.Component<
     return null;
   }
 
-  renderExternalImage(embed: CardCover.EmbedDesc) {
-    return <picture className="wireeater-card-picture">
-      <img
-        className="wireeater-card-img"
-        src={embed.handle}
-        title={embed.desc}
-        onClick={() => this.setState(
-          (state) => ({...state, viewer_open: true})
-        )}
-      />
-    </picture>;
-  };
-
   renderCoverPhoto() {
-    return <picture className="wireeater-card-picture">
-      <source
-        srcSet={`/img/wireeater/${this.props.pics[0].filename}.webp`}
-        type="image/webp"
+    const npics = this.props.pics.length;
+
+    if (npics === 1) {
+      return <div className="wireeater-cover-viewer">
+        {this.renderLocalImage(this.state.cur_photo)}
+      </div>;
+    }
+
+    return <>
+      <button
+        className="wireeater-cover-button wireeater-cover-left"
+        onClick={() => this.setState((state) => ({
+          ...state,
+          cur_photo: (state.cur_photo - 1 + npics) % npics,
+        }))}
       />
-      <img
-        className="wireeater-card-img"
-        src={`/img/wireeater/${this.props.pics[0].filename}.jpg`}
-        title={this.props.pics[0].title}
-        style={styleFor(this.props.pics[0])}
-        onClick={() => this.setState(
-          (state) => ({...state, viewer_open: true})
-        )}
+      <TransitionGroup className="wireeater-cover-viewer">
+        <CSSTransition
+          key={this.state.cur_photo}
+          classNames="wireeater-cover-fade"
+          timeout={1000}
+        >
+          {this.renderLocalImage(this.state.cur_photo)}
+        </CSSTransition>
+      </TransitionGroup>
+      <button
+        className="wireeater-cover-button wireeater-cover-right"
+        onClick={() => this.setState((state) => ({
+          ...state,
+          cur_photo: (state.cur_photo + 1) % npics,
+        }))}
       />
-    </picture>;
+    </>;
   }
 
   renderCover() {
@@ -148,7 +189,10 @@ export class CardCover extends React.Component<
       className="wireeater-viewer"
       overlayClassName="wireeater-viewer-overlay"
     >
-      <PhotoViewer {...this.props} />
+      <PhotoViewer
+        pic={this.props.pics?.[this.state.cur_photo]}
+        embed={this.props.embed}
+      />
     </ReactModal>
   }
 
@@ -182,6 +226,7 @@ export namespace CardCover {
     embed: EmbedDesc | null;
   };
   export type State = {
+    cur_photo: number;
     viewer_open: boolean;
   };
 }
