@@ -4,8 +4,10 @@ categories: [bos]
 tags: [food]
 
 pics:
-  - filename: tech-support
-    title: photo forthcoming!
+  - filename: ifresh-noodle
+    title: spicy oil biang biang noodles from ifresh
+  - filename: ifresh-noodle-liang-pi
+    title: liang pi (凉皮) from ifresh
 link: http://www.ifreshnoodle.com/
 ---
 

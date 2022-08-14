@@ -4,8 +4,8 @@ categories: [bos]
 tags: [food]
 
 pics:
-  - filename: tech-support
-    title: photo forthcoming!
+  - filename: genes
+    title: hot & sour hand-pulled noodles from gene&#39;s
 link: https://genescafe.com/
 ---
 
