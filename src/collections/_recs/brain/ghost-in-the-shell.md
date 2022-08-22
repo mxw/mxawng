@@ -6,7 +6,7 @@ tags: [watch]
 embed:
   kind: image
   handle: https://media1.tenor.com/images/62d75fd108012244a07851b28f9d5574/tenor.gif
-  desc: i thought what i&#39;d do was, i&#39;d pretend i was one of those deaf-mutes
+  desc: i thought what i'd do was, i'd pretend i was one of those deaf-mutes
 link: https://www.adultswim.com/videos/ghost-in-the-shell
 rank: 1
 ---

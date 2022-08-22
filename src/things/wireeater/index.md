@@ -37,10 +37,10 @@ styles: [pages/wireeater]
           data-categories="{{ rec.categories | join: " " }}"
           data-tags="{{ rec.tags | join: " " }}"
           {% if rec.pics %}
-          data-pics='{{ rec.pics | jsonify }}'
+          data-pics='{{ rec.pics | jsonify | escape_once }}'
           {% endif %}
           {% if rec.embed %}
-          data-embed='{{ rec.embed | jsonify }}'
+          data-embed='{{ rec.embed | jsonify | escape_once }}'
           {% endif %}
           {% if rec.link %}
           data-link="{{ rec.link }}"

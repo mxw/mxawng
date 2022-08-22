@@ -11,6 +11,8 @@ import { Wireeater } from 'components/wireeater/Wireeater';
 
 ReactModal.setAppElement('body');
 
+//-----------------------------------------------------------------------------
+
 function data_map<T>(id: string, func: (elem: HTMLElement) => T): T[] {
   const data_container = document.getElementById(id);
   return [...data_container.children].map(elem_ => {
@@ -18,6 +20,8 @@ function data_map<T>(id: string, func: (elem: HTMLElement) => T): T[] {
     return func(elem);
   });
 };
+
+//-----------------------------------------------------------------------------
 
 const container = document.getElementById('wireeater-container');
 
