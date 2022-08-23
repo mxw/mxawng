@@ -3,10 +3,10 @@ title: "ghost in the shell: sac"
 categories: [brain]
 tags: [watch]
 
-embed:
-  kind: image
-  handle: https://media1.tenor.com/images/62d75fd108012244a07851b28f9d5574/tenor.gif
-  desc: i thought what i'd do was, i'd pretend i was one of those deaf-mutes
+pics:
+  - filename: https://media1.tenor.com/images/62d75fd108012244a07851b28f9d5574/tenor.gif
+    title: i thought what i'd do was, i'd pretend i was one of those deaf-mutes
+    external: true
 link: https://www.adultswim.com/videos/ghost-in-the-shell
 rank: 1
 ---

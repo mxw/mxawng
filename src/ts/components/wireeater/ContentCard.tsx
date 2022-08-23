@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 
+import { Piccy } from 'components/utils/Piccy';
 import { CardCover } from 'components/wireeater/CardCover';
 
 export class ContentCard extends React.Component<
@@ -67,7 +68,7 @@ export namespace ContentCard {
     title: string;
     categories: string[];
     tags: string[];
-    pics: CardCover.PicDesc[] | null;
+    pics: Piccy.Desc[] | null;
     embed: CardCover.EmbedDesc | null;
     link: string | null;
     innerHTML: string;
