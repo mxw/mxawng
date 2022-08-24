@@ -4,7 +4,9 @@
 
 import * as React from 'react';
 
+import { ExternalIcon } from 'components/utils/ExternalIcon';
 import { Piccy } from 'components/utils/Piccy';
+
 import { CardCover } from 'components/wireeater/CardCover';
 
 export class ContentCard extends React.Component<
@@ -21,16 +23,7 @@ export class ContentCard extends React.Component<
         <h2 className="wireeater-card-title">
           <a href={this.props.link} target="_blank">
             <span>{this.props.title}</span>
-            <svg
-              className="external-icon"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"></path>
-            </svg>
+            <ExternalIcon />
           </a>
         </h2>
       );
