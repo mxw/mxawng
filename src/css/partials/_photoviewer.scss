@@ -6,13 +6,15 @@
 
 $prefix: '' !default;
 
+$pad: 2rem;
+
 .#{$prefix}-viewer-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 2rem;
+  padding: $pad;
 
   z-index: 5; // to go over wireeater hamburger menu
 
@@ -31,7 +33,7 @@ $prefix: '' !default;
 }
 
 img.#{$prefix}-viewer-img {
-  max-width: calc(100vw - 3rem);
-  max-height: calc(100vh - 3rem);
+  max-width: calc(100vw - 2 * $pad);
+  max-height: calc(100vh - 2 * $pad);
   object-fit: scale-down;
 }
