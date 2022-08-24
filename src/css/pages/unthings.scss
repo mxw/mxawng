@@ -217,7 +217,7 @@ hr.unthings-item-pricediv {
 }
 
 .unthings-item-buy {
-  background-color: initial;
+  background-color: var(--accent-alpha);
   border-color: var(--accent-lite);
   color: inherit;
 
@@ -227,9 +227,9 @@ hr.unthings-item-pricediv {
 
   cursor: pointer;
 
-  transition: background-color var(--defocus-time);
+  transition: transform 0.1s;
   &:hover {
-    background-color: var(--accent-alpha);
+    transform: scale(1.1) rotate(4deg);
   }
   &:before {
     content: 'buy it!';

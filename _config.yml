@@ -15,7 +15,7 @@ exclude: [ts]
 # bumping it forces clients to bypass cache.  see the rewrite rule
 # in mxawng.nginx.
 
-static_version: 12
+static_version: 13
 
 sass:
   implementation: sass-embedded
