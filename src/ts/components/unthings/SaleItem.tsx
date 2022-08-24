@@ -71,7 +71,7 @@ export const SaleItem: React.FC<ItemDesc> = (props) => {
             <button
               className="unthings-item-buy"
               onClick={() => window.open(
-                buylink + encodeURIComponent(props.title),
+                buylink + encodeURIComponent(`${props.title} ($${props.price})`),
                 '_blank', 'noopener,noreferrer'
               )}
             >
