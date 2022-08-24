@@ -1,7 +1,7 @@
 ---
 title: Uniqlo red cashmere turtleneck
 tags: [clothing]
-price: 10
+price: 11
 msrp: 49.90
 size: XS
 
