@@ -13,7 +13,8 @@ pics:
 link: https://www.amazon.com/gp/product/B00I2U62J8/
 ---
 
-v-necks in grass green and dark grey, as pictured.  rarely worn.
+v-necks, rarely worn.  one in grass green and two in dark grey, as pictured.
 
 these sueded shirts are the softest shirts i've ever encountered.  i own a
-bunch as basics, i just don't like these two colors.
+bunch as basics, i just don't like these two colors.  they're longer than the
+average t-shirt, so good for tall skinny people.

@@ -1,6 +1,6 @@
 ---
 title: Pokemon Go-tcha charger
-tags: [electronics]
+tags: [electronics, gaming]
 price: 0
 msrp: 3.25
 
