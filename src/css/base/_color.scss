@@ -41,6 +41,7 @@ $green: #009961;
   --accent-lite: #{lighten-accent($teal)};
   --accent-desat: #{color.scale($teal, $blackness: 42%, $whiteness: 31%)};
   --accent-alpha: #{with-alpha($teal, 0.42)};
+  --accent-alpha-er: #{with-alpha($teal, 0.75)};
 
   --accent-left: #{$fuchsia};
   --accent-left-dark: #730B57;

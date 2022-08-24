@@ -43,11 +43,11 @@ const PhotoViewer: React.FC<Piccy.PropsOne> = ({
     : localImg(pic.filename);
 
   return <>
-    <div className="${prefix}-viewer-container">
-      <picture className="${prefix}-viewer-picture">
+    <div className={`${prefix}-viewer-container`}>
+      <picture className={`${prefix}-viewer-picture`}>
         <Sources pic={pic} localSrcs={localSrcs} />
         <img
-          className="${prefix}-viewer-img"
+          className={`${prefix}-viewer-img`}
           src={src}
           title={pic.title}
         />
@@ -76,10 +76,10 @@ export class Piccy extends React.Component<Piccy.Props, Piccy.State> {
       ? pic.filename
       : this.props.localImg(pic.filename);
 
-    return <picture className={`${prefix}-cover-picture`}>
+    return <picture className={`${prefix}-piccy-picture`}>
       <Sources pic={pic} localSrcs={this.props.localSrcs} />
       <img
-        className={`${prefix}-cover-img`}
+        className={`${prefix}-piccy-img`}
         src={src}
         title={pic.title}
         style={styleFor(pic)}
@@ -114,36 +114,36 @@ export class Piccy extends React.Component<Piccy.Props, Piccy.State> {
     const prefix = this.props.classPrefix;
 
     if (npics === 1) {
-      return <div className={`${prefix}-cover-viewer`}>
+      return <div className={`${prefix}-piccy-viewer`}>
         {this.renderPicture(this.state.cur_photo)}
       </div>;
     }
 
-    return <>
+    return <div className={`${prefix}-piccy-container`}>
       <button
-        className={`${prefix}-cover-button ${prefix}-cover-left`}
+        className={`${prefix}-piccy-button ${prefix}-piccy-left`}
         onClick={() => this.setState((state) => ({
           ...state,
           cur_photo: (state.cur_photo - 1 + npics) % npics,
         }))}
       />
-      <TransitionGroup className={`${prefix}-cover-viewer`}>
+      <TransitionGroup className={`${prefix}-piccy-viewer`}>
         <CSSTransition
           key={this.state.cur_photo}
-          classNames={`${prefix}-cover-fade`}
+          classNames={`${prefix}-piccy-fade`}
           timeout={1000}
         >
           {this.renderPicture(this.state.cur_photo)}
         </CSSTransition>
       </TransitionGroup>
       <button
-        className={`${prefix}-cover-button ${prefix}-cover-right`}
+        className={`${prefix}-piccy-button ${prefix}-piccy-right`}
         onClick={() => this.setState((state) => ({
           ...state,
           cur_photo: (state.cur_photo + 1) % npics,
         }))}
       />
-    </>;
+    </div>;
   }
 
   render() {

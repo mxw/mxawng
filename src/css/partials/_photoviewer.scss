@@ -4,7 +4,7 @@
 
 @use 'common/flex';
 
-$prefix: 'photo' !default;
+$prefix: '' !default;
 
 .#{$prefix}-viewer-overlay {
   position: fixed;

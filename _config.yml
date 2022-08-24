@@ -15,7 +15,7 @@ exclude: [ts]
 # bumping it forces clients to bypass cache.  see the rewrite rule
 # in mxawng.nginx.
 
-static_version: 11
+static_version: 12
 
 sass:
   implementation: sass-embedded
@@ -64,6 +64,8 @@ collections:
 #      - name: software
 #        display: stuff inside my laptop
     sort_by: rank
+  sale:
+    sort_by: price
 
 excerpt_separator: "<!--more-->"
 

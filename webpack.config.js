@@ -52,7 +52,13 @@ const common = outfile => ({
   },
 });
 
-module.exports = {
-  entry: './src/ts/entries/wireeater.tsx',
-  ...common('wireeater.js')
-};
+module.exports = [
+  {
+    entry: './src/ts/entries/wireeater.tsx',
+    ...common('wireeater.js')
+  },
+  {
+    entry: './src/ts/entries/unthings.tsx',
+    ...common('unthings.js')
+  },
+];
