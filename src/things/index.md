@@ -14,5 +14,6 @@ recommendations website](/things/wireeater/), which is subordinate to my
 website in much the same way that a publication might be subordinate, say, to
 the new york times or to vox media.
 
-one day there will be [more things](/things/unthings/) here but, uh, not yet,
-because i am slow.
+if you feel either of those ways about my taste in physical objects and
+commercial goods in particular, please help me [dispossess](/things/unthings/)
+myself of some things i no longer want.
