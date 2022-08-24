@@ -120,6 +120,11 @@ img.unthings-piccy-img {
   width: 100%;
 }
 
+.unthings-item-title {
+  font-weight: 500;
+  // & > a { font-weight: 500; }
+}
+
 svg.external-icon {
   width: 1.5rem;
   height: 1.5rem;
