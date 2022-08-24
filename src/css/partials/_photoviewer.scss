@@ -1,0 +1,37 @@
+/*
+ * <Piccy> photo viewer modal
+ */
+
+@use 'common/flex';
+
+$prefix: 'photo' !default;
+
+.#{$prefix}-viewer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+
+  z-index: 5; // to go over wireeater hamburger menu
+
+  @include flex.row-center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+.#{$prefix}-viewer {
+  overflow: auto;
+  outline: none;
+}
+
+.#{$prefix}-viewer-container {
+}
+
+img.#{$prefix}-viewer-img {
+  max-width: calc(100vw - 3rem);
+  max-height: calc(100vh - 3rem);
+  object-fit: scale-down;
+}
