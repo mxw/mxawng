@@ -1,5 +1,5 @@
 mxawng
-------
+======
 
 this is my personal website, powered by jekyll, and housed on github for
 personal convenience.  a few credits:
@@ -16,7 +16,7 @@ other accreditation can be found inline in the source and on the about page for
 the [site itself](https://mxawng.com/about/site/).
 
 
-### copyright & license
+## copyright & license
 
 my code here is released under an MIT license, but NOT my writing, photos, or
 other content.  in other words, the licensed Software includes:
