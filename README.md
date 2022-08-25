@@ -16,6 +16,30 @@ other accreditation can be found inline in the source and on the about page for
 the [site itself](https://mxawng.com/about/site/).
 
 
+### copyright & license
+
+my code here is released under an MIT license, but NOT my writing, photos, or
+other content.  in other words, the licensed Software includes:
+
+- the directory structure and file paths
+- config files in the toplevel directory
+- jekyll plugins in `src/_plugins/`
+- templates in `src/_{includes,layouts}/` and `things/{wireeater,unthings}/`
+- static resources in `src/{css,js,ts}/`
+
+the Software notably does not include:
+
+- other Markdown (`.md`) and HTML (`.html)` files, such as pages, collections,
+  and posts
+- image files and pdfs, such as photos and favicons, in `src/_root/`,
+  `src/img/` and elsewhere
+
+all of which are protected under full copyright (c) 2012-present Max Wang.
+
+the images in `src/img/icons/` are not mine and belong to their respective
+trademark holders or to the public domain.
+
+
 [1]: https://github.com/imathis/octopress
 [2]: http://compass-style.org/
 [3]: https://medium.com/@allizadrozny/using-webpack-and-react-with-jekyll-cfe137f8a2cc
