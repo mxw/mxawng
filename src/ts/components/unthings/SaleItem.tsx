@@ -41,6 +41,18 @@ export const SaleItem: React.FC<ItemDesc> = (props) => {
     </span>
   );
 
+  const msrp = () => (
+    <>
+      <hr className="unthings-item-pricediv"></hr>
+      <span className="unthings-item-msrp">
+        {props.msrp.toFixed(2)}
+      </span>
+      <span className="unthings-item-discount">
+        {discount}
+      </span>
+    </>
+  );
+
   const discount = Math.round((props.price / props.msrp) * 100);
 
   return (
@@ -61,13 +73,7 @@ export const SaleItem: React.FC<ItemDesc> = (props) => {
             <span className="unthings-item-price">
               {props.obo ? `${props.price} OBO` : props.price}
             </span>
-            <hr className="unthings-item-pricediv"></hr>
-            <span className="unthings-item-msrp">
-              {props.msrp.toFixed(2)}
-            </span>
-            <span className="unthings-item-discount">
-              {discount}
-            </span>
+            {props.msrp !== 0 ? msrp() : null}
             <button
               className="unthings-item-buy"
               onClick={() => window.open(
