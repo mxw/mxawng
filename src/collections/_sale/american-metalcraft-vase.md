@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: American Metalcraft tiny ceramic vase
 tags: [household]
 price: 0

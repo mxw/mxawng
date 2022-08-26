@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: IKEA VITTSJÖ laptop stand
 tags: [household]
 price: 25

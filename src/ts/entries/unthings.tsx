@@ -48,6 +48,10 @@ let items = data_map('unthings-data-items', elem => ({
 const index = items.find(item => item.title === 'index');
 items = items.filter(item => item.title !== 'index');
 
+items = items.filter((x) => !x.sold).concat(
+  items.filter((x) => x.sold)
+);
+
 const root = ReactDOMClient.createRoot(container!);
 root.render(
   <Unthings

@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: dress shirt, white, John Ashford
 tags: [clothing, shirts]
 price: 2

@@ -53,10 +53,30 @@ export const SaleItem: React.FC<ItemDesc> = (props) => {
     </>
   );
 
+  const buy = () => (
+    <button
+      className="unthings-item-buy"
+      onClick={() => window.open(
+        buylink + encodeURIComponent(`${props.title} ($${props.price})`),
+        '_blank', 'noopener,noreferrer'
+      )}
+    >
+    </button>
+  );
+
+  const sold = () => (
+    <span className="unthings-item-sold">
+    </span>
+  );
+
   const discount = Math.round((props.price / props.msrp) * 100);
 
+  const cn = props.sold
+    ? "unthings-item unthings-sold"
+    : "unthings-item";
+
   return (
-    <div className="unthings-item">
+    <div className={cn}>
       <Piccy
         pics={props.pics}
         classPrefix="unthings"
@@ -74,14 +94,7 @@ export const SaleItem: React.FC<ItemDesc> = (props) => {
               {props.obo ? `${props.price} OBO` : props.price}
             </span>
             {props.msrp !== 0 ? msrp() : null}
-            <button
-              className="unthings-item-buy"
-              onClick={() => window.open(
-                buylink + encodeURIComponent(`${props.title} ($${props.price})`),
-                '_blank', 'noopener,noreferrer'
-              )}
-            >
-            </button>
+            {props.sold ? sold() : buy()}
           </div>
         </header>
         <div

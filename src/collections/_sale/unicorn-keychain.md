@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: unicorn keychain
 tags: [accessories]
 price: 0
