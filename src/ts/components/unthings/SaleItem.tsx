@@ -78,6 +78,7 @@ export const SaleItem: React.FC<ItemDesc> = (props) => {
   return (
     <div className={cn}>
       <Piccy
+        key={props.title}
         pics={props.pics}
         classPrefix="unthings"
         localImg={(x) => x}
