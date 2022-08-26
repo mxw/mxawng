@@ -1,6 +1,6 @@
 ---
 title: Uniqlo linen long-sleeve shirt
-tags: [clothing]
+tags: [clothing, shirts]
 price: 4
 msrp: 19.90
 size: XS

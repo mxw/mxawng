@@ -1,7 +1,7 @@
 ---
 title: Uniqlo Aerism masks
 tags: [clothing]
-price: 0
+price: 2
 msrp: 9.90
 size: L
 
@@ -13,7 +13,7 @@ pics:
 link: https://www.uniqlo.com/us/en/products/E437784-000/00?colorDisplayCode=00&sizeDisplayCode=005
 ---
 
-reusable cloth masks.  round shape and profile.
+reusable cloth masks.  round shape and profile.  price is for a set of 3.
 
 i tried to use these for dance but they weren't sweat-wicking enough.  i have
 three each of white and black, please take any and all.

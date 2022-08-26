@@ -1,6 +1,6 @@
 ---
 title: prAna Stretch Zion pants
-tags: [clothing, outdoors]
+tags: [clothing, outdoors, pants]
 price: 40
 obo: true
 msrp: 94.95

@@ -129,6 +129,8 @@ export class Unthings extends React.Component<
           placeholder="filter items by tag"
           value={this.state.selected.map(tag => ({value: tag, label: tag}))}
 
+          maxMenuHeight={400}
+
           onChange={(options: SelectOption[]) => {
             this.setState((state, props) => ({
               ...state,

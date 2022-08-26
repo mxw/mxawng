@@ -1,6 +1,6 @@
 ---
 title: Next Level v-neck t-shirts
-tags: [clothing]
+tags: [clothing, shirts]
 price: 2
 msrp: 10
 size: S
