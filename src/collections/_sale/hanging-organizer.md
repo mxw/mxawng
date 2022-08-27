@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: Honey-Can-Do 8-shelf hanging organizer
 tags: [household]
 price: 3
