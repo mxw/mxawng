@@ -1,7 +1,7 @@
 ---
 title: Tile Mate
 tags: [electronics]
-price: 5
+price: 7
 msrp: 16.99
 
 pics:
@@ -12,5 +12,5 @@ link: https://www.amazon.com/Tile-RE-19001-Mate-1-Pack/dp/B07W9BBCTB
 
 inferior apple airtags.
 
-i have two gently used tile mates for $5 (which i can transfer ownership of),
-and one unused one for $8.
+i have two gently used tile mates for $7 (which i can transfer ownership of),
+and one unused one for $10.
