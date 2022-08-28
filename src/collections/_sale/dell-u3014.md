@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: Dell UltraSharp U3014 monitor, broken
 tags: [electronics]
 price: 5

@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: spindown d20s
 tags: [gaming]
 price: 0

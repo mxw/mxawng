@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: clear plastic coat hangers
 tags: [household]
 price: 0

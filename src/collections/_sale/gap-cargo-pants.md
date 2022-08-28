@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: cargo pants, olive, Gap
 tags: [clothing, pants]
 price: 3

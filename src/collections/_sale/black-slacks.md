@@ -1,7 +1,9 @@
 ---
+sold: true
+
 title: black slacks, Kenneth Cole
 tags: [clothing, pants]
-price: 2
+price: 3
 msrp: 0
 size: 31x32
 

@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: Neatmaster ultrasonic pest repeller
 tags: [electronics]
 price: 1

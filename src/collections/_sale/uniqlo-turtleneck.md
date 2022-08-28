@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: Uniqlo red cashmere turtleneck
 tags: [clothing, shirts]
 price: 15

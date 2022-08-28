@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: bubble things
 tags: [household]
 price: 0

@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: Uniqlo linen long-sleeve shirt
 tags: [clothing, shirts]
 price: 4

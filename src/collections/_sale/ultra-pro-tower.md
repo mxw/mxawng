@@ -1,8 +1,10 @@
 ---
+sold: true
+
 title: Ultra Pro Pro-Tower deck box
 tags: [gaming]
-price: 10
-msrp: 34.95
+price: 30
+msrp: 38.99
 
 pics:
   - filename: https://m.media-amazon.com/images/I/91eU27VvPiL._AC_SX679_.jpg

@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: dress shirt, blue, Arrow
 tags: [clothing, shirts]
 price: 2

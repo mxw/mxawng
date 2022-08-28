@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: dress shirt, purple, Express 1MX
 tags: [clothing, shirts]
 price: 2

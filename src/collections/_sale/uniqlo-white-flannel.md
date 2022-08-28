@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: Uniqlo white flannel
 tags: [clothing, shirts]
 price: 8
