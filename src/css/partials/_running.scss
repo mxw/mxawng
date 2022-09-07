@@ -65,6 +65,8 @@ body > header {
 //
 // modified from: https://codepen.io/shieldsma91/pen/zLpbLX
 
+$curve: cubic-bezier(0.75,0.2,0.15,1.0);
+
 @media (hover: none) {
   nav#sitenav {
     @include flex.vertical;
@@ -85,7 +87,7 @@ body > header {
       top: calc(50% - 1rem);
       left: calc(50% - 1rem);
 
-      z-index: 3;
+      z-index: 4;
       opacity: 0;
     }
 
@@ -94,14 +96,14 @@ body > header {
       display: flex;
       width: 1.75rem;
       height: 0.25rem;
-      z-index: 2;
+      z-index: 3;
 
       background: var(--fg-color);
       border-radius: 0.25rem;
 
       transition: #{
-        transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        transform 0.5s $curve,
+        background 0.5s $curve,
         opacity 0.55s ease
       };
 
@@ -111,6 +113,20 @@ body > header {
       &:nth-of-type(3) {
         transform-origin: 0% 100%;
       }
+    }
+
+    // overlay
+    & > div {
+      position: fixed;
+      width: 0;
+      height: 0;
+      top: 0%;
+      left: 0%;
+
+      background-color: var(--bg-color);
+      opacity: 0;
+
+      transition: opacity 0.5s $curve;
     }
 
     @mixin nav-ul {
@@ -142,7 +158,7 @@ body > header {
 
     & > ul {
       position: absolute;
-      z-index: 1;
+      z-index: 2;
 
       width: 80vw;
       height: 100vh;
@@ -151,7 +167,7 @@ body > header {
 
       transform-origin: 0% 0%;
       transform: translate(5rem, 0);
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      transition: transform 0.5s $curve;
 
       background-color: var(--bg-alpha);
       backdrop-filter: blur(5px);
@@ -186,6 +202,11 @@ body > header {
       }
       & ~ ul {
         transform: translate(-12rem);
+      }
+      & ~ div {
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.5;
       }
     }
   }
