@@ -123,7 +123,7 @@ export class Unthings extends React.Component<
 
           isMulti
           isClearable
-          isSearchable
+          isSearchable={false}
 
           options={[...this.props.tags].map((t) => ({value: t, label: t}))}
           placeholder="filter items by tag"
