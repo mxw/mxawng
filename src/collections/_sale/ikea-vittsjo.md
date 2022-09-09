@@ -2,7 +2,7 @@
 sold: true
 
 title: IKEA VITTSJÖ laptop stand
-tags: [household]
+tags: [furnishing]
 price: 25
 msrp: 39.99
 
