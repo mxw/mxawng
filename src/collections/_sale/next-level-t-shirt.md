@@ -11,6 +11,7 @@ pics:
   - filename: https://m.media-amazon.com/images/I/61ir45ux0gL._AC_UX569_.jpg
     external: true
 link: https://www.amazon.com/gp/product/B00I2U62J8/
+bg: white
 ---
 
 v-necks, rarely worn.  one in grass green and two in dark grey, as pictured.

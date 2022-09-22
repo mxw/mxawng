@@ -8,6 +8,7 @@ pics:
   - filename: https://m.media-amazon.com/images/I/81nCzX+EoML._AC_UY625_.jpg
     external: true
 link: https://www.amazon.com/gp/product/B06ZXV99W5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+bg: white
 ---
 
 63"-long shoelaces.  they've got a nice to stretch to them, but i was looking

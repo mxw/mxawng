@@ -8,6 +8,7 @@ pics:
   - filename: https://i.ebayimg.com/images/g/UgkAAOSwnUthcFxZ/s-l500.jpg
     external: true
 link: https://www.amazon.com/Christmas-Holiday-Comfort-Thicken-Supplies/dp/B0989C1LNK/
+bg: white
 ---
 
 for almost a decade, i have been trying to find a copy of the perfect, most

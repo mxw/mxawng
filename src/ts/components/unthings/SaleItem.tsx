@@ -21,6 +21,7 @@ export type ItemDesc = {
 
   pics: Piccy.Desc[];
   link: string | null;
+  bg: string | null;
   innerHTML: string;
 };
 
@@ -79,6 +80,7 @@ export const SaleItem: React.FC<ItemDesc> = (props) => {
     <div className={cn}>
       <Piccy
         key={props.title}
+        style={props.bg ? { background: props.bg } : undefined}
         pics={props.pics}
         classPrefix="unthings"
         localImg={(x) => x}

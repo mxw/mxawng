@@ -8,6 +8,7 @@ pics:
   - filename: https://m.media-amazon.com/images/I/81vkN0c98FL._AC_SX679_.jpg
     external: true
 link: https://www.amazon.com/gp/product/B009WU5EG4/
+bg: white
 ---
 
 magic: the gathering card pocket pages that can in theory hold other cards i

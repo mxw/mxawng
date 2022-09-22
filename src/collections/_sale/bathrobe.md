@@ -9,6 +9,7 @@ pics:
   - filename: https://m.media-amazon.com/images/I/71ZwLL6vwJL._AC_SX679_.jpg
     external: true
 link: https://www.amazon.com/gp/product/B08QSTDQD5/
+bg: white
 ---
 
 worn once as costumes by non-me people.  one each in XS and L sizes.

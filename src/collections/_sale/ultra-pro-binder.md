@@ -8,6 +8,7 @@ pics:
   - filename: https://m.media-amazon.com/images/I/51kj8-SdenL._AC_.jpg
     external: true
 link: https://www.amazon.com/gp/product/B004FVJDV2/
+bg: white
 ---
 
 cute li'l padded binder for magic cards.

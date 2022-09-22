@@ -10,6 +10,7 @@ pics:
   - filename: https://m.media-amazon.com/images/I/51WDJdSUN2L._AC_SY879_.jpg
     external: true
 link: https://www.amazon.com/gp/product/B001F51ADU/
+bg: white
 ---
 
 i used this when i moved into my first apartment and didn't have a conceptual

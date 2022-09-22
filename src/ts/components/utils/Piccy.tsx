@@ -114,9 +114,14 @@ export class Piccy extends React.Component<Piccy.Props, Piccy.State> {
     const prefix = this.props.classPrefix;
 
     if (npics === 1) {
-      return <div className={`${prefix}-piccy-viewer`}>
-        {this.renderPicture(this.state.cur_photo)}
-      </div>;
+      return (
+        <div
+          className={`${prefix}-piccy-viewer`}
+          style={this.props.style}
+        >
+          {this.renderPicture(this.state.cur_photo)}
+        </div>
+      );
     }
 
     return <div className={`${prefix}-piccy-container`}>
@@ -127,7 +132,10 @@ export class Piccy extends React.Component<Piccy.Props, Piccy.State> {
           cur_photo: (state.cur_photo - 1 + npics) % npics,
         }))}
       />
-      <TransitionGroup className={`${prefix}-piccy-viewer`}>
+      <TransitionGroup
+        className={`${prefix}-piccy-viewer`}
+        style={this.props.style}
+      >
         <CSSTransition
           key={this.state.cur_photo}
           classNames={`${prefix}-piccy-fade`}
@@ -164,13 +172,19 @@ export namespace Piccy {
 
   type PropsBase = {
     classPrefix: string;
+    // path munging for local image handles
     localImg: (x: string) => string;
+    // path munging for local image <source> srcsets. webp only lol.
     localSrcs: (x: string) => string[];
   };
 
   export type PropsOne = { pic: Piccy.Desc } & PropsBase;
 
-  export type Props = { pics: Piccy.Desc[] } & PropsBase;
+  export type Props = {
+    pics: Piccy.Desc[];
+    // style for the container div
+    style?: CSS.Properties;
+  } & PropsBase;
 
   export type State = {
     cur_photo: number;

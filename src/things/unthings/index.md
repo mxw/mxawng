@@ -41,6 +41,9 @@ styles: [pages/unthings]
         {%- if item.link %}
         data-link="{{ item.link }}"
         {%- endif %}
+        {%- if item.bg %}
+        data-bg="{{ item.bg }}"
+        {%- endif %}
       >
         {{ item.content | markdownify }}
       </div>

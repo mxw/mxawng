@@ -10,6 +10,7 @@ pics:
   - filename: https://m.media-amazon.com/images/I/71cKlD1Y7tL._AC_SX466_.jpg
     external: true
 link: https://www.amazon.com/Neatmaster-Ultrasonic-Repeller-Electronic-Repellent/dp/B07ZH4LZYF/
+bg: white
 ---
 
 NRFB mystery device.  my friend jess asked me if i wanted it and i said sure,

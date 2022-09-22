@@ -41,6 +41,7 @@ let items = data_map('unthings-data-items', elem => ({
 
   pics: elem.dataset.pics ? JSON.parse(elem.dataset.pics) : null,
   link: elem.dataset.link ?? null,
+  bg: elem.dataset.bg ?? null,
 
   innerHTML: elem.innerHTML,
 }));

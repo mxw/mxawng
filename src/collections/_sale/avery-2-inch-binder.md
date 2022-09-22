@@ -8,6 +8,7 @@ pics:
   - filename: https://m.media-amazon.com/images/I/91ybA11OuKL._AC_SX679_.jpg
     external: true
 link: https://www.amazon.com/gp/product/B000CD2HM4/
+bg: white
 ---
 
 🅱️ig 🅱️inder
