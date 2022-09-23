@@ -16,15 +16,15 @@
  * link styling for <a>link</a>
  */
 @mixin link($accent-color, $line-weight) {
-    a {
-      @include pf.text-decoration(underline, solid, $accent-color, $line-weight);
-      transition: color var(--defocus-time);
+  a {
+    @include pf.text-decoration(underline, solid, $accent-color, $line-weight);
+    transition: color var(--defocus-time);
 
-      &:hover {
-        color: $accent-color;
-        transition: color var(--focus-time);
-      }
+    &:hover {
+      color: $accent-color;
+      transition: color var(--focus-time);
     }
+  }
 }
 
 /*

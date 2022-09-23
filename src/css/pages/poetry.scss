@@ -1,0 +1,39 @@
+---
+---
+
+@use 'common/media';
+@use 'common/rhythm';
+@use 'common/theme';
+@use 'common/polyfill' as pf;
+
+section.poetry {
+  @include rhythm.leader(2.5);
+  @include rhythm.trailer(3.5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  & > div.divider:before {
+    @include rhythm.rhythm(2rem);
+    content: '* \00a0 * \00a0 *';
+  }
+}
+
+article.poem {
+  // centering
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  & > header {
+    @include rhythm.trailer(2);
+  }
+
+  user-select: none;
+}
+
+h1.title {
+  @include rhythm.rhythm(1.75rem);
+}

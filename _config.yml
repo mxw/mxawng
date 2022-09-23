@@ -15,7 +15,7 @@ exclude: [ts]
 # bumping it forces clients to bypass cache.  see the rewrite rule
 # in mxawng.nginx.
 
-static_version: 18
+static_version: 19
 
 sass:
   implementation: sass-embedded
@@ -32,6 +32,8 @@ root_dir: _root   # for favicons, etc.; @see: _plugins/copy-root.rb
 collections_dir: collections
 collections:
   externals: ~
+  poems:
+    sort_by: order
   code:
     sort_by: order
   recs:
