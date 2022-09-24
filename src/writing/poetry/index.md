@@ -8,6 +8,9 @@ styles: [pages/poetry]
 i find writing poetry very challenging and emotionally impenetrable.  i manage
 to do it only occasionally, but you can see some of my work here.
 
+- _( you appear to be reading this on a narrow phone-like device.  consider turning
+  it sideways for a less headachey experience. )_
+
 <section class="poetry">
 {%- assign poems = site.poems %}
 {%- for poem in poems %}

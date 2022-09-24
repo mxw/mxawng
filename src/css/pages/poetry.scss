@@ -6,6 +6,24 @@
 @use 'common/theme';
 @use 'common/polyfill' as pf;
 
+section.page-content {
+  // narrow screen warning
+  @include media.tablet {
+    & > ul {
+      display: none;
+    }
+  }
+  & > ul {
+    list-style-type: none;
+    position: relative;
+    & > li:before {
+      position: absolute;
+      left: 0.25em;
+      content: '⚠️'; // '⚠';
+    }
+  }
+}
+
 section.poetry {
   @include rhythm.leader(2.5);
   @include rhythm.trailer(3.5);
@@ -24,16 +42,21 @@ section.poetry {
 article.poem {
   // centering
   width: max-content;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 
   & > header {
     @include rhythm.trailer(2);
   }
-
   user-select: none;
 }
 
 h1.title {
   @include rhythm.rhythm(1.75rem);
+}
+
+section.poem-content {
+  white-space: nowrap;
+  overflow-x: auto;
 }
