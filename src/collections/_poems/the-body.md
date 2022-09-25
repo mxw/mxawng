@@ -29,7 +29,7 @@ so unbecoming as becoming.
 Few lives are lived. Most are mislaid,  
 as if marooned someplace between the is and land,  
 latent, as if being were too slight or still, and  
-its trembling blue dot marks where our bodies are laid.  
+its trembling blue dot marked where our bodies are laid.  
 Yet, I think every life ought to transpire: each foregone,  
 unprinted trail, each unmade desire, each wish is a tragedy;  
 therefore—in what is—there is only majesty.  
