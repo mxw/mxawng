@@ -1,0 +1,12 @@
+---
+---
+
+@use 'common/media';
+
+.youtube-figure {
+  @include media.tablet {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
