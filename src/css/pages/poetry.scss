@@ -28,35 +28,54 @@ section.poetry {
   @include rhythm.leader(2.5);
   @include rhythm.trailer(3.5);
 
+  margin-left: 5rem;
+  margin-right: 5rem;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
 
-  & > div.divider:before {
-    @include rhythm.rhythm(2rem);
-    content: '* \00a0 * \00a0 *';
+  & > div.divider {
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before {
+      @include rhythm.rhythm(1.75rem);
+      content: '* \00a0 * \00a0 *';
+    }
   }
+
+  @include rhythm.rhythm(1.125rem);
+  font-family: 'Avenir', 'Source Sans 3', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 100;
 }
 
 article.poem {
-  // centering
   width: max-content;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
 
   & > header {
     @include rhythm.trailer(2);
   }
-  user-select: none;
 }
 
 h1.title {
-  @include rhythm.rhythm(1.75rem);
+  @include rhythm.rhythm(1.625rem);
+
+  & > a {
+    font-weight: 700;
+
+    text-decoration-color: transparent;
+    &:hover { text-decoration-color: var(--accent-lite); }
+
+    transition: color var(--defocus-time), text-decoration-color var(--defocus-time);
+  }
 }
 
 section.poem-content {
   white-space: nowrap;
   overflow-x: auto;
+  user-select: none;
 }
