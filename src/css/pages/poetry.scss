@@ -59,7 +59,7 @@ article.poem {
   // margin-right: auto;
 
   & > header {
-    @include rhythm.trailer(2);
+    @include rhythm.trailer(1.5);
   }
 }
 
