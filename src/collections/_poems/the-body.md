@@ -8,9 +8,9 @@ Flesh is made of madness; it decomposes
 as microscopic mania, a trembling cacophony  
 of possibilities, inked out in some inscrutable cartography:  
 this is the chart that every birth composes.  
-Its orientation's unknown. Each fading, shallow stroke implies  
+Its orientation's unknown. Each shallow stroke implies  
 a start of questions, like the kindly wayside signs  
-instructing how to turn into or along these lines—  
+instruct how to turn into or along these lines—  
 or perhaps the moss-hewn bed where realization lies.
 
 How does a person travail this life? Are they like a boulder,  
