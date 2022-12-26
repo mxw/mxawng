@@ -28,8 +28,10 @@ section.poetry {
   @include rhythm.leader(2.5);
   @include rhythm.trailer(3.5);
 
-  margin-left: 5rem;
-  margin-right: 5rem;
+  @include media.tablet {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 
   display: flex;
   flex-direction: column;
