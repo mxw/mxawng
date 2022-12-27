@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: prAna Stretch Zion pants
 tags: [clothing, outdoors, pants]
 price: 40

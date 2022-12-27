@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: Hestra Army Leather Gore-Tex gloves
 tags: [clothing, outdoors]
 price: 95
