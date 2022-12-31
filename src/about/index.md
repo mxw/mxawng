@@ -13,16 +13,13 @@ that way about dressing myself sometimes and i still put on
 
 ## currently
 
-these days i'm mostly [practicing dance](/stuff/dance/).  i'm training my hip
-hop grooves and trying to spend more time on house.  i think one reason i enjoy
-dance is that i'm kind of terrible at it and i'm not used to feeling so bad at
-something for so long.
+these days i spend most of my unwasted time reading and occassionally [writing
+poetry](/stuff/poetry/).  much of my remaining time is spent convincing myself
+it is ok to prioritize this above other stuff i do, or to do any of the stuff i
+do at all.  i am thinking about maybe getting an MFA.
 
-another reason is probably that it lets me procrastinate my other stuff.  my
-other stuff includes vocal training, [making music](/stuff/music/), and writing
-[poetry](/writing/poetry/) and [screeds](/writing/).  i intend to try and do a
-music program or an MFA in poetry sometime soon™.
-
+other stuff i do includes vocal training, [making music](/stuff/music/),
+practicing house dance, and [dance videography](/stuff/dance/#videography).
 further down the procrastination pipeline, i sometimes play [magic: the
 gathering][mtg] and pokémon go.
 
