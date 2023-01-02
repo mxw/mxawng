@@ -1,6 +1,7 @@
 ---
 ---
 
+@use 'common/media';
 @use 'common/rhythm';
 @use 'common/theme';
 
@@ -12,11 +13,21 @@ article {
 
 .post-content {
   blockquote {
-    margin-left: 4rem;
+    @include rhythm.rhythm(1rem);
+    margin-left: 1rem;
+
+    @include media.tablet {
+      @include rhythm.rhythm(1.125rem);
+      margin-left: 4rem;
+    }
+
     padding-left: 1rem - rhythm.px-to-rem(2px);
     border-left: solid 2px var(--accent-color);
 
     font-style: initial;
-    text-align: justify;
+    text-align: initial;
+
+    white-space: nowrap;
+    overflow-x: auto;
   }
 }

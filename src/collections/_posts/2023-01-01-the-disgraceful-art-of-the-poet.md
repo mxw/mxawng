@@ -23,7 +23,7 @@ fact we are often unavoidably writing about ourselves, something which bishop
 makes urgently clear in many of these early poems, as she likewise makes clear
 in "cirque d'hiver".
 
-here's the text of the poem:
+here's the text of the poem (scrollable on mobile):
 
 > ### Cirque d'Hiver
 >  
