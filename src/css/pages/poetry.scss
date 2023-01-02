@@ -48,7 +48,7 @@ section.poetry {
   }
 
   @include rhythm.rhythm(1.125rem);
-  font-family: 'Avenir', 'Source Sans 3', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Avenir', theme.$sans-serif;
   font-weight: 100;
 }
 

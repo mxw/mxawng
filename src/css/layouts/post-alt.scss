@@ -1,0 +1,22 @@
+---
+---
+
+@use 'common/rhythm';
+@use 'common/theme';
+
+article {
+  @include rhythm.rhythm(1.125rem);
+  font-family: 'Avenir', theme.$sans-serif;
+  font-weight: 100;
+}
+
+.post-content {
+  blockquote {
+    margin-left: 4rem;
+    padding-left: 1rem - rhythm.px-to-rem(2px);
+    border-left: solid 2px var(--accent-color);
+
+    font-style: initial;
+    text-align: justify;
+  }
+}

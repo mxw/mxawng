@@ -5,6 +5,12 @@
 @use 'common/rhythm';
 @use 'common/polyfill' as pf;
 
+//-----------------------------------------------------------------------------
+
+$sans-serif: 'Source Sans 3', 'Helvetica', 'Arial', sans-serif;
+
+//-----------------------------------------------------------------------------
+
 @function accent-shadow($off-px) {
   @return #{
     rhythm.px-to-rem($off-px)     rhythm.px-to-rem($off-px)     var(--accent-left),
