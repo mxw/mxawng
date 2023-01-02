@@ -165,7 +165,7 @@ first glance, even more so than the superficially reflexive "he is the more
 intelligent by far". except!—it's a big tin key, the most self-evidently
 artifactual component of the toy horse. look as the poet winds up her subject
 and makes him go! see her fashion for him his own compassionate soul! to
-bishop, this is a sort of dishonesty, i think, and not something to be proud
+bishop, this is a profound dishonesty, i think, and not something to be proud
 of.
 
 except... is she not essential here, after all? without her poem, we would not
