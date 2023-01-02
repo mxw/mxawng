@@ -16,9 +16,15 @@ article {
     @include rhythm.rhythm(1rem);
     margin-left: 1rem;
 
+    white-space: nowrap;
+    overflow-x: auto;
+
     @include media.tablet {
       @include rhythm.rhythm(1.125rem);
       margin-left: 4rem;
+
+      white-space: initial;
+      overflow-x: initial;
     }
 
     padding-left: 1rem - rhythm.px-to-rem(2px);
@@ -27,7 +33,5 @@ article {
     font-style: initial;
     text-align: initial;
 
-    white-space: nowrap;
-    overflow-x: auto;
   }
 }
