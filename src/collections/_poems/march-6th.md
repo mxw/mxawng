@@ -21,8 +21,8 @@ the satisfaction of a quiet ending to each day?
 
 further along, here the buildings also seem to speak.  
 they hiss and they whisper and string their  
-crumpled secrets out onto a wiry wind.  
-they tower indifferently, faking stillness  
+crumpled edicts out onto a wiry wind.  
+they tower indifferently overhead, feigning secrecy  
 —their back alleys tower, too,  
 dressed in agitated signage, in all caps, as if to say:  
 it is impossible.  

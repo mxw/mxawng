@@ -17,8 +17,8 @@ tension or intention, was moored here
 to this place of rest?
 
 a sea of cotton quivers; a dim eye  
-floods with flitting mockeries,  
-or memories, worth their weight  
+floods with frozen mockeries  
+or memories worth their weight  
 in silver coin.  
 who will carry you?—  
 across the surges  
