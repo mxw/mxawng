@@ -8,19 +8,19 @@ Flesh is made of madness; it decomposes
 as microscopic mania, a trembling cacophony  
 of possibilities, inked out in some inscrutable cartography:  
 this is the chart that every birth composes.  
-Its orientation's unknown. Each shallow stroke implies  
-a start of questions, like the kindly wayside signs  
-instruct how to turn into or along these lines—  
+Its orientation's unknown. Each fading, shallow stroke implies  
+a start of questions, like those kindly road-side signs  
+instruct how to turn into or along these lines;  
 or perhaps the moss-hewn bed where realization lies.
 
 How does a person travail this life? Are they like a boulder,  
-landmarked, unflappable, against a crying dawn wind,  
-bits of self scraped off in secret, refusing to move even one inch  
-but for the arrogant rain of time? The boulder would rather die  
-than change, so again and again it dies and dies  
-its unseen deaths; it sinks deeply into its earth, clutches dirt,  
-bleeds hot magma from a crackling heart, fills up  
-its skin-dry scars with easy moss. This is a boulder. Do you think  
+landmarked, unflappable, against a desperate dawn wind,  
+bits of self scraped off in secret, refusing to move even an inch  
+but for the arrogant rain of time? The boulder would rather die,  
+so again and again it dies and dies  
+familiar deaths: it sinks deeply into its earth, clutches dirt,  
+bleeds hot magma from a reckless heart, fills up  
+its skin-dry scars with aimless moss. This is a boulder. Do you think  
 the boulder bits find each other again and make  
 a great monument, a great memory,  
 a great tomb for the boulder? Nothing is so abject,  
@@ -31,6 +31,6 @@ as if marooned someplace between the is and land,
 latent, as if being were too slight or still, and  
 its trembling blue dot marked where our bodies are laid.  
 Yet, I think every life ought to transpire: each foregone,  
-unprinted trail, each unmade desire, each wish is a tragedy;  
-therefore—in what is—there is only majesty.  
+unprinted trail, each unworn desire, each wish is a tragedy;  
+therefore, in what is—there is only majesty.  
 Look back just once, and even the road is gone.
