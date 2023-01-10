@@ -13,7 +13,7 @@ fire, free, the moths aspire,
 heart and wing-beat intertwined  
 in metabolic revelry.
 
-captive, you might wish to wait,  
+captivated, you may wish to wait,  
 watching while the wavering air  
 encircles you, tiptoeing toward  
 that brilliant view; or consecrate  
