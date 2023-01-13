@@ -18,9 +18,9 @@ landmarked, unflappable, against a desperate dawn wind,
 bits of self scraped off in secret, refusing to move even an inch  
 but for the arrogant rain of time? A boulder would rather die,  
 so again and again it dies and dies  
-familiar deaths: it splashes into its earth, clutches dirt,  
+familiar deaths: it seeps into its earth, clutches dirt,  
 bleeds hot magma from a quivering heart, fills up  
-its skin-dry scars with aimless moss. This is a boulder. Do you think  
+its skin-dry scars with easy moss. This is a boulder. Do you think  
 the boulder bits find each other again and make  
 a great monument, a great memory,  
 a great tomb for the boulder? Nothing is so abject,  
