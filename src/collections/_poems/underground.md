@@ -5,19 +5,19 @@ order: 4
 ---
 
 here beneath the cobblestone sky,  
-moths alight like dancing embers:  
-swirling, spiraling, they find  
+&emsp;&emsp;moths alight like dancing embers:  
+&emsp;&emsp;&emsp;&emsp;swirling, spiraling, they find  
 their funeral pyre—urgently,  
-imparting every pulse with splendorous  
-fire, free, the moths aspire,  
+&emsp;&emsp;imparting every pulse with splendorous  
+&emsp;&emsp;&emsp;&emsp;fire, free, the moths aspire,  
 heart and wing-beat intertwined  
-in metabolic revelry.
+&emsp;&emsp;in metabolic revelry.
 
 captivated, you may wish to wait,  
-watching while the wavering air  
-encircles you, tiptoeing toward  
+&emsp;&emsp;watching while the wavering air  
+&emsp;&emsp;&emsp;&emsp;encircles you, tiptoeing toward  
 that brilliant view; or consecrate  
-their motion, reaching out with wary  
-fingertips—as through them slip  
+&emsp;&emsp;their motion, reaching out with wary  
+&emsp;&emsp;&emsp;&emsp;fingertips—as through them slip  
 those fireflies—slip through the door,  
-upstairs, and past, into the night.
+&emsp;&emsp;upstairs, and past, into the night.
