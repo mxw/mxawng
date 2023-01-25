@@ -13,7 +13,7 @@ or yawns in their regular exchange of habit.
 their hum coats a dim metal dust, the worker's glove,  
 velveteen grit adorning fingertips; it is  
 the ringing in your ears which neither starts  
-nor stops. does anyone notice that they're here?  
+nor stops. does anyone notice that they're there?  
 tucked in unremarkably, like bricks shaken loose  
 by decades of boredom—can the passers-by  
 stop in their tracks and feel release,  
