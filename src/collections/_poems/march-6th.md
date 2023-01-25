@@ -9,9 +9,9 @@ biking down Massachusetts Avenue:
 
 behind, a pair of old furnaces take their turns breathing.  
 hunched, reliable, they alternate gasps  
-or yawns in their steady exchange of habit.  
-their hum is a dim metal dust, the worker's glove,  
-velveteen grit adorning fingertips; and  
+or yawns in their regular exchange of habit.  
+their hum coats a dim metal dust, the worker's glove,  
+velveteen grit adorning fingertips; it is  
 the ringing in your ears which neither starts  
 nor stops. does anyone notice that they're here?  
 tucked in unremarkably, like bricks shaken loose  
@@ -19,12 +19,12 @@ by decades of boredom—can the passers-by
 stop in their tracks and feel release,  
 the satisfaction of a quiet ending to each day?
 
-further along, here the buildings also seem to speak.  
-they hiss and they whisper and string their  
-crumpled edicts out onto a wiry wind.  
-they tower indifferently overhead, feigning secrecy  
-—their back alleys tower, too,  
-dressed in agitated signage, in all caps, as if to say:  
+further along, here the empty buildings seem to offer  
+their own suggestions, in big whispering echoes,  
+they string their crumpled edicts out onto a wiry wind.  
+they tower aloof overhead, feigning secrecy  
+—their back alleys tower, too, in imitation,  
+decked in agitated signage, in all caps, as if to say:  
 it is impossible.  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
                     and the wind  
@@ -35,7 +35,7 @@ just beneath, i hear a trickle: cool, clear.
 
 i bend down, turning my ear towards the sidewalk's edge.  
 there the river meets the night.  
-it weaves the wispy steam of the moon  
+it weaves the bright wispy steam of the moon  
 snug along its modest, bankless body,  
 like a glacial flow carrying the final sediment  
 of its age to the unknown basin. i remember  
@@ -50,4 +50,3 @@ a chorus of downpour, still the river carries itself from here
 and gulps down into the crack beneath the sidewalk:  
 and when i listen back, i understand  
 that all i may hear is the wind.
-
