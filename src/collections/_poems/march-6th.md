@@ -22,7 +22,7 @@ the satisfaction of a quiet ending to each day?
 further along, here the empty buildings seem to offer  
 their own suggestions, in big whispering echoes,  
 stringing their crumpled edicts out onto a wiry wind.  
-they tower aloof overhead, insistently, permanently  
+they tower aloof overhead, insistent,  
 —their back alleys tower, too, in imitation,  
 decked in agitated signage, in all caps, as if to say:  
 it is impossible.  
