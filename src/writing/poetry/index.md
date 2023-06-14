@@ -5,6 +5,10 @@ layout: page
 styles: [pages/poetry]
 ---
 
+my poetics is the poetics of desperation.  my experience of life and of the
+creative process is, at its heart, a sort of restless yearning for meaning, and
+for connection.  this is inevitably at the soul of everything i make.
+
 i find writing poetry very challenging and emotionally impenetrable.  i manage
 to do it only occasionally, but you can see some of my work here.
 

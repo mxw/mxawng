@@ -7,21 +7,21 @@ styles: [pages/about]
 hey, it's me, max.  what are the haps?
 
 this is my personal website. i feel some ways about personal websites, like
-that they are "useless" or "not worth spending my time on".  but i also feel
+that they are "pointless" or "not worth spending my time on".  but i also feel
 that way about dressing myself sometimes and i still put on
 [clothes](/things/unthings/).  or at least when i leave the apartment.
 
 ## currently
 
-these days i spend most of my unwasted time reading and occassionally [writing
-poetry](/stuff/poetry/).  much of my remaining time is spent convincing myself
-it is ok to prioritize this above other stuff i do, or to do any of the stuff i
-do at all.  i am thinking about maybe getting an MFA.
+presently, i am trying to recover, heal, and do nothing.  i would like to
+decouple my life and the living of it from the productivity grind that i've
+spent it being conditioned for.  this is a remarkably difficult undertaking.
 
-other stuff i do includes vocal training, [making music](/stuff/music/),
-practicing house dance, and [dance videography](/stuff/dance/#videography).
-further down the procrastination pipeline, i sometimes play [magic: the
-gathering][mtg] and pokémon go.
+i read and occassionally [write poetry](/stuff/poetry/).  other stuff i do
+includes vocal training, [making music](/stuff/music/), practicing house dance,
+and [dance videography](/stuff/dance/#videography).  further down the
+procrastination pipeline, i sometimes play [magic: the gathering][mtg] and
+pokémon go.
 
 ## group identity
 
@@ -32,16 +32,16 @@ is the groups i've been a part of.
 another corollary is that here's a section on my website with my group
 affiliations.
 
-i'm used to describing myself as a "recent harvard grad", although this is
-probably no longer accurate.  i went to school for english, took [math
+i'm used to describing myself as a "recent harvard grad", although this is no
+longer accurate.  i went to school for english, took [math
 classes](/stuff/#course-notes), decided to major in chemistry, and wound up
 with a computer science degree.  i spent a lot of my time at harvard with the
 [harvard university band][hub], and i [conducted][yAle] said band in my final
 semesters.
 
-after harvard, i ended up in industry.  i spent my entire tenure on facebook's
-[hhvm][hhvm] compiler team.  i have since [left fb][verge] for a new career in
-vaguely doing art things and feeling bad about myself.
+after harvard, i ended up in the tech industry.  i spent my entire tenure on
+facebook's [hhvm][hhvm] compiler team.  i have since [left fb][verge] for a new
+career in vaguely doing art things and feeling bad about myself.
 
 before all that, i attended the [center for talented youth][cty] over several
 summers in lancaster, pa, where i [held the duck][duck].  i maintain
