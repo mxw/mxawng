@@ -15,7 +15,8 @@ station][gmap] in cambridge and have a bike, so i can do local meetups in much
 of the boston/cambridge/somerville area.
 
 feel free to request shipping, additional photos, etc. if you're interested in
-something!  higher bids also welcome!
+something!  higher bids also welcome if you hate money or want to feel like
+you're at an auction!
 
 [form]: https://forms.gle/uNUMdJH1hQPTzefA6
 [gmap]: https://goo.gl/maps/upm7v6keW4CyB3pN6
