@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Harvard Basketball Nike t-shirt
 tags: [clothing, shirts]
 price: 3

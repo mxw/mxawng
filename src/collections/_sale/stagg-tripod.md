@@ -1,4 +1,6 @@
 ---
+sold: true
+
 title: Stagg tripod, broken
 tags: [household]
 price: 0

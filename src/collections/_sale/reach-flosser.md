@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Reach Access flosser
 tags: [household]
 price: 0

@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Dual-Link DVI cable
 tags: [electronics]
 price: 2

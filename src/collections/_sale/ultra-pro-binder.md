@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Ultra Pro padded binder
 tags: [gaming]
 price: 7

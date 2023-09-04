@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Avery 2&quot; 3-ring binder, black
 tags: [household]
 price: 2

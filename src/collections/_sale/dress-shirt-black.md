@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: dress shirt, black, Preswick & Moore
 tags: [clothing, shirts]
 price: 2

@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Next Level v-neck t-shirts
 tags: [clothing, shirts]
 price: 2

@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: water hyacinth bin
 tags: [furnishing]
 price: 9

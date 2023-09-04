@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: TJ Maxx women's sunglasses
 tags: [accessories]
 price: 4

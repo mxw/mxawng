@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Amazon Basics bathrobes
 tags: [clothing]
 price: 4

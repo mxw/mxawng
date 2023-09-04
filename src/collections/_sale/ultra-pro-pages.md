@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Ultra Pro 18-pocket side-load pages, black, 50ct.
 tags: [gaming]
 price: 9

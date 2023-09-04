@@ -1,7 +1,7 @@
 ---
 title: Tile Mate
 tags: [electronics]
-price: 7
+price: 5
 msrp: 16.99
 
 pics:
@@ -13,5 +13,5 @@ bg: white
 
 inferior apple airtags.
 
-i have two gently used tile mates for $7 (which i can transfer ownership of),
-and one unused one for $10.
+i have two gently used tile mates for $5 (which i can transfer ownership of),
+and one unused one for $8.

@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Woot! shirt – It Came Out of Nowhere
 tags: [clothing, shirts]
 price: 5

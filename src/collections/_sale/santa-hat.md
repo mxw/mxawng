@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: Santa hats
 tags: [clothing]
 price: 1

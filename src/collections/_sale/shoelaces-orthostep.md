@@ -1,4 +1,7 @@
 ---
+sold: true
+donated: true
+
 title: OrthoStep round shoelaces
 tags: [accessories]
 price: 0
