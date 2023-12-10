@@ -92,7 +92,7 @@ all about?
 > <cite>anonymous</cite>
 
 > we're all born ted cruz and we all aspire to become max wang.
-> <cite>my girlfriend</cite>
+> <cite>my ex-girlfriend</cite>
 
 > i heard he recently started a blog.
 > <cite>garrett morton</cite>
