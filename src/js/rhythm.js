@@ -50,15 +50,22 @@ const rhythm = function() {
         const elt = elements[i];
         if (elt.classList.contains('norhythm')) continue;
 
-        const lines = Math.ceil(elt.offsetHeight / lineheight);
-        const padding = lines * lineheight - elt.offsetHeight;
+        const accent = elt.classList.contains('noaccent') ? 0 : 10;
+        const height = elt.offsetHeight + accent;
 
-        elt.style.paddingTop = padding / 2 + 'px';
-        elt.style.paddingBottom = padding / 2 + 'px';
+        const lines = Math.ceil(height / lineheight);
+        const padding = lines * lineheight - height;
+
+        const padding_top = parseInt(elt.style.paddingTop || 0);
+        const padding_bot = parseInt(elt.style.paddingBottom || 0);
+
+        elt.style.paddingTop    = (padding_top + (padding / 2)) + 'px';
+        elt.style.paddingBottom = (padding_bot + (padding / 2)) + 'px';
         elt.style.maxHeight = 'none';
       }
     },
   };
 }();
 
+document.addEventListener('DOMContentLoaded', ev => rhythm.adjust('figure'));
 window.addEventListener('load', ev => rhythm.adjust('figure'));

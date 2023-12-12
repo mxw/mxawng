@@ -3,6 +3,25 @@
 
 @use 'common/media';
 
+.instagram-figure {
+  @include media.tablet {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & > .figcontent {
+    aspect-ratio: 540 / 562;
+    background: white;
+
+    & > iframe {
+      border: none !important;
+      border-radius: 0 !important;
+      margin: auto !important;
+    }
+  }
+}
+
 .youtube-figure {
   @include media.tablet {
     width: 85%;
