@@ -5,6 +5,7 @@ layout: page
 styles: [pages/dance]
 
 videos:
+  - HZymbeOW-kU
   - qKOct4T2aM8
   - TwFtC-lxO4g
   - RZUxsp22Gec
@@ -13,14 +14,16 @@ videos:
   - B-xPhkaQpzo
   - 0CG-bqD3Yr0
   - nlghucKw4pg
-  - 8WsL3uhBESo
   - mwwQCi91nsU
 ---
 
 i picked up dance as a craft after an ex-girlfriend cheated on me (putting it
 alongside other skills, like baking or [playing this song on the ukulele][uke],
-that i also gained after being cheated on by ex-girlfriends).  nowadays i
-mostly dance house, some hip-hop, and very little choreo.
+that i also gained after being cheated on).  nowadays i mostly dance house,
+some hip-hop, and very little choreo.
+
+you can follow my dance insta if you want.  you could also not, that's a valid
+choice.
 
 <figure class="full instagram-figure">
   <div class="figcontent">
@@ -168,14 +171,10 @@ mostly dance house, some hip-hop, and very little choreo.
   </div>
 </figure>
 
-unlike most other things i do, there's basically no records of my dance
-practice that i'm willing to subject my website viewers to.
-
 ## videography
 
-i also **film dance** and _am_ willing to subject a wider audience to some of
-my edits.  (if for some reason you want me to film for you, you can try
-[contacting me](/contact/).)
+i also **film dance**, mostly group projects (most of which are kpop).  if you
+want me to film for you, you can try [contacting me](/contact/).
 
 {%- for handle in page.videos %}
 <figure class="full youtube-figure">
