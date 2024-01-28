@@ -13,14 +13,19 @@ that way about dressing myself sometimes and i still put on
 
 ## currently
 
-presently, i am trying to recover, heal, and do nothing.  i would like to
-decouple my life and the living of it from the productivity grind that i've
-spent it being conditioned for.  this is a remarkably difficult undertaking.
+recently, i have taken to describing myself as a full-time amateur [house
+dancer](/stuff/dance/).  besides dance, i often spend my time eating things and
+touching interesting fabrics.
 
-i read and occassionally [write poetry](/stuff/poetry/).  other stuff i do
-includes vocal training, [making music](/stuff/music/), practicing house dance,
-and [dance videography](/stuff/dance/#videography).  further down the
-procrastination pipeline, i sometimes play [magic: the gathering][mtg] and
+i spend a good deal of time not doing much of anything.  my personal
+enlightenment came of trying to decouple my life from the productivity grind i
+spent most of it conditioned for---now i strive for little and i accomplish who
+cares.  i still do really value social time with my friends.
+
+other stuff i do includes reading and occassionally [writing
+poetry](/stuff/poetry/), vocal training, [making music](/stuff/music/), and
+[dance videography](/stuff/dance/#videography).  further down the
+procrastination pipeline, i infrequently play [magic: the gathering][mtg] and
 pokémon go.
 
 ## group identity

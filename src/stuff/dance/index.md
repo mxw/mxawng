@@ -5,6 +5,7 @@ layout: page
 styles: [pages/dance]
 
 videos:
+  - Pug9R1gHJTM
   - HZymbeOW-kU
   - qKOct4T2aM8
   - TwFtC-lxO4g
@@ -17,10 +18,10 @@ videos:
   - mwwQCi91nsU
 ---
 
-i picked up dance as a craft after an ex-girlfriend cheated on me (putting it
-alongside other skills, like baking or [playing this song on the ukulele][uke],
-that i also gained after being cheated on).  nowadays i mostly dance house,
-some hip-hop, and very little choreo.
+i picked up dance as a craft while being depressed about an ex cheating on me
+(putting it alongside other skills, like baking or [playing this song on the
+ukulele][uke], that i also gained after being cheated on).  nowadays i mostly
+dance house.
 
 you can follow my dance insta if you want.  you could also not, that's a valid
 choice.
