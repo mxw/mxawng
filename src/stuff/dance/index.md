@@ -5,6 +5,7 @@ layout: page
 styles: [pages/dance]
 
 videos:
+  - GyK5q1wNQNo
   - Pug9R1gHJTM
   - HZymbeOW-kU
   - qKOct4T2aM8
